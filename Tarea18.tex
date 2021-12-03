@@ -1,0 +1,242 @@
+\documentclass[12pt]{article} 
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{pdfpages}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{multicol}
+\newenvironment{Figura}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+\usepackage{caption}
+\usepackage{amsfonts}
+\usepackage{amsmath, amsthm, amssymb}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\usepackage{graphicx}
+\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage{pstricks}
+\usepackage{xcolor}
+\definecolor{verde_manzana}{rgb}{0.55, 0.71, 0.0}
+\definecolor{Aguamarina}{rgb}{0.5, 1.0, 0.83}
+\definecolor{mandarina_atomica}{rgb}{1.0, 0.6, 0.4}
+\definecolor{blizzardblue}{rgb}{0.67, 0.9, 0.93}
+\definecolor{bluegray}{rgb}{0.4, 0.6, 0.8}
+\definecolor{coolgrey}{rgb}{0.55, 0.57, 0.67}
+\definecolor{tealgreen}{rgb}{0.0, 0.51, 0.5}
+\definecolor{ticklemepink}{rgb}{0.99, 0.54, 0.67}
+\definecolor{thulianpink}{rgb}{0.87, 0.44, 0.63}
+\definecolor{wildwatermelon}{rgb}{0.99, 0.42, 0.52}
+\definecolor{wisteria}{rgb}{0.79, 0.63, 0.86}
+\definecolor{yellow(munsell)}{rgb}{0.94, 0.8, 0.0}
+\definecolor{trueblue}{rgb}{0.0, 0.45, 0.81}	\definecolor{tropicalrainforest}{rgb}{0.0, 0.46, 0.37}
+\definecolor{tearose(rose)}{rgb}{0.96, 0.76, 0.76}
+\definecolor{antiquefuchsia}{rgb}{0.57, 0.36, 0.51}	\definecolor{bittersweet}{rgb}{1.0, 0.44, 0.37}	\definecolor{carrotorange}{rgb}{0.93, 0.57, 0.13}
+\definecolor{cinereous}{rgb}{0.6, 0.51, 0.48}
+\definecolor{darkcoral}{rgb}{0.8, 0.36, 0.27}	\definecolor{orange(colorwheel)}{rgb}{1.0, 0.5, 0.0}
+\definecolor{palatinateblue}{rgb}{0.15, 0.23, 0.89} \definecolor{pakistangreen}{rgb}{0.0, 0.4, 0.0} 	\definecolor{vividviolet}{rgb}{0.62, 0.0, 1.0} 
+\definecolor{tigre}{rgb}{0.88, 0.55, 0.24} 	\definecolor{prussianblue}{rgb}{0.0, 0.19, 0.33} 	\definecolor{plum(traditional)}{rgb}{0.56, 0.27, 0.52} 	\definecolor{persianred}{rgb}{0.8, 0.2, 0.2} 	\definecolor{orange(webcolor)}{rgb}{1.0, 0.65, 0.0} 	\definecolor{onyx}{rgb}{0.06, 0.06, 0.06}
+
+\begin{document}
+\pagestyle{empty} 
+\setlength{\parindent}{0pt}
+\sffamily
+\begin{center} \LARGE{\bf Benemérita Universidad Autónoma de Puebla} \\[0.5cm]
+\begin{figure}[htb] \centering \includegraphics[scale=.2]{LogoBUAPpng.png} \end{figure}
+\LARGE{Facultad de Ciencias Físico Matemáticas}\\[0.5cm]
+\begin{figure}[htb] \centering \includegraphics[scale=.39]{LogoFCFMBUAP.png} \end{figure} 
+\Large{Licenciatura en Física Teórica}\\[0.5cm]
+\large{Primer semestre} \end{center}
+\begin{center} { \Large \bfseries{Tarea 18}: (Continuación de teoremas de desigualdades)} \\ \end{center}
+\large{\bf Curso:} Matemáticas básicas \textbf{(N.R.C.:25598)}\\
+\large{\bf Alumno:} Julio Alfredo Ballinas García $\left(202107583\right)$ \\
+\large{\bf Docente:} Dra. María Araceli Juárez Ramírez\\
+\large{\bf Grupo:} 102\\ \begin{center} 
+\vfill
+\textsc{\underline{Tarea retrasada:} venció 3 de octubre} \end{center}
+\begin{center}
+\textsc{Fecha de hoy: 9 de octubre}
+\end{center}
+\newpage
+
+\section{Mostrar {\red{Teorema 18}} {\blue{ii)}}} \vspace{.5cm}
+
+{\LARGE{{\blue{ii)}} \hspace{.1cm} $x$ $<$ $y$ $\Longleftrightarrow$ $x$ $+$ $z$ $<$ $y+z$}} \vspace{.5cm}
+
+
+{\textcolor{onyx}{1.-}} {\red{{\underline{Demostración directa}}}} {\textcolor{pakistangreen}{{\Large{$\Longrightarrow$}}}}: es decir {\Large{$x$ $<$ $y$ $\Longrightarrow$ $x+z$ $<$ $y+z$}} \vspace{0.5cm}
+
+{\red{{\underline{Solución:}}}} \vspace{0.5cm} 
+
+Suponemos {\Large{$x$ $<$ $y$}} {\textcolor{pakistangreen}{verdadera.}} \vspace{0.5cm}
+
+{\textcolor{carrotorange}{Por la definición de {\underline{menor estricto}}}} {(\Large{\textcolor{pakistangreen}{$<$}})} nos queda {{\Large{$x$ $<$ $y$}} como:\vspace{0.5cm}}
+
+\hspace{4cm} $x$ $<$ $y$ $\Longleftrightarrow$ $x$ $\leq$ $y$ $\wedge$ $x$ $\neq$ $y$ \vspace{0.5cm}
+
+{\textcolor{carrotorange}{Por {\underline{teorema 14}} (T$_{14}$)}} rescribimos a {\Large{$x$ $\leq$ $y$}} como: \vspace{0.5cm}
+
+\hspace{2.1cm} $x$ $\leq$ $y$ $\wedge$ $x$ $\neq$ $y$ $\Longleftrightarrow$ ($x$ $<$ $y$ $\vee$ $x$ $=$ $y$) $\wedge$ $x$ $\neq$ $y$\vspace{0.5cm}
+
+{\textcolor{carrotorange}{Distribuyendo $\wedge$ / $\vee$}} tenemos: \vspace{0.5cm}
+
+($x$ $<$ $y$  $\vee$ $x$ $=$ $y$) $\wedge$ $x$ $\neq$ $y$ $\Longleftrightarrow$ ($x$ $<$ $y$ $\wedge$ $x$ $\neq$ $y$) $\vee$ ($x$ $=$ $y$ $\wedge$ $x$ $\neq$ $y$) \vspace{0.5cm}
+
+ \hspace{5.4cm} $\Longleftrightarrow$ ($x$ $<$ $y$ $\wedge$ $x$ $\neq$ $y$) $\vee$ (falsa) \vspace{0.5cm}
+ 
+\hspace{5.6cm}$\Longleftrightarrow$ {{\underline{$x$ $<$ $y$}} $\wedge$ {{\underline{$x$ $\neq$ $y$}}}} \vspace{0.01cm}
+
+\hspace{7cm} {\red{v}} \hspace{1.3cm} {\red{v}} \vspace{0.2cm}
+
+\hspace{5.45cm} $\Longleftrightarrow$ $x$ $<$ $y$ \hspace{0.2cm} \fbox{\textcolor{bluegray}{no resuelto, faltó llegar a:} {\textcolor{pakistangreen}{$x+z$ $<$ $y+z$}}} \vspace{0.5cm} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+{\textcolor{onyx}{2.-}} {\red{{\underline{Demostración directa}}}} {\textcolor{pakistangreen}{{\Large{$\Longleftarrow$}}}}: es decir {\Large{$x+z$ $<$ $y+z$ $\Longleftrightarrow$ $x$ $<$ $y$}} \vspace{0.5cm}
+ 
+ {\red{{\underline{Solución:}}}} \vspace{0.5cm} 
+
+Suponemos {\Large{$x+z$ $<$ $y+z$}} {\textcolor{pakistangreen}{verdadera.}} \vspace{0.5cm}
+
+{\textcolor{carrotorange}{Por axioma 4 (R$_4$)}} {({\textcolor{pakistangreen}{elemento simétrico}})}:\vspace{0.5cm}
+
+\hspace{2.3cm} $x+z$ $<$ $y+z$ $\Longleftrightarrow$ $x+z$ $+$ $(-z)$ $<$ $y+z$ $+$ $(-z)$\vspace{0.5cm}
+
+{\textcolor{carrotorange}{Por axioma 2 (R$_2$)}} {({\textcolor{pakistangreen}{asociatividad}})} tenemos: \vspace{0.5cm}
+
+\hspace{5.4cm} $\Longleftrightarrow$ $x$ $+$ $(z+(-z))$ $<$ $y$ $+$ $(z+(-z))$\vspace{0.5cm}
+
+{\textcolor{carrotorange}{Por axioma 4 (R$_4$)}} {({\textcolor{pakistangreen}{elemento simétrico}})} tenemos: \vspace{0.5cm}
+
+\hspace{5.4cm} $\Longleftrightarrow$ $x$ $+$ $(0)$ $<$ $y$ $+$ $(0)$ \vspace{0.5cm}
+
+{\textcolor{carrotorange}{Por axioma 3 (R$_3$)}} {({\textcolor{pakistangreen}{elemento neutro}})} tenemos: \vspace{0.5cm}
+
+\hspace{5.4cm} $\Longleftrightarrow$ $x$ $<$ $y$ \vspace{0.5cm}
+
+{\textcolor{carrotorange}{Por transitividad de la}} {\textcolor{vividviolet}{{\Large{$\Longleftrightarrow$}}}} tenemos:  \vspace{0.5cm}
+
+\hspace{2.5cm}  $x+z$ $<$ $y+z$ $\Longleftrightarrow$ $x$ $<$ $y$ \hspace{0.5cm} \qedsymbol \vspace{0.7cm}
+
+%%%%%%%%%%%%%%%%%%%%%% hasta aquí inicia el segundo ejercicio %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% hasta aquí inicia el segundo ejercicio %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% hasta aquí inicia el segundo ejercicio %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% hasta aquí inicia el segundo ejercicio %%%%%%%%%%%%%%%%
+
+\begin{center}
+{\textcolor{trueblue}
+{
+$\bullet$  \rule{10mm}{0.3mm} $\bullet$ \rule{10mm}{0.3mm} $\bullet$ \rule{10mm}{0.3mm}  $\bullet$  \rule{10mm}{0.3mm} $\bullet$ \rule{10mm}{0.3mm} $\bullet$ \rule{10mm}{0.3mm}  $\bullet$  \rule{10mm}{0.3mm}  $\bullet$  \rule{10mm}{0.3mm}  $\bullet$  \rule{10mm}{0.3mm} $\bullet$ \rule{10mm}{0.3mm} $\bullet$ }
+}
+\end{center} \vspace{0.5cm}
+
+\section{Mostrar {\red{tautología}}:} \vspace{0.2cm}
+
+\begin{center} 
+{\underline
+    {
+        {\Large{$P$ $\Longleftrightarrow$ $Q$ $\Longleftrightarrow$ $R$ $\Longleftrightarrow$ $S$ $\equiv$ $P$ $\Longrightarrow$ $Q$ $\Longrightarrow$ $R$ $\Longrightarrow$ $S$ $\Longrightarrow$ $P$ }}
+    }
+}
+\end{center} \vspace{0.5cm}
+
+{\red{\underline{Solución:}}}
+
+{\textcolor{carrotorange}{Sabemos por definición de la {\textcolor{pakistangreen}{BICONDICIONAL}} que}}: \vspace{0.5cm}
+
+1.- ($P$ $\Longleftrightarrow$ $Q$) $\Longrightarrow$ $P$ $\Longrightarrow$ $Q$ $\wedge$ $Q$ $\Longrightarrow$ $P$ 
+
+2.- ($Q$ $\Longleftrightarrow$ $R$) $\Longrightarrow$ $Q$ $\Longrightarrow$ $R$ $\wedge$ $R$ $\Longrightarrow$ $Q$ 
+
+3.- ($R$ $\Longleftrightarrow$ $S$) $\Longrightarrow$ $R$ $\Longrightarrow$ $S$ $\wedge$ $S$ $\Longrightarrow$ $R$ \vspace{0.5cm} 
+
+Volvemos a reescribir todo de la siguiente manera: \vspace{0.5cm}
+
+{\normalsize{($P$ $\Longrightarrow$ $Q$) $\wedge$ ($Q$ $\Longrightarrow$ $P$) $\wedge$ ($Q$ $\Longrightarrow$ $R$) $\wedge$ ($R$ $\Longrightarrow$ $Q$) $\wedge$ ($R$ $\Longrightarrow$ $S$) $\wedge$ ($S$ $\Longrightarrow$ $R$)}} 
+
+Como la implicación de las proposiciones se hace con respecto de la disyunción, estas necesariamente deben ser verdaderas. {\vspace{0.5cm}}
+
+{\textcolor{carrotorange}{Por transitividad de la  {\textcolor{pakistangreen}{implicación}}}} {\textcolor{vividviolet}{{\Large{$\Longrightarrow$}}}}:  \vspace{0.5cm}
+
+{\normalsize{($P$ $\Longrightarrow$ $Q$) $\wedge$  ($Q$ $\Longrightarrow$ $R$) $\wedge$  ($R$ $\Longrightarrow$ $S$) $\wedge$ ($S$ $\Longrightarrow$ $R$)}} \vspace{0.5cm}
+
+{\textcolor{carrotorange}{De nuevo por la transitiva de la 
+{\textcolor{pakistangreen}{implicación}}}} {\textcolor{vividviolet}{{\Large{$\Longrightarrow$}}}}:  \vspace{0.5cm}
+
+{\underline
+    {
+        {\normalsize{$P$ $\Longrightarrow$ $Q$ $\Longrightarrow$ $R$ $\Longrightarrow$ $S$ $\Longrightarrow$ $P$}} 
+    }
+}   \hspace{0.5cm}  \qedsymbol \vspace{0.7cm}
+
+\begin{center}
+{\textcolor{trueblue}
+{
+$\bullet$  \rule{10mm}{0.3mm} $\bullet$ \rule{10mm}{0.3mm} $\bullet$ \rule{10mm}{0.3mm}  $\bullet$  \rule{10mm}{0.3mm} $\bullet$ \rule{10mm}{0.3mm} $\bullet$ \rule{10mm}{0.3mm}  $\bullet$  \rule{10mm}{0.3mm}  $\bullet$  \rule{10mm}{0.3mm}  $\bullet$  \rule{10mm}{0.3mm} $\bullet$ \rule{10mm}{0.3mm} $\bullet$ }
+}
+\end{center} \vspace{0.5cm}
+
+%%%%%%%%%%%%%%%%%%%%%% hasta aquí inicia el tercer ejercicio %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% hasta aquí inicia el tercer ejercicio %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% hasta aquí inicia el tercer ejercicio %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% hasta aquí inicia el tercer ejercicio %%%%%%%%%%%%%%%%%
+
+
+\section{Mostrar {\red{Teorema 19}} {\blue{i)}} {\textcolor{pakistangreen}{{\underline{Implicación 4.}}}}} \vspace{.5cm}
+
+\begin{center}
+{\LARGE{$-y$ $\leq$ $-x$ $\Longrightarrow$ $x$ $\leq$ $y$}}
+\end{center} \vspace{0.5cm}
+
+{\red{{\underline{Demostración directa}}}} {\textcolor{pakistangreen}{{\Large{$\Longrightarrow$}}}}: es decir {\Large{$ -y $ $\leq$ $-x$ $\Longrightarrow$ $x$ $\leq$ $y$}} \vspace{0.5cm}
+
+{\red{{\underline{Solución:}}}} \vspace{0.5cm} 
+
+Suponemos {\Large{$-y$ $\leq$ $-x$}} \hspace{0.2cm} {\textcolor{pakistangreen}{verdadera.}} \vspace{0.5cm}
+
+
+{\textcolor{carrotorange}{Por axioma 4 (R$_4$)}} {({\textcolor{pakistangreen}{elemento simétrico}})} tenemos: \vspace{0.5cm}
+
+
+\hspace{1.58cm} $-y$ $\leq$ $-x$ $\Longrightarrow$ $-y$ $+$ $-$ ($-y$) $+$ $-$ ($-x$) $\leq$ $-x$ $+$ $-$ ($-x$) $+$ $-$ ($-y$) 
+ \vspace{0.5cm}
+
+
+{\textcolor{carrotorange}{Por teorema 4 (T$_4$) }} tenemos: \vspace{0.5cm}
+
+\begin{center}
+ $\Longrightarrow$ $-y$ $+$ ($y$) $+$ ($x$) $\leq$ $-x$ $+$ ($x$) $+$ ($y$) 
+\end{center} \vspace{0.5cm}  
+
+{\textcolor{carrotorange}{Por axioma 1 (R$_1$) }} {({\textcolor{pakistangreen}{conmutatividad}})} tenemos: \vspace{0.5cm}
+
+ 
+\hspace{3.8cm} $\Longrightarrow$ $y$ $+$ ($-y$) $+$ $x$ $\leq$ $x$ $+$ ($-x$)  $+$ $y$ 
+ \vspace{0.5cm}  
+
+{\textcolor{carrotorange}{Por axioma 2 (R$_2$) }} {({\textcolor{pakistangreen}{asociatividad}})} tenemos: \vspace{0.5cm}
+
+\begin{center}
+ $\Longrightarrow$ ($y$ $+$ ($-y$)) $+$ $x$ $\leq$ ($x$ $+$ ($-x$))  $+$ $y$ 
+\end{center} \vspace{0.5cm}  
+
+{\textcolor{carrotorange}{Por axioma 4 (R$_4$) }} {({\textcolor{pakistangreen}{asociatividad}})} tenemos: \vspace{0.5cm}
+
+
+\hspace{3.8cm} $\Longrightarrow$ $(0)$ $+$ $x$ $\leq$ $(0)$  $+$ $y$ 
+\vspace{0.5cm}   
+
+{\textcolor{carrotorange}{Por axioma 3 (R$_3$) }} {({\textcolor{pakistangreen}{asociatividad}})} tenemos: \vspace{0.5cm}
+
+
+\hspace{3.8cm} $\Longrightarrow$ $x$ $\leq$  $y$ 
+\vspace{0.5cm}  
+
+{\textcolor{carrotorange}{Por transitividad de la  {\textcolor{pakistangreen}{implicación}}}} {\textcolor{vividviolet}{{\Large{$\Longrightarrow$}}}}:  \vspace{0.5cm} 
+
+\hspace{1.6cm} $-y$ $\leq$ $-x$ $\Longrightarrow$ $x$ $\leq$  $y$ \hspace{0.5cm} \qedsymbol
+\vspace{0.5cm} 
+
+\end{document}
