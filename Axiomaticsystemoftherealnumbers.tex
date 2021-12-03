@@ -1,0 +1,305 @@
+\documentclass[12pt]{article} 
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsfonts}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{graphicx}
+\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage{pstricks}
+\begin{document}
+\sffamily
+\thispagestyle{empty} 
+\begin{center} \LARGE{\bf Benemérita Universidad Autónoma de Puebla} \\[0.5cm]
+\begin{figure}[htb] \centering \includegraphics[scale=.2]{LogoBUAPpng.png} \end{figure}
+\LARGE{Facultad de Ciencias Físico Matemáticas}\\[0.5cm]
+\begin{figure}[htb] \centering \includegraphics[scale=.39]{LogoFCFMBUAP.png} \end{figure} 
+\Large{Licenciatura en Física Teórica}\\[0.5cm]
+\large{Primer semestre} \end{center}
+\begin{center} { \Large \bfseries{\underline{El sistema axiomático de los números reales}}} \\ \end{center}
+\large{\bf Curso:} Matemáticas básicas \textbf{(N.R.C.:25598)}\\
+\large{\bf Docente:} Dra. María Araceli Juárez Ramírez\\
+\large{\bf Grupo:} 102\\ \begin{center} 
+\vfill
+\textsc{Septiembre de 2021} \end{center}  
+\newpage
+
+\begin{center}
+    \section*{\underline{Axiomática}}
+\end{center}
+
+Conjunto $\mathbb{ R }$ de los números reales. Lista de los axiomas que lo definen: $\mathbb{ R }$ es un conjunto en el cual están definidas dos operaciones y una relación de \textemdash orden (es decir, dos funciones de $\mathbb{R}$ $\times$ $\mathbb{R}$ a $\mathbb{R}$ y una relación de $\mathbb{R}$ a $\mathbb{R}$) denotadas como sigue y cumpliendo con la lista de propiedades siguiente: \\
+
+{\underline{NOTACIÓN.}} La primera operación es una función de dominio $\mathbb{R}  \times  \mathbb{R}$ denotada:\\
+
+$(x,y)$ \hspace{.1cm} \textendash\textendash\textendash\textendash \textendash\textendash\textendash\textendash\textendash\textendash\textendash\textendash \textendash\textendash\textendash\textendash   \textgreater \hspace{.1cm} $ (x+y) $ \hspace{.1cm} (suma)\\
+
+$\mathbb{R} \times \mathbb{R}$ \hspace{.1cm} \textendash\textendash\textendash\textendash \textendash\textendash\textendash\textendash\textendash\textendash\textendash\textendash \textendash\textendash\textendash\textendash   \textgreater \hspace{.1cm} $\mathbb{R}$ \\
+
+La segunda operación es una función de dominio $\mathbb{R} \times \mathbb{R}$ denotada:\\
+
+$(x,y)$ \hspace{.1cm} \textendash\textendash\textendash\textendash \textendash\textendash\textendash\textendash\textendash\textendash\textendash\textendash \textendash\textendash\textendash\textendash   \textgreater \hspace{.1cm} $ (x\cdot y) $\hspace{.1cm} (o también $xy$ )\\
+
+$\mathbb{R} \times \mathbb{R}$ \hspace{.1cm} \textendash\textendash\textendash\textendash \textendash\textendash\textendash\textendash\textendash\textendash\textendash\textendash \textendash\textendash\textendash\textendash   \textgreater \hspace{.1cm} $\mathbb{R}$ \hspace{0.1cm} (producto)\\
+
+La relación en $\mathbb{R}$ se escribe $x \leq y$ \hspace{0.1cm} ($x$ es menor que $y$) \\
+
+\hspace{3cm} o también \hspace{0.15cm} $y \geq x$  \hspace{0.1cm} ($y$ es mayor que $x$) \\
+
+Se cumplen:\\
+
+\textbf{R}$_1$ \hspace{0.1cm}\textbf{:} $\forall$ $ ( x , y ) $ $\in$ $\mathbb{R} \times \mathbb{R}$ \hspace{0.1 cm} $x+y = y+x$ \\
+
+\textbf{R}$_2$ \hspace{0.1cm}\textbf{:} $\forall$ $ ( x , y, z ) $ $\in$ $\mathbb{R}$ \hspace{0.1 cm} $x+(y+z) = (x+y)+z$ \hspace{0.1 cm} (Se escribe $x+y+z)$ \\
+
+\textbf{R}$_3$ \hspace{0.1cm}\textbf{:} Existe en $\mathbb{R}$ un elemento neutro para la suma. O sea:\\
+\begin{center}
+    $\exists$ $_e$ $\in$ $\mathbb{R}$ $\mid$ $\forall$ $x$ $\in$ $\mathbb{R}$ \hspace{0.1 cm} $e+x = x$ 
+\end{center}
+
+\textbf{R}$_4$ \hspace{0.1cm}\textbf{:} A cada elemento de $\mathbb{R}$ se puede asociar otro elemento de $\mathbb{R}$, simétrico \par del primero con respecto a la suma. O sea $\forall x \in \mathbb{R}$ \hspace{0.1cm} $\exists x^{\prime} \in \mathbb{R} \mid x+x^{\prime} = e$ 
+
+\newpage
+
+\textbf{R}$_5$ \hspace{0.1cm}\textbf{:} $\forall$ $ ( x , y ) $ $\in$ $\mathbb{R} \times \mathbb{R}$ \hspace{0.1 cm} $xy = yx$ \\
+
+\textbf{R}$_6$ \hspace{0.1cm}\textbf{:} $\forall$ $ ( x , y, z) $ $\in$ $\mathbb{R}$ \hspace{0.1 cm} $x(yz) = (xy)z$ \hspace{0.1 cm} (Se escribe $xyz$) (en lugar de $xx$ se \par escribe $x^{2}$ étc.) \\
+
+\textbf{R}$_7$ \hspace{0.1cm}\textbf{:} Existe en $\mathbb{R}$ un elemento distinto de $e$, neutro para el producto. O sea:\\
+
+\begin{center}
+    $\exists$ $_é$ $\in$ $\mathbb{R}$ $\mid$ $e \neq é$ \hspace{0.1 cm} $\wedge$ \hspace{0.1 cm} $\forall$ $x$ $\in \mathbb{R}$ \hspace{0.1 cm} $éx = x$ 
+\end{center}\\
+
+\textbf{R}$_8$ \hspace{0.1cm}\textbf{:} A cada elemento de $\mathbb{R}$ distinto de $e$ se puede asociar otro elemento de \par $\mathbb{R}$, simétrico del primero con respecto al producto. O sea: \\
+
+\begin{center}
+    $\forall$ $x$ $\in$ $\mathbb{R}$ $-\{e\}$ \hspace{0.3cm} $\exists$ $x^{{\prime}{\prime}}$ $\in$ $\mathbb{R}$ $\mid$ $xx^{{\prime}{\prime}} = é$
+\end{center}
+
+\textbf{R}$_9$ \hspace{0.1cm}\textbf{:} $\forall$ $ ( x , y, z) $ $\in$ $\mathbb{R}$ \hspace{0.1 cm} $x (y+z) = xy+xz$ \\
+
+\textbf{R}$_1_0$ \hspace{0.1cm}\textbf{:} $\forall$ $ ( x , y, z) $ $\in$ $\mathbb{R}$ \hspace{0.1 cm} si \hspace{0.1 cm} $\left[ \hspace{0.3 cm} x\hspace{0.1 cm}\leq \hspace{0.1 cm} y \hspace{0.3 cm} \wedge \hspace{0.3
+cm} y\hspace{0.1 cm} \leq \hspace{0.1 cm} z \hspace{0.3 cm} \right]$ \hspace{0.1 cm} $\Rightarrow$ \hspace{0.3cm} $ x \hspace{0.1 cm}\leq \hspace{0.1 cm} z $ \\
+
+\textbf{R}$_1_1$ \hspace{0.1cm}\textbf{:} $\forall$ $ ( x , y) $ $\in$ $\mathbb{R}$ \hspace{0.1 cm} si \hspace{0.1 cm} $\left[ \hspace{0.3 cm} x\hspace{0.1 cm}\leq \hspace{0.1 cm} y \hspace{0.3 cm} \wedge \hspace{0.3
+cm} y\hspace{0.1 cm} \leq \hspace{0.1 cm} x \hspace{0.3 cm} \right]$ \hspace{0.1 cm} $\Leftrightarrow$ \hspace{0.3cm} $ x = y $ \\
+
+\textbf{R}$_1_2$ \hspace{0.1cm}\textbf{:} $\forall$ $ ( x , y) $ $\in$ $\mathbb{R}$ \hspace{0.4cm} $ x\hspace{0.1 cm}\leq \hspace{0.1 cm} y \hspace{0.3 cm} \vee \hspace{0.3cm} y\hspace{0.1 cm} \leq \hspace{0.1 cm} x \hspace{0.3 cm}$\\
+
+\textbf{R}$_1_3$ \hspace{0.1cm}\textbf{:} $\forall$ $ ( x , y) $ $\in$ $\mathbb{R}$ \hspace{0.4cm} $ x\hspace{0.1 cm}\leq \hspace{0.1 cm} y \hspace{0.3 cm} \Rightarrow \hspace{0.3cm} x+z \hspace{0.1 cm}\leq \hspace{0.3 cm} y+z $\\
+
+\textbf{R}$_1_4$ \hspace{0.1cm}\textbf{:} $\forall$ $ ( x , y) $ $\in$ $\mathbb{R}$ \hspace{0.4cm} si \hspace{0.3cm}$ \left[\hspace{0.3 cm} e\hspace{0.1 cm}\leq \hspace{0.1 cm} x\hspace{0.3 cm} \wedge \hspace{0.3 cm} e \hspace{0.3 cm} \leq \hspace{0.3 cm} y\hspace{0.3 cm} \right] \hspace{0.3 cm} \Rightarrow \hspace{0.3cm} e \hspace{0.1 cm}\leq \hspace{0.3 cm} xy$\\
+
+\textbf{R}$_1_5$ \hspace{0.1cm}\textbf{:} $\forall$ $ ( a , b, c, d)$ $\in$ $\mathbb{R}$, si la función polinomio de $\mathbb{R}$ a $\mathbb{R}$ definida por:\\
+
+\begin{center}
+    $P(x)$ $=$ $ax^{3} + bx^{2} + cx + d$ \hspace{0.1cm} es tal que existen \hspace{0.1cm} $x_1$, $x_2$ $\in$ $\mathbb{R}$ \hspace{0.1cm} que cumplan
+\end{center}\\
+\begin{center}
+    $x_1\hspace{0.3 cm} \leq \hspace{0.3 cm} x_2 \hspace{0.3 cm} \wedge \hspace{0.3 cm} P(x_1) \hspace{0.3 cm} \leq \hspace{0.3 cm} e \hspace{0.3 cm} \wedge \hspace{0.3 cm} P(x_2) \hspace{0.3 cm} \geq \hspace{0.3 cm} e$
+\end{center}
+\begin{center}
+   Entonces existe $x_o$ $\in \mathbb{R} \hspace{0.3 cm} \mid \hspace{0.3 cm} x_1 \hspace{0.3 cm} \leq \hspace{0.3 cm} x_o \hspace{0.3 cm} \leq \hspace{0.3 cm} x_2 \hspace{0.3 cm} \wedge \hspace{0.3 cm} P(x_0) = e $
+\end{center}
+
+\newpage
+
+\textbf{R}$_1_6$ \hspace{0.1cm}\textbf{:} $\mathbb{R}$ contiene $\mathbb{N}$, sus operaciones prolongan las de $\mathbb{N}$, y se tiene: \\
+
+\begin{center}
+    $\forall$ $ ( x , y) $ $\in \mathbb{R}$ \hspace{0.3 cm} si \hspace{0.3 cm} $\left[\hspace{0.3 cm} x \neq 0 \hspace{0.3 cm} \wedge \hspace{0.3 cm} x \hspace{0.3 cm} \geq \hspace{0.3 cm} 0 \hspace{0.3 cm} \wedge \hspace{0.3 cm} y \hspace{0.3 cm} \geq \hspace{0.3 cm} 0 \hspace{0.3 cm} \right]$ 
+\end{center}
+\begin{center}
+ $\rightarrow$ \hspace{0.3 cm} $\exists n \in \mathbb{N}$  $\mid$ $y \hspace{0.3 cm} \leq \hspace{0.3 cm} nx$   
+\end{center} \\\\
+\newpage
+\begin{center}
+    \section*{\underline{Axiomática}}
+\end{center}\\
+
+Lista de TEOREMAS consecuencias de los Axiomas \textbf{R}$_1$ a \textbf{R}$_1_6$\\
+
+\textbf{1.-}  El elemento neutro para la suma en $\mathbb{R}$ es único (se denota $e=0$).\vspace{0.2cm}
+
+
+\textbf{2.-}  Se tiene siempre en $\mathbb{R}$ la implicación: \hspace{0.3cm} $x+y=x+z \Rightarrow y=z$. \vspace{0.2cm}
+
+
+\textbf{3.-}  Para cada $x$ de $\mathbb{R}$, su simétrico $x^{\prime}$ es único (se denota $x^{\prime} = -x)$.\vspace{0.2cm}
+
+
+\textbf{4.-}  Para cada $x$ de $\mathbb{R}$ se tiene $-(-x)=x$ \hspace{0.1cm} (Notación: $y-x$ designa $y+(-x)$).\vspace{0.2cm}
+
+
+\textbf{5.-} Se tiene siempre en $\mathbb{R}$ la equivalencia:\hspace{0.3cm} $xy=0 \hspace{0.3cm} \Longleftrightarrow \hspace{0.3cm} x=0 \hspace{0.3cm} \vee \hspace{0.3cm} y=0$.\vspace{0.2cm}
+
+
+\textbf{6.-}  El elemento neutro para el producto en $\mathbb{R}$ es único (se denota $é=1$).\vspace{0.2cm}
+
+
+\textbf{7.-}  Se tiene siempre en $\mathbb{R} \mid x \neq 0 \hspace{0.5cm} xy\hspace{0.2cm}=\hspace{0.2cm}xz \hspace{0.2cm} \Rightarrow \hspace{0.2cm} y=z$.\vspace{0.2cm}
+
+
+\textbf{8.-}  Para cada $x \neq 0 $ en $\mathbb{R}$, su simétrico $x^{{\prime}{\prime}}$ es único. \hspace{0.3cm} (Se denota $x^{-1}$ o $\frac{1}{x}$).\vspace{0.2cm}
+
+
+\textbf{9.-}  Para cada $x \neq 0$ en $\mathbb{R}$ se tiene siempre $(x^{-1})^{-1}=x$. \hspace{0.1cm} (Notación: $\frac{y}{x}$ designa \par $yx^{-1}$).\vspace{0.2cm}
+
+
+\textbf{10.-}  0 no tiene simétrico con respecto al producto.\vspace{0.2cm}
+
+
+\textbf{11.-}  Para todo $x\neq 0$ y todo $y\neq0$ se tiene $(xy)^{-1}=y^{-1}x^{-1}$.\vspace{0.2cm}
+
+
+\textbf{12.-}  Para toda $x$ y toda $y$ en $\mathbb{R}$ se tiene $(-x)y=x(-y)=-(xy)$.\vspace{0.2cm}
+
+
+\textbf{13.-}  Para todo $x$ en $\mathbb{R}$ se tiene $-x=(-1)x$. \vspace{0.3cm}
+
+{\underline{DEFINICIÓN.}} La relación entre elementos de $\mathbb{R} $ definida por:\vspace{0.3cm}
+
+\begin{center}
+     ($x \hspace{0.2cm}\leq \hspace{0.2cm} y \hspace{0.2cm} \wedge \hspace{0.2cm} x \hspace{0.2cm}\neq \hspace{0.2cm} y$) se escribe ($x\hspace{0.2cm}<\hspace{0.2cm}y$) o también ($y\hspace{0.2cm}>\hspace{0.2cm}x$) y se lee 
+    \begin{center}
+    ``$x$ estrictamente menor que $y$'' o ``$x$ es menor estricto que $y$''.
+    \end{center}
+\end{center}  
+\vspace{0.2cm}
+
+\textbf{14.-} - Se tiene siempre en $\mathbb{R}$: $x\hspace{0.2cm}\leq\hspace{0.2cm} y \hspace{0.2cm} \Longleftrightarrow$ $\hspace{0.2cm} x\hspace{0.2cm}<\hspace{0.2cm}y\hspace{0.2cm} \vee \hspace{0.2cm} x=y$. \newpage
+
+
+\textbf{15.-} $x,y$ siendo elementos cualesquiera de $\mathbb{R}$, se cumple siempre una y sólo \par una de las tres relaciones: $x\hspace{0.3cm}<\hspace{0.3cm}y$; \hspace{0.3cm}$y\hspace{0.3cm}<\hspace{0.3cm}x$;\hspace{0.3cm} $x=y$. \vspace{0.2cm}
+
+
+\textbf{16.-}  Se tiene siempre en $\mathbb{R}$: \hspace{0.3cm}$x\hspace{0.3cm}\leq\hspace{0.3cm} y \hspace{0.3cm}\wedge\hspace{0.3cm} y\hspace{0.2cm}<\hspace{0.2cm}z \hspace{0.3cm} \Longrightarrow \hspace{0.3cm} x\hspace{0.2cm}<\hspace{0.2cm}z$.
+\vspace{0.3cm}
+
+\hspace{2cm} y también: \hspace{1.5cm} $x\hspace{0.2cm}<\hspace{0.2cm}y\hspace{0.2cm} \wedge\hspace{0.2cm} y\hspace{0.2cm}\leq\hspace{0.2cm} z\hspace{0.2cm} \Longrightarrow\hspace{0.2cm} x\hspace{0.2cm}<\hspace{0.2cm}z$.
+\vspace{0.3cm}
+
+\textbf{17.-}  Se tiene siempre en $\mathbb{R}$: \vspace{0.2cm}
+
+\hspace{2cm} $x_1 \hspace{0.2cm} \leq \hspace{0.2cm} y_1 \hspace{0.2cm} \wedge \hspace{0.2cm} x_2 \hspace{0.2cm} \leq\hspace{0.2cm} y_2\hspace{0.2cm} \Longrightarrow\hspace{0.2cm} x_1\hspace{0.2cm}+\hspace{0.2cm}x_2\hspace{0.2cm}\leq\hspace{0.2cm}$ $y_1\hspace{0.2cm}+\hspace{0.2cm}y_2$.\vspace{0.1cm}
+
+Si además una de las desigualdades de la izquierda es estricta, entonces, la \par desigualdad de la derecha también lo es.
+\vspace{0.2cm}
+
+\textbf{18.-}  En $\mathbb{R}$ se tienen siempre las equivalencias: \vspace{0.2cm}
+
+\hspace{0.5cm}$ x\hspace{0.2cm} \leq \hspace{0.2cm} y\hspace{0.2cm}  \Longleftrightarrow\hspace{0.2cm} x\hspace{0.1cm} + \hspace{0.1cm}z\hspace{0.2cm}\leq\hspace{0.2cm} y\hspace{0.1cm} +\hspace{0.1cm}z \hspace{2cm} x\hspace{0.2cm}<\hspace{0.2cm}y \Longleftrightarrow\hspace{0.2cm} x\hspace{0.1cm}+\hspace{0.1cm}z\hspace{0.2cm}<\hspace{0.2cm}y\hspace{0.1cm}+\hspace{0.1cm}z$.\vspace{0.2cm}
+
+\textbf{19.-} En $\mathbb{R}$ se tienen siempre las equivalencias:
+\vspace{0.2cm}
+
+$x\hspace{0.2cm}\leq \hspace{0.2cm}y\hspace{0.2cm} \Longleftrightarrow \hspace{0.2cm} 0 \hspace{0.2cm}\leq\hspace{0.2cm} y \hspace{0.1cm} -\hspace{0.2cm} x\hspace{0.2cm} \Longleftrightarrow \hspace{0.2cm} x\hspace{0.1cm}-\hspace{0.1cm}y\hspace{0.2cm}\leq\hspace{0.2cm}0\hspace{0.2cm}\Longleftrightarrow\hspace{0.2cm}-\hspace{0.1cm}y\hspace{0.2cm} \leq\hspace{0.2cm}-\hspace{0.1cm}x$ \vspace{0.1cm}.
+
+$x\hspace{0.2cm}<\hspace{0.2cm}y\hspace{0.2cm} \Longleftrightarrow \hspace{0.2cm} 0 \hspace{0.2cm}<\hspace{0.2cm} y \hspace{0.1cm} -\hspace{0.2cm} x\hspace{0.2cm} \Longleftrightarrow \hspace{0.2cm} x\hspace{0.1cm}-\hspace{0.1cm}y\hspace{0.2cm}<\hspace{0.2cm}0\hspace{0.2cm}\Longleftrightarrow\hspace{0.2cm}-\hspace{0.1cm}y\hspace{0.2cm}<\hspace{0.2cm}-\hspace{0.1cm}x$ \vspace{0.2cm}.
+
+\textbf{20.-} En $\mathbb{R}$ se tiene siempre;
+\vspace{0.1cm}
+
+$x\hspace{0.2cm}\geq\hspace{0.2cm} 0 \hspace{0.2cm}\wedge\hspace{0.2cm} y \hspace{0.2cm}\geq\hspace{0.2cm}0\hspace{0.2cm} \Longrightarrow \hspace{0.2cm} x\hspace{0.21cm}+\hspace{0.1cm}y\hspace{0.2cm}\geq\hspace{0.2cm}0$\vspace{0.1cm}
+
+$\hspace{4.5cm} \Longrightarrow \hspace{0.2cm} x\hspace{0.21cm}+\hspace{0.1cm}y\hspace{0.2cm}>\hspace{0.2cm}0\hspace{0.1cm}\vee \hspace{0.2cm}x\hspace{0.1cm}=\hspace{0.1cm} y\hspace{0.1cm}=\hspace{0.1cm}0$\vspace{0.2cm}.
+
+{\underline{DEFINICIÓN.}} Para todo $x$ en $\mathbb{R}$ se define $\mid x\mid \hspace{0.1cm} = x$ \hspace{0.45cm} si \hspace{0.2cm} $x\hspace{0.2cm} \geq \hspace{0.2cm}0$. \vspace{0.1cm}
+
+\hspace{8.63cm} $\mid x\mid = -\hspace{0.1cm}  x$ \hspace{0.2cm} si \hspace{0.1cm} $x\hspace{0.2cm} < \hspace{0.2cm}0$. 
+\vspace{0.3cm}
+
+\textbf{21.-} Para todo $x$ en $\mathbb{R}$ se tiene $\mid x\mid \hspace{0.1cm} \geq \hspace{0.1cm} 0$ \vspace{0.1cm}
+
+\hspace{6.45cm} $\mid x\mid \hspace{0.1cm}=\hspace{0.1cm} \mid -x\mid$ \hspace{0.2cm} \vspace{0.1cm}
+
+\hspace{6.45cm} $\mid x\mid \hspace{0.1cm}= \hspace{0.1cm} 0 \hspace{0.3cm} \Longleftrightarrow\hspace{0.1cm}$ \hspace{0.1cm} $x\hspace{0.2cm}=\hspace{0.2cm}0$. \vspace{0.2cm}
+
+\textbf{22.-} Si $a$ es un real tal que $a\hspace{0.1cm}>\hspace{0.1cm}0$, se tiene siempre en $\mathbb{R}$ \vspace{0.2cm}
+
+ \hspace{0.8cm}$\mid x\mid \hspace{0.1cm}\leq \hspace{0.1cm} a \hspace{0.2cm} \Longleftrightarrow \hspace{0.2cm} -a\hspace{0.1cm} \leq\hspace{0.1cm} x\hspace{0.1cm}\leq\hspace{0.1cm}a$ \hspace{1cm} $\mid x\mid \hspace{0.1cm}< \hspace{0.1cm} a \hspace{0.2cm} \Longleftrightarrow \hspace{0.2cm} -a\hspace{0.1cm} <\hspace{0.1cm} x\hspace{0.1cm}<\hspace{0.1cm}a$. \vspace{0.2cm}
+
+\textbf{23.-} Para todo $x$ y todo $y$ en $\mathbb{R}$ se cumplen las desigualdades: \vspace{0.2cm}
+
+$\mid x \hspace{0.1cm}+\hspace{0.1cm}y\mid \hspace{0.2cm} \leq \hspace{0.2cm} \mid x\mid \hspace{0.1cm} + \hspace{0.1cm} \mid y \mid $ \hspace{1cm} $\mid\mid x\mid \hspace{0.1cm}-\hspace{0.1cm}\mid y\mid\mid\hspace{0.2cm} \leq \hspace{0.2cm} \mid x \hspace{0.1cm} - \hspace{0.1cm} y \mid $.
+\vspace{0.2cm}
+
+\textbf{24.-} Si $z$ es un real tal que $z\hspace{0.1cm}\geq\hspace{0.1cm}0$, se tiene siempre en $\mathbb{R}:$ \vspace{0.2cm}
+
+\hspace{4cm} \hspace{0.1cm}$x$\hspace{0.1cm} $\leq$ \hspace{0.1cm} $y$ $\Longrightarrow$ \hspace{0.1cm} $xz$ \hspace{0.1cm}$\leq$ \hspace{0.1cm} 
+$yz$. \newpage
+
+\textbf{25.-} Se tiene siempre en $\mathbb{R}$ las implicaciones: \vspace{0.2cm}
+
+\hspace{4cm} $x\hspace{0.1cm} \leq \hspace{0.1cm}0\hspace{0.2cm}\wedge \hspace{0.2cm} y\hspace{0.1cm}\geq\hspace{0.1cm} 0 \hspace{0.2cm} \Longrightarrow \hspace{0.2cm} xy\hspace{0.1cm} \leq \hspace{0.1cm}0$ \vspace{0.2cm}
+
+\hspace{4cm} $x\hspace{0.1cm} \leq \hspace{0.1cm}0\hspace{0.2cm}\wedge \hspace{0.2cm} y\hspace{0.1cm}\leq\hspace{0.1cm} 0 \hspace{0.2cm} \Longrightarrow \hspace{0.2cm} xy\hspace{0.1cm} \geq \hspace{0.1cm}0$ \vspace{0.2cm}
+
+\hspace{4cm} $x\hspace{0.1cm} > \hspace{0.1cm}0\hspace{0.2cm}\wedge \hspace{0.2cm} y\hspace{0.1cm}<\hspace{0.1cm} 0 \hspace{0.2cm} \Longrightarrow \hspace{0.2cm} xy\hspace{0.1cm} < \hspace{0.1cm}0$ \vspace{0.2cm}
+
+\hspace{4cm} $x\hspace{0.1cm} < \hspace{0.1cm}0\hspace{0.2cm}\wedge \hspace{0.2cm} y\hspace{0.1cm}<\hspace{0.1cm} 0 \hspace{0.2cm} \Longrightarrow \hspace{0.2cm} xy\hspace{0.1cm} > \hspace{0.1cm}0$. \vspace{0.2cm}
+
+\textbf{26.-} Para todo real $x$ se tiene siempre: $x^{2} \hspace{0.1cm} \geq \hspace{0.1cm}0$ \vspace{0.1cm}
+
+\hspace{8cm} $x^{2} \hspace{0.1cm} = \hspace{0.1cm}0\hspace{0.2cm} \Longrightarrow\hspace{0.1cm} x\hspace{0.1cm} = \hspace{0.1cm} 0$ \vspace{0.1cm}
+
+\hspace{8cm} $x^{2} \hspace{0.1cm} > \hspace{0.1cm}0\hspace{0.2cm} \Longrightarrow\hspace{0.1cm} x\hspace{0.1cm} \neq\hspace{0.1cm} 0$.
+\vspace{0.2cm}
+
+\textbf{27.-} \hspace{0.2cm} $1\hspace{0.2cm}>\hspace{0.2cm}0; \hspace{0.3cm} 2\hspace{0.2cm}>0;\hspace{0.3cm} 3\hspace{0.2cm}>0\hspace{0.1cm}$ etc...\vspace{0.2cm}
+
+\textbf{28.-} En $\mathbb{R}$ se tiene siempre $\mid xy\mid \hspace{0.1cm}=\hspace{0.1cm} \mid x\mid \hspace{0.1cm} \mid y\mid$.
+\vspace{0.2cm}
+
+\textbf{29.-} Para todo elemento $x$ de $\mathbb{R}$ se tiene siempre: \hspace{0.1cm} $\mid x \mid^{2} \hspace{0.2cm}=\hspace{0.2cm} \mid x^{2}\mid \hspace{0.2cm}= \hspace{0.2cm} x^{2}$.\vspace{0.2cm}
+
+\textbf{30.-} Se tiene siempre en $\mathbb{R}: x \hspace{0.1cm}>\hspace{0.1cm}0\hspace{0.1cm}\Longrightarrow\hspace{0.1cm} x^{-1}\hspace{0.1cm}>0$.
+
+\vspace{0.2cm}
+
+\textbf{31.-} Se tiene siempre en $\mathbb{R}; \hspace{0.1cm} z$ siendo un real tal que $z\hspace{0.1cm}>\hspace{0.1cm}0$ \vspace{0.1cm}
+
+\hspace{0.8cm}$x \hspace{0.1cm}\leq \hspace{0.1cm} y \hspace{0.2cm} \Longleftrightarrow \hspace{0.2cm} xz\hspace{0.1cm} \leq\hspace{0.1cm} yz\hspace{0.1cm}$ \hspace{1cm} $x \hspace{0.1cm}< \hspace{0.1cm} y \hspace{0.2cm} \Longleftrightarrow \hspace{0.2cm} xz\hspace{0.1cm} <\hspace{0.1cm} yz\hspace{0.1cm}$.
+\vspace{0.2cm}
+
+\textbf{32.-} Se tiene siempre en $\mathbb{R}: \hspace{0.2cm} 0\hspace{0.1cm}<\hspace{0.1cm}x\hspace{0.1cm}<\hspace{0.1cm}y\hspace{0.2cm}\Longleftrightarrow\hspace{0.2cm}\hspace{0.1cm} 0\hspace{0.1cm}<\hspace{0.1cm}y^{-1}\hspace{0.1cm}<\hspace{0.1cm}x^{-1}$. \vspace{0.2cm}
+
+\textbf{33.-} Se tiene siempre en $\mathbb{R}:$ \vspace{0.2cm}
+
+\hspace{3cm}$\hspace{0.1cm} 0 \hspace{0.1cm} <\hspace{0.1cm}x_1\hspace{0.1cm}\leq\hspace{0.1cm}y_1 \hspace{0.2cm} \wedge\hspace{0.2cm} 0\hspace{0.1cm}<\hspace{0.1cm}x_2\hspace{0.1cm}\leq\hspace{0.1cm}y_2\hspace{0.2cm} \Longrightarrow\hspace{0.2cm} x_1x_2\hspace{0.1cm}<\hspace{0.1cm}y_1y_2$.\vspace{0.1cm} 
+
+Si además una de las desigualdades $\leq$ de la izquierda se cambia por $<$, \par entonces la desigualdad de la derecha también. \vspace{0.2cm}
+
+\textbf{34.-} En $\mathbb{R}$ se tiene siempre: $x^{2} \hspace{0.1cm}\leq \hspace{0.1cm} y^{2}\hspace{0.2cm} \Longleftrightarrow \hspace{0.2cm} \mid x\mid\hspace{0.2cm} \leq\hspace{0.2cm} \mid y\mid$. \vspace{0.2cm}
+
+\textbf{35.-} En $\mathbb{R}$ se tiene siempre: $x^{3} \hspace{0.1cm}\leq \hspace{0.1cm} y^{3}\hspace{0.2cm} \Longleftrightarrow \hspace{0.2cm}  x\hspace{0.2cm} \leq\hspace{0.2cm} y$ \vspace{0.2cm}
+
+\textbf{36.-} Para todo real $a$ tal que $a\hspace{0.1cm}>\hspace{0.1cm}0$, existe un real $b$ único tal que \par $b\hspace{0.1cm}>\hspace{0.1cm}0\hspace{0.2cm}\wedge\hspace{0.2cm} b^{2}\hspace{0.1cm} =\hspace{0.1cm} a.$ \hspace{0.1cm} La ecuación $x^{2} \hspace{0.1cm} = \hspace{0.1cm}a$ admite $b$ y $-b$ como únicas \par soluciones.\vspace{0.2cm}
+
+\textbf{37.-} En $\mathbb{R}$ una ecuación del tipo $x^{2}\hspace{0.1cm}=\hspace{0.1cm}a$ no tiene solución si $x \hspace{0.1cm}< \hspace{0.1cm} 0.$ 
+
+Tiene UNA solución $(\hspace{0.1cm}x\hspace{0.1cm}=\hspace{0.1cm}0\hspace{0.1cm})$ si $a\hspace{0.1cm}=\hspace{0.1cm}0$ \vspace{0.1cm}
+
+Tiene DOS soluciones opuestas si $a\hspace{0.1cm}>\hspace{0.1cm}0$\vspace{0.1cm}
+
+(Notación: cuando $a\hspace{0.1cm}\geq \hspace{0.1cm} 0$, se designa por $\sqrt{a}$ la única solución $\hspace{0.1cm} \geq \hspace{0.1cm} 0$ de la \par ecuación $x^{2}\hspace{0.1cm}=\hspace{0.1cm}a.$ Se lee ``raíz cuadrada de a'').\vspace{0.2cm}
+
+\textbf{38.-} En $\mathbb{R}$ se tiene siempre la equivalencia: \vspace{0.1cm}
+
+\hspace{4cm}$\hspace{0.2cm} 0\hspace{0.1cm}\leq\hspace{0.1cm}x\hspace{0.1cm}\leq\hspace{0.1cm}y\hspace{0.2cm}\Longleftrightarrow\hspace{0.2cm} \sqrt{x}\hspace{0.1cm}\leq\hspace{0.1cm}\sqrt{y}$.
+\vspace{0.2cm}
+
+\textbf{39.-} En $\mathbb{R}$ UNA ECUACIÓN del tipo $ax^{2}+\hspace{0.1cm}bx\hspace{0.1cm}+c\hspace{0.1cm}=\hspace{0.1cm}0 \hspace{0.2cm}$ (Con $a$ $\neq$ $0$) \vspace{0.2cm}
+
+Tiene DOS soluciones distintas si \hspace{0.4cm} $b^{2} \hspace{0.1cm} - \hspace{0.1cm}4ac\hspace{0.1cm} > \hspace{0.1cm}0$ \vspace{0.1cm}
+
+\hspace{1.3cm}UNA solución \hspace{2.3cm}si \hspace{0.4cm} $b^{2} \hspace{0.1cm} - \hspace{0.1cm}4ac\hspace{0.1cm} = \hspace{0.1cm}0$ \vspace{0.1cm}
+
+\hspace{0.6cm}NINGUNA solución \hspace{1.85cm}si \hspace{0.4cm} $b^{2} \hspace{0.1cm} - \hspace{0.1cm}4ac\hspace{0.1cm} < \hspace{0.1cm}0$.
+\vspace{0.2cm}
+
+\textbf{40.-} En $\mathbb{R}$ toda ecuación del tipo $ax^{3} \hspace{0.1cm}+\hspace{0.1cm}b^{2}\hspace{0.1cm}+\hspace{0.1cm}cx\hspace{0.1cm}+\hspace{0.1cm}d\hspace{0.1cm}=\hspace{0.1cm}0$ \hspace{0.2cm} (Con $a\neq 0$)\vspace{0.1cm}
+
+Tiene siempre por lo menos una solución. 
+
+ \end{document}
