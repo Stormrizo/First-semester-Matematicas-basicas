@@ -1,0 +1,170 @@
+\documentclass[12pt]{article} 
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{pdfpages}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{multicol}
+\newenvironment{Figura}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+\usepackage{caption}
+\usepackage{amsfonts}
+\usepackage{amsmath, amsthm, amssymb}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\usepackage{graphicx}
+\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage{pstricks}
+\usepackage{xcolor}
+\definecolor{verde_manzana}{rgb}{0.55, 0.71, 0.0}
+\definecolor{Aguamarina}{rgb}{0.5, 1.0, 0.83}
+\definecolor{mandarina_atomica}{rgb}{1.0, 0.6, 0.4}
+\definecolor{blizzardblue}{rgb}{0.67, 0.9, 0.93}
+\definecolor{bluegray}{rgb}{0.4, 0.6, 0.8}
+\definecolor{coolgrey}{rgb}{0.55, 0.57, 0.67}
+\definecolor{tealgreen}{rgb}{0.0, 0.51, 0.5}
+\definecolor{ticklemepink}{rgb}{0.99, 0.54, 0.67}
+\definecolor{thulianpink}{rgb}{0.87, 0.44, 0.63}
+\definecolor{wildwatermelon}{rgb}{0.99, 0.42, 0.52}
+\definecolor{wisteria}{rgb}{0.79, 0.63, 0.86}
+\definecolor{yellow(munsell)}{rgb}{0.94, 0.8, 0.0}
+\definecolor{trueblue}{rgb}{0.0, 0.45, 0.81}	\definecolor{tropicalrainforest}{rgb}{0.0, 0.46, 0.37}
+\definecolor{tearose(rose)}{rgb}{0.96, 0.76, 0.76}
+\definecolor{antiquefuchsia}{rgb}{0.57, 0.36, 0.51}	\definecolor{bittersweet}{rgb}{1.0, 0.44, 0.37}	\definecolor{carrotorange}{rgb}{0.93, 0.57, 0.13}
+\definecolor{cinereous}{rgb}{0.6, 0.51, 0.48}
+\definecolor{darkcoral}{rgb}{0.8, 0.36, 0.27}	\definecolor{orange(colorwheel)}{rgb}{1.0, 0.5, 0.0}
+\definecolor{palatinateblue}{rgb}{0.15, 0.23, 0.89} \definecolor{pakistangreen}{rgb}{0.0, 0.4, 0.0} 	\definecolor{vividviolet}{rgb}{0.62, 0.0, 1.0} 
+\definecolor{tigre}{rgb}{0.88, 0.55, 0.24} 	\definecolor{prussianblue}{rgb}{0.0, 0.19, 0.33} 	\definecolor{plum(traditional)}{rgb}{0.56, 0.27, 0.52} 	\definecolor{persianred}{rgb}{0.8, 0.2, 0.2} 	\definecolor{orange(webcolor)}{rgb}{1.0, 0.65, 0.0} 	\definecolor{onyx}{rgb}{0.06, 0.06, 0.06}
+\definecolor{blue-violet}{rgb}{0.54, 0.17, 0.89}
+\definecolor{byzantine}{rgb}{0.74, 0.2, 0.64}
+\definecolor{byzantium}{rgb}{0.44, 0.16, 0.39}
+\definecolor{darkmagenta}{rgb}{0.55, 0.0, 0.55} 	\definecolor{darkviolet}{rgb}{0.58, 0.0, 0.83} 	\definecolor{deepmagenta}{rgb}{0.8, 0.0, 0.8}
+
+\begin{document}
+\pagestyle{empty} 
+\setlength{\parindent}{0pt}
+\sffamily
+\begin{center} \LARGE{\bf Benemérita Universidad Autónoma de Puebla} \\[0.5cm]
+\begin{figure}[htb] \centering \includegraphics[scale=.2]{LogoBUAPpng.png} \end{figure}
+\LARGE{Facultad de Ciencias Físico Matemáticas}\\[0.5cm]
+\begin{figure}[htb] \centering \includegraphics[scale=.39]{LogoFCFMBUAP.png} \end{figure} 
+\Large{Licenciatura en Física Teórica}\\[0.5cm]
+\large{Primer semestre} \end{center}
+\begin{center} { \Large \bfseries{Tarea 21}} \\ \end{center}
+\large{\bf Curso:} Matemáticas básicas \textbf{(N.R.C.:25598)}\\
+\large{\bf Alumno:} Julio Alfredo Ballinas García $\left(202107583\right)$ \\
+\large{\bf Docente:} Dra. María Araceli Juárez Ramírez\\
+\large{\bf Grupo:} 102\\ \begin{center} 
+\vfill
+\textsc{\underline{Tarea retrasada:} venció {\red{{\underline{10 de octubre}}}} de 2021} \end{center}
+\begin{center}
+\textsc{Fecha de hoy: 15 de octubre de 2021}
+\end{center}
+\newpage
+
+\section*{\sffamily{Mostrar {\red{Teorema 22}} {\blue{ii)}}:}}  \vspace{.5cm}
+
+{\LARGE{{\blue{ii)}} \hspace{.1cm} $\mid x \mid$ $<$ $a$ $\Longleftrightarrow$ $-a$ $<$ $x$ $<$ $a$}} \vspace{.5cm}
+
+
+{\red{{\underline{Demostración $i$) ``$\Longrightarrow$''}}}} {{\Large{$\mid x\mid$ $<$ $a$ $\Longrightarrow$ $-a$ $<$ $x$ $<$ $a$ $\equiv$ {\fbox{$-a$ $<$ $x$}} $\wedge$ {\fbox{$x$ $<$ $a$}}}}}   \vspace{0.5cm}
+
+{\red{{\underline{Solución:}}}} \vspace{0.5cm} 
+
+{\red{{\underline{Hipótesis:}}}} $\mid x \mid$ $<$ $a$ \vspace{0.5cm} 
+
+{\textcolor{palatinateblue}{{\underline{Caso 1.}} }} si {\fbox{{\Large{$x$ $\geq$ $0$}}}}\vspace{0.5cm}
+
+{\textcolor{palatinateblue}{Tenemos:}} \vspace{0.5cm}
+
+{\textcolor{carrotorange}{Definición de valor absoluto}} \vspace{0.5cm}
+
+\begin{center}
+    
+{\underline{DEFINICIÓN.}} Para todo $x$ en $\mathbb{R}$ se define $\mid x\mid \hspace{0.1cm} = x$ \hspace{0.45cm} si \hspace{0.2cm} $x\hspace{0.2cm} \geq \hspace{0.2cm}0$. (1) \vspace{0.1cm}
+
+\hspace{8.63cm} $\mid x\mid = -\hspace{0.1cm}  x$ \hspace{0.2cm} si \hspace{0.1cm} $x\hspace{0.2cm} < \hspace{0.2cm}0$. (2) 
+\vspace{0.3cm}
+
+\end{center} \vspace{0.5cm}
+
+{\textcolor{carrotorange}{Por la definición de valor absoluto (1): }} \vspace{0.5cm}
+
+\hspace{4cm} $\mid x \mid$ $=$ $x$ \vspace{0.5cm}
+
+{\textcolor{palatinateblue}{Entonces por la {\red{\underline{hipótesis:}}}}} {\fbox{$\mid x \mid$ $<$ $a$}}  {\textcolor{palatinateblue}{tenemos:}}\vspace{0.5cm} 
+
+\hspace{4cm} $\mid x \mid$ $<$ $a$ \vspace{0.5cm}
+
+\hspace{3.5cm} $\Longrightarrow$ {\fbox{$x$ $<$ $a$}}  \hspace{0.4cm} {\textcolor{carrotorange}{\qedsymbol}}   \vspace{0.5cm}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+{\textcolor{palatinateblue}{{\underline{Caso 2.}} }} si {\Large{$x$ $<$ $0$}}\vspace{0.5cm}
+
+{\textcolor{palatinateblue}{Entonces:}} \vspace{0.5cm}
+
+{\textcolor{carrotorange}{Por la definición de valor absoluto (2)}} \vspace{0.5cm}
+
+{\textcolor{palatinateblue}{Se tiene que:}} \vspace{0.5cm}
+
+\hspace{4.8cm} $\mid x \mid$ $=$ $-x$ \vspace{0.5cm}  
+
+{\textcolor{palatinateblue}{Entonces por la {\red{\underline{hipótesis:}}}}} {\fbox{$\mid x \mid$ $<$ $a$}}  {\textcolor{palatinateblue}{tenemos:}}\vspace{0.5cm} 
+
+\hspace{5cm} $\mid x \mid$ $<$ $a$ \vspace{0.5cm}
+
+\hspace{4cm} $\Longrightarrow$ $ -x $ $<$ $a$ \vspace{0.5cm}
+
+\hspace{4cm} $\Longrightarrow$ \hspace{0.2cm} {\fbox{$ x $ $>$ $-a$}} \hspace{1.9cm} {\textcolor{carrotorange}{Por teorema 19 (T$_{19}$) $ii$) 4 }} \vspace{0.5cm}
+
+\hspace{7cm} {\textcolor{carrotorange}{\qedsymbol}} 
+
+{\textcolor{palatinateblue}{De los casos 1. y 2. se tiene que}} \vspace{0.5cm}
+
+\hspace{4.4cm} $-a$  $<$ $x$ $<$ $a$ $\equiv$ {\fbox{$-a$ $<$ $x$}} $\wedge$ {\fbox{$x$ $<$ $a$}} \vspace{2cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+{\red{{\underline{Demostración $ii$) ``$\Longleftarrow$''}}}} {{\Large{$-a$ $<$ $x$ $<$ $a$ $\Longrightarrow$ {\fbox{$\mid x \mid$ $<$ $a$}}}}} \vspace{0.5cm}
+
+{\red{{\underline{Solución:}}}} \vspace{0.5cm} 
+
+{\red{{\underline{Hipótesis:}}}} {\fbox{$-a$ $<$ $x$}} $\wedge$ {\fbox{$x$ $<$ $a$}} \vspace{0.5cm} 
+
+{\textcolor{palatinateblue}{{\underline{Caso 1.}} }} si {\fbox{{\Large{$-a$ $<$ $x$}}}}\vspace{0.5cm}
+
+{\textcolor{palatinateblue}{Tenemos:}} \vspace{0.5cm}
+
+\hspace{4cm} $ a $ $>$ $-x$ \hspace{0.4cm} {\textcolor{carrotorange}{Por teorema 19 (T$_{19}$) $ii$) 4}} \vspace{0.5cm}
+
+{\textcolor{carrotorange}{Por la definición de valor absoluto (2)}} \vspace{0.5cm}
+
+\hspace{4cm} $ a$ $>$ $-x$ \hspace{0.4cm} \vspace{0.5cm}
+
+\hspace{2.7cm} $\Longrightarrow$ \hspace{0.2cm} {\fbox{$a$ $>$ $\mid x \mid$}} \hspace{0.4cm} {\textcolor{carrotorange}{\qedsymbol}} \vspace{0.5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+{\textcolor{palatinateblue}{{\underline{Caso 2.}} }} si {\Large{{\fbox{$x$ $<$ $a$}}}}\vspace{0.5cm}
+
+{\textcolor{palatinateblue}{Entonces:}} \vspace{0.5cm}
+
+{\textcolor{carrotorange}{Por la definición de valor absoluto (1)}} \vspace{0.5cm}
+
+{\textcolor{palatinateblue}{Se tiene que:}} \vspace{0.5cm}
+
+\hspace{4cm} $x$ $<$ $a$ \hspace{0.4cm} \vspace{0.5cm}
+
+\hspace{2.1cm} $\Longrightarrow$ \hspace{0.2cm} {\fbox{$\mid x \mid$ $<$ $ a $}} \hspace{0.4cm} {\textcolor{carrotorange}{\qedsymbol}} \vspace{0.5cm}
+\end{document}
+
