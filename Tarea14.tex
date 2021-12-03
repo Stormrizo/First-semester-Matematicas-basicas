@@ -1,0 +1,285 @@
+\documentclass[12pt]{article} 
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsfonts}
+\usepackage{amsmath, amsthm, amssymb}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\usepackage{graphicx}
+\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage{pstricks}
+\begin{document}
+
+\thispagestyle{empty} 
+\begin{center} \LARGE{\bf Benemérita Universidad Autónoma de Puebla} \\[0.5cm]
+\begin{figure}[htb] \centering \includegraphics[scale=.2]{LogoBUAPpng.png} \end{figure}
+\LARGE{Facultad de Ciencias Físico Matemáticas}\\[0.5cm]
+\begin{figure}[htb] \centering \includegraphics[scale=.39]{LogoFCFMBUAP.png} \end{figure} 
+\Large{Licenciatura en Física Teórica}\\[0.5cm]
+\large{Primer semestre} \end{center}
+\begin{center} { \Large \bfseries{Tarea 14}} \\ \end{center}
+\large{\bf Curso:} Matemáticas básicas \textbf{(N.R.C.:25598)}\\
+\large{\bf Alumno:} Julio Alfredo Ballinas García $\left(202107583\right)$ \\
+\large{\bf Docente:} Dra. María Araceli Juárez Ramírez\\
+\large{\bf Grupo:} 102\\ \begin{center} 
+\vfill
+\textsc{21 de septiembre de 2021} \end{center}  
+\newpage
+\sffamily
+\section*{Lista de axiomas.}
+
+\begin{figure}[htb] \centering \includegraphics[scale=.9]{Imagen1.png} 
+\caption{Axiomas $R_1$ a $R_1_6$}
+\end{figure} 
+
+\newpage
+
+\section*{{\blue{Teorema 3: Unicidad del simétrico aditivo.}}}\\
+
+{\textit{Para cada $x$ de $\mathbb{R}$, su simétrico $x^{\prime}$ es único (se denota $x^{\prime}=-x)$.}}\\
+
+{\red{\underline{Solución:}}} Sean $x^{\prime}$ y $x^{{\prime}{\prime}}$ $\in$  $\mathbb{R}$ $\Rightarrow$ $x^{\prime}= x^{{\prime}{\prime}}$
+
+\begin{center}
+    {{\textbf{Hipótesis 1:}}} $x^{\prime} + x = 0$
+\end{center}
+
+\begin{center}
+{{\textbf{Hipótesis 2:}}} $x^{{\prime}{\prime}} + x = 0$
+\end{center}
+
+\begin{center}
+    {{\textbf{Tesis:}}} $ x^{\prime} = x^{{\prime}{\prime}}$
+\end{center}
+
+
+
+{\red{\underline{Demostración:}}}
+\begin{align*}
+\blue
+  x^{\prime} =  x^{\prime} + e & \qquad \textup{Por axioma 3 (R$_3$)}\\
+  \blue
+  x^{\prime} =  x^{\prime} + 0 & \qquad \textup{Sabemos que e = 0}\\
+  \blue
+  x^{\prime} =  x^{\prime} + (x^{{\prime}{\prime}}+x) & \qquad \textup{Por \textbf{Hipótesis 2}}\\
+  \blue
+ x^{\prime} =  (x^{{\prime}{\prime}}+x)+x^{\prime} & \qquad \textup{Por axioma 1 (R$_1$)}\\
+ \blue
+  x^{\prime} = x^{{\prime}{\prime}}+(x+x^{\prime}) & \qquad \textup{Por axioma 2 (R$_2$)}\\
+  \blue
+  x^{\prime} =  x^{{\prime}{\prime}} + e & \qquad \textup{Por axioma 3 (R$_3$)}\\
+  \blue
+  x^{\prime} =  x^{{\prime}{\prime}} + 0 & \qquad \\
+  \blue
+  x^{\prime} =  x^{{\prime}{\prime}} & \qquad \textup{\qedsymbol}\\
+\end{align*}
+
+Concluimos que existe un sólo elemento simétrico con respecto a la operación suma debido a que $x^{\prime}$ $=$ $x^{{\prime}{\prime}}$ y lo denotamos como $-x$. 
+\newpage
+\section*{{\blue{Teorema 7: Ley de cancelación para el producto.}}}\\
+{\textit{Se tiene siempre en $\mathbb{R}:$ $ x\neq 0 $ $ xy = xz$ $\Rightarrow$ $y=z$}}.\\
+
+{\red{\underline{Demostración directa:}}} \\
+
+{{\green{Suponemos $xy = xz$}}}
+\begin{align*}
+\blue
+  xy\cdot x^{\prime} =  xz\cdot x^{\prime} & \qquad \textup{Por axioma 8 (R$_8$)}\\
+  \blue
+  x^{\prime}\cdot xy = x^{\prime}\cdot xz & \qquad \textup{Por axioma 5 (R$_5$)}\\
+  \blue
+  (x^{\prime}x)\cdot y = (x^{\prime}x)\cdot z & \qquad \textup{Por axioma 6 (R$_6$)}\\
+  \blue
+  (\'e)\cdot y = (\'e)\cdot z & \qquad \textup{Por axioma 8 (R$_8$)}\\
+  \blue
+  y = z & \qquad \textup{Por axioma 7 (R$_7$)}\\
+  & \qquad \textup{\qedsymbol}\\
+\end{align*}
+
+Podemos concluir que si multiplicamos un número por su inverso, este será igual a multiplicar el mismo número y su inverso, aunque suene absurdo, por tanto $y$ y $z$ son iguales.\\\\
+
+
+\section*{{\blue{Teorema 8: Unicidad del simétrico multiplicativo.}}}\\
+{\textit{Para cada $x\neq 0$ en $\mathbb{R}$,  su simétrico $x^{{\prime}{\prime}}$ es único.}}\\
+
+{\red{\underline{Demostración:}}} \\
+
+{\red{\underline{Solución:}}} {{\green{Suponemos que existen dos elementos simétricos con respecto a la operación prodcuto; sean $a^{-1}$ y $b^{-1}$.}}}
+
+\begin{center}
+    {{\textbf{Hipótesis 1:}}} $x \cdot a^{-1} = \'e$
+\end{center}
+
+\begin{center}
+{{\textbf{Hipótesis 2:}}} $x$ $\cdot$ $b^{-1}$ $=$ $\'e$
+\end{center}
+
+\begin{center}
+    {{\textbf{Tesis:}}} $ a^{-1} = b^{-1}$ $ = x^{{\prime}{\prime}}$
+\end{center}
+
+\begin{align*}
+\blue
+  x \cdot a^{-1} =  \'e & \qquad \\
+  \blue
+  x \cdot a^{-1} =  x \cdot b^{-1} & \qquad \textup{Por \textbf{Hipótesis 2}}\\
+  \blue
+ x \cdot a^{-1} \cdot x^{\prime} =  x \cdot b^{-1} \cdot x^{\prime} & \qquad \textup{Por axioma 8 (R$_8$)}\\
+ \blue
+  x^{\prime} \cdot x \cdot a^{-1} = x^{\prime} \cdot  x \cdot b^{-1} & \qquad \textup{Por axioma 5 (R$_5$)}\\
+  \blue
+    (x^{\prime} \cdot x) \cdot a^{-1} = (x^{\prime} \cdot  x) \cdot b^{-1} & \qquad \textup{Por axioma 6 (R$_6$)}\\
+  \blue
+   (\'e ) \cdot a^{-1} = (\'e ) \cdot b^{-1} & \qquad \textup{Por axioma 8 (R$_8$)}\\ 
+  \blue
+   a^{-1} = b^{-1} & \qquad \textup{Por axioma 7 (R$_7$)}\\
+    & \qquad \textup{\qedsymbol}
+\end{align*}
+
+Podemos concluir que existe un sólo elemento simétrico con respecto al producto debido a que $a^{-1} = b^{-1}$ y lo tenotamos como $x^{{\prime}{\prime}}$ $ = $ $x^{-1}$ $ = $ $\frac{1}{x}$.
+
+\section*{{\blue{Teorema 9.}}}\\
+{\textit{Para cada $x\neq 0$ en $\mathbb{R}$, se tiene siempre $(x^{-1})^{-1} = x$. (Notación $\frac{y}{x}$ designa $yx^{-1}$.}}\\
+
+{\red{\underline{Demostración:}}} \\
+
+Por axioma 8 $(R_8)$: 
+\begin{center}
+\blue
+    $ x^{-1} \cdot x = \'e $  $ \vee $ $ x\cdot x^{-1}  = \'e $ $\longleftarrow$ \qquad \textup{{\black{Por axioma 5 (R$_5$)}}}
+\end{center}
+
+Si
+\begin{center}
+\blue
+    $x^{-1}$ $\in$ $\mathbb{R}$ $\Longrightarrow$ $(x^{-1})^{-1}$ también $\in$ $\mathbb{R}$
+\end{center}
+
+De nuevo por axioma 8 $(R_8)$: 
+\begin{center}
+\blue
+     $ x^{-1} \cdot (x^{-1})^{-1} = \'e $  $ \vee $ $ (x^{-1})^{-1} \cdot x^{-1}  = \'e $ $\longleftarrow$ \qquad \textup{\black{Por axioma 5 (R$_5$)}}
+\end{center}
+\newpage
+Entonces por transitividad de la igualdad tenemos:
+\begin{center}
+\blue
+ $(x^{-1})^{-1} \cdot x^{-1}$ $=$ $\'e$ $=$ $x \cdot x^{-1}$
+ \end{center}
+ \begin{center}
+\blue
+ $\Rightarrow$ $x \cdot  (x^{-1})^{-1}\cdot x^{-1} = x \cdot x^{-1} \cdot x$ $\leftarrow$ \qquad \textup{\black{Por axioma 8 (R$_8$)}}
+ \end{center}
+ Como anteriormente se menciona por transitividad de la igualdad tenemos:
+\begin{center}
+\blue
+    $x \cdot  (x^{-1})^{-1} \cdot x^{-1} = x \cdot x^{-1} \cdot x$
+\end{center}
+
+\begin{align*}
+\blue
+ x^{-1} \cdot x \cdot  (x^{-1})^{-1} = x^{-1} \cdot x \cdot x & \qquad \textup{Por axioma 5 (R$_5$)}\\
+  \blue
+   (x^{-1} \cdot x) \cdot  (x^{-1})^{-1} = (x^{-1} \cdot x) \cdot x & \qquad \textup{Por axioma 6 (R$_6$)}\\
+  \blue
+  (\'e) \cdot  (x^{-1})^{-1} = (\'e) \cdot x & \qquad \textup{Por axioma 8 (R$_8$)}\\
+ \blue
+ (x^{-1})^{-1} =  x & \qquad \textup{Por axioma 7 (R$_7$)}\\
+    & \qquad \textup{\qedsymbol}
+\end{align*}
+ 
+Hemos demostrado que $(x^{-1})^{-1}$ $=$ $x$.  \\\\
+
+\section*{{\blue{Teorema 5:}} Caso 2.}
+
+{\textit{Se tiene siempre en $\mathbb{R}$ la equivalencia:}} 
+
+\begin{center}
+    $ xy = 0 $ $ \Leftrightarrow $ $ x = 0 $ $\vee$ $ y = 0 $
+\end{center}
+
+Caso 2.- $y = 0$, mostraremos que $x \cdot 0 = 0$.\\
+
+{\red{\underline{Demostración:}}}\\
+
+Por axioma 3 (R$_3$):
+
+\begin{center}
+\blue
+   si  $ 0 + x = 0 $ $ \Rightarrow $ $ 0 + 0 = 0$
+\end{center}
+\newpage
+
+Por lo tanto $x\cdot 0$ puede expresarse así:
+\begin{center}
+\blue
+    $x\cdot (0+0)$
+\end{center}
+
+Por axioma 9 ($R_9$):
+
+\begin{center}
+\blue
+    $x\cdot 0 + x \cdot 0$
+\end{center}
+
+Ahora por transitividad de la igualdad:
+
+\begin{equation*}
+    \begin{split}
+    \blue
+        x \cdot 0 & = \blue x \cdot (0 + 0) \\\\ 
+        & = \blue x \cdot 0 + x \cdot 0\\\\ 
+         & =\blue  0 + x \cdot 0\\\\ 
+       \qquad \textup{Por axioma 1 (R$_1$)}  & =\blue   x \cdot 0 + 0 
+    \end{split}
+\end{equation*}
+De nuevo, por transitividad de la igualdad:
+
+\begin{equation*}
+    \begin{split}
+    \blue
+        x \cdot 0 +  x \cdot 0 & = \blue x \cdot 0 + 0 \\\\ 
+       \qquad \textup{Por teorema 2.} \qquad \blue x \cdot 0 & =\blue 0 \qquad \textup{{\black{teorema 2: $x+y=x+z\Rightarrow y=z$}}}\\\\
+       & \qquad \textup{\qedsymbol}
+    \end{split}
+\end{equation*}
+Hemos demostrado el segundo caso del teorema 5. 
+
+\newpage
+
+\section*{\blue{Tabla de verdad para tautología:}}
+
+\begin{center}
+\section*{$P\Rightarrow Q \vee R \Leftrightarrow P \wedge \lnot  Q\Rightarrow R$ } 
+\end{center}\\
+
+Se concluye que en efecto se trata de una tautología.
+\begin{table}
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|} 
+\hline
+P & Q & R & $\lnot  Q$ & $Q \vee R$ & $P \wedge \lnot  Q$ & ($P\Rightarrow Q \vee R$) & ($P \wedge \lnot  Q\Rightarrow R$) & ($P\Rightarrow Q \vee R) \Leftrightarrow (P \wedge \lnot  Q\Rightarrow R$)  \\ 
+\hline
+V & V & V &  F  &  V     &  F      &        V          &        V           &             V                                          \\ 
+\hline
+V & V & F &  F  &  V     &  F      &        V          &        V           &           V                                            \\ 
+\hline
+V & F & V &  V  &  V     &   V     &       V           &         V          &            V                                           \\ 
+\hline
+V & F & F &   V & F      &  V      &        F          &        F           &           V                                            \\ 
+\hline
+F & V & V & F   & V      &  F      &        V          &        V           &           V                                            \\ 
+\hline
+F & V & F & F   & V      & F       &        V          &        V           &           V                                            \\ 
+\hline
+F & F & V & V   & V      & F       &        V          &    V               &           V                                            \\ 
+\hline
+F & F & F &  V  &  F     & F       &        V          &    V               &           V                                            \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\end{document}
+
+
