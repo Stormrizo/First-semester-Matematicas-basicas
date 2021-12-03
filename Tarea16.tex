@@ -1,0 +1,123 @@
+\documentclass[12pt]{article} 
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsfonts}
+\usepackage{amsmath, amsthm, amssymb}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\usepackage{graphicx}
+\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage{pstricks}
+\begin{document}
+
+\thispagestyle{empty} 
+\begin{center} \LARGE{\bf Benemérita Universidad Autónoma de Puebla} \\[0.5cm]
+\begin{figure}[htb] \centering \includegraphics[scale=.2]{LogoBUAPpng.png} \end{figure}
+\LARGE{Facultad de Ciencias Físico Matemáticas}\\[0.5cm]
+\begin{figure}[htb] \centering \includegraphics[scale=.39]{LogoFCFMBUAP.png} \end{figure} 
+\Large{Licenciatura en Física Teórica}\\[0.5cm]
+\large{Primer semestre} \end{center}
+\begin{center} { \Large \bfseries{Tarea 16}} \\ \end{center}
+\large{\bf Curso:} Matemáticas básicas \textbf{(N.R.C.:25598)}\\
+\large{\bf Alumno:} Julio Alfredo Ballinas García $\left(202107583\right)$ \\
+\large{\bf Docente:} Dra. María Araceli Juárez Ramírez\\
+\large{\bf Grupo:} 102\\ \begin{center} 
+\vfill
+\textsc{28 de septiembre de 2021} \end{center}  
+\newpage
+\sffamily
+\section*{Lista de axiomas.}
+
+\begin{figure}[htb] \centering \includegraphics[scale=.95]{Lista de axiomas 1.png} 
+\caption{Axiomas $R_1$ a $R_1_4$}
+\end{figure} 
+\newpage
+\begin{figure}[htb] \centering \includegraphics[scale=.95]{Lista de axiomas 2.png} 
+\caption{Axiomas $R_5$ a $R_1_5$}
+\end{figure} 
+\newpage
+\begin{figure}[htb] \centering \includegraphics[scale=.95]{Lista de axiomas 3.png} 
+\caption{Axioma $R_1_6$}
+\end{figure} 
+
+\vspace{1cm}
+
+\section*{\blue{Teorema 12:} \red{Caso 2}. \black{$\textbf{x(-y) = -xy}$}}\\
+
+{\textit{Para mostrar esto sabemos que si al producto $\textbf{xy}$ le sumamos su inverso aditivo $(\textbf{-xy})$ el resultado es $\textbf{e}$ o $\textbf{0}$}:}\\
+
+\begin{center}
+    $xy + (- xy) = 0$ \hspace{1cm} \textup{Por axioma 4 (\textbf{R}$_4)$}
+\end{center} \vspace{0.8cm}
+
+{\red{\underline{Solución:}}} Para mostrar 2., bastará mostrar $xy + x(-y)=0$. Aquí asumimos que $x(-y)$ es el elemento simétrico ($x^{\prime}$) de $xy$ ($x$). \\\\
+
+{\red{\underline{Demostración:}}}
+\begin{equation*}
+    \begin{split}
+       xy + x(-y) & = \blue x(y + (-y)) \hspace{1cm} \textup{\black{Por axioma 9 (R$_9)$}} \\\\ 
+        & = \blue x(0)\hspace{2.7cm} \textup{\black{Por axioma 4 (R$_4)$}}\\\\ 
+         & = \blue 0 \hspace{3.4cm} \textup{\black{Por teorema 5 $(xy=0 \hspace{0.3cm} \Leftrightarrow \hspace{0.3cm} x = 0\hspace{0.3cm} \vee \hspace{0.3cm} y=0)$}}\\\\
+          xy + x(-y) & = \blue 0\hspace{3.4cm} \textup{\black{Por transitividad de la igualdad}}\\\\ 
+           x(-y) & = \blue -xy\hspace{2.8cm} \textup{\black{Por teorema 3 $(x^{\prime}=-x)$}} \hspace{.5cm} \textup{\black{\qedsymbol}}\\\\ 
+    \end{split}
+\end{equation*}
+\newpage
+
+\section*{\blue{Teorema 13:}}\\
+
+{\textit{Para todo $x$ en $\mathbb{R}$ se tiene \hspace{.5cm} $-x=-1(x)$}:}\\
+
+{\red{\underline{Demostración:}}}
+\begin{equation*}
+    \begin{split}
+       -x& = \blue é(-x) \hspace{1cm} \textup{\black{Por axioma 7 (R$_7)$}} \\\\ 
+        & = \blue -1x \hspace{1.4cm} \textup{\black{Por axioma 5 (R$_5)$}} \\\\
+         & = \blue -1(x) \hspace{1cm} \textup{\black{Por axioma 6 (R$_6)$}} \hspace{.5cm} \textup{\black{\qedsymbol}}\\\\ 
+    \end{split}
+\end{equation*}
+
+\section*{\blue{Teorema 14: \black{ida \Rightarrow}}}\\
+
+{\textit{Se tiene siempre en $\mathbb{R}$:\hspace{.5cm} $x\hspace{.2cm}\leq\hspace{.2cm} y \hspace{.2cm}\Leftrightarrow\hspace{.2cm} x \hspace{.2cm}<\hspace{.2cm} y \hspace{.4cm}\vee\hspace{.4cm} x\hspace{.2cm}=\hspace{.2cm}y$ }:}\\
+
+Mostrar ida\hspace{.2cm} $``\Rightarrow"$, es decir \hspace{0.4cm} $x\hspace{.2cm}\leq \hspace{.2cm} y \hspace{.2cm}\Rightarrow\hspace{.2cm} x\hspace{.2cm}<\hspace{.2cm}y \hspace{.4cm}\vee \hspace{.4cm}x\hspace{.2cm}=\hspace{.2cm}y$ \\
+
+Para la solución de esta demostración vamos a usar la siguiente tautología: \\
+
+\begin{center}
+    $P\hspace{0.3cm}\Rightarrow \hspace{0.3cm}Q \hspace{0.3cm}\vee\hspace{0.3cm} R \hspace{0.3cm}\Rightarrow\hspace{0.3cm} P \hspace{0.3cm}\wedge\hspace{0.3cm} \neg \hspace{0.1cm} R\hspace{0.3cm} \Rightarrow \hspace{0.3cm}Q$
+\end{center}
+\vspace{0.2cm} 
+
+\hspace{0.7cm} $\textbf{P}=x \hspace{0.3cm} \leq \hspace{0.3cm} y$\hspace{0.4cm} $\textbf{Q}=x \hspace{0.3cm} < \hspace{0.3cm} y$ \hspace{0.4cm} $\textbf{R}=x \hspace{0.3cm} = \hspace{0.3cm} y$\\
+
+Nos queda: 
+
+\begin{center}
+    $x \hspace{0.3cm} \leq \hspace{0.3cm} y \hspace{0.3cm} \wedge \hspace{0.3cm}  \neg \hspace{0.1cm} (\hspace{0.1cm}x\hspace{0.2cm}=\hspace{0.2cm}y\hspace{0.1cm}) \hspace{0.3cm} \Rightarrow \hspace{0.3cm} x\hspace{0.3cm}<\hspace{0.3cm}y$
+\end{center} \vspace{2cm} 
+
+{\red{\underline{Demostración:}}}
+\newpage
+Vamos a demostrar por método directo. Suponemos verdadero el antecedente: 
+
+\begin{center}
+    $x \hspace{0.3cm} \leq \hspace{0.3cm} y \hspace{0.3cm} \wedge \hspace{0.3cm}  \neg \hspace{0.1cm} (\hspace{0.1cm}x\hspace{0.2cm}=\hspace{0.2cm}y\hspace{0.1cm}) \hspace{0.3cm} \Leftrightarrow \hspace{0.3cm} x \hspace{0.3cm} \leq \hspace{0.3cm} y \hspace{0.3cm} \wedge \hspace{0.3cm} (\hspace{0.1cm}x\hspace{0.2cm}<\hspace{0.2cm}y\hspace{0.1cm})$ 
+    
+    \vspace{1cm}
+    
+    \hspace{9cm}Por definición de $\neg \hspace{0.1cm}(=)$
+\end{center}
+\vspace{1cm}
+
+Por transitiva de $\Leftrightarrow$:\\
+
+\begin{center}
+    $x \hspace{0.3cm} \leq \hspace{0.3cm} y \hspace{0.3cm} \wedge \hspace{0.3cm}  \neg \hspace{0.1cm} (\hspace{0.1cm}x\hspace{0.2cm}=\hspace{0.2cm}y\hspace{0.1cm}) \hspace{0.3cm} \Leftrightarrow \hspace{0.3cm} x \hspace{0.3cm} \leq \hspace{0.3cm} y \hspace{0.3cm} \wedge \hspace{0.3cm} (\hspace{0.1cm}x\hspace{0.2cm}<\hspace{0.2cm}y\hspace{0.1cm})$ 
+\end{center}\vspace{0.1cm}
+
+\begin{center}
+    $x \hspace{0.3cm} \hspace{0.3cm} \leq \hspace{0.3cm} y \hspace{0.3cm} \wedge \hspace{0.3cm} (\hspace{0.1cm}x\hspace{0.2cm}<\hspace{0.2cm}y\hspace{0.1cm}) \Leftrightarrow \hspace{0.3cm} (\hspace{0.1cm}x\hspace{0.2cm}<\hspace{0.2cm}y\hspace{0.1cm})$ \hspace{.5cm} \textup{\black{\qedsymbol}} 
+\end{center}\vspace{1cm}
+
+\end{document} 
