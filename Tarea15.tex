@@ -1,0 +1,902 @@
+\documentclass[12pt]{article} 
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsfonts}
+\usepackage{amsmath, amsthm, amssymb}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\usepackage{graphicx}
+\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage{pstricks}
+\begin{document}
+
+\thispagestyle{empty} 
+\begin{center} \LARGE{\bf Benemérita Universidad Autónoma de Puebla} \\[0.5cm]
+\begin{figure}[htb] \centering \includegraphics[scale=.2]{LogoBUAPpng.png} \end{figure}
+\LARGE{Facultad de Ciencias Físico Matemáticas}\\[0.5cm]
+\begin{figure}[htb] \centering \includegraphics[scale=.39]{LogoFCFMBUAP.png} \end{figure} 
+\Large{Licenciatura en Física Teórica}\\[0.5cm]
+\large{Primer semestre} \end{center}
+\begin{center} { \Large \bfseries{Tarea 15 matemáticas básicas: Solución de Ecuaciones usando T5.}} \\ \end{center}
+\large{\bf Curso:} Matemáticas básicas \textbf{(N.R.C.:25598)}\\
+\large{\bf Alumno:} Julio Alfredo Ballinas García $\left(202107583\right)$ \\
+\large{\bf Docente:} Dra. María Araceli Juárez Ramírez\\
+\large{\bf Grupo:} 102\\ \begin{center} 
+\vfill
+\textsc{26 de septiembre de 2021} \end{center}  
+\newpage
+\sffamily
+
+\section*{Factorizar y reducir la expresión $E(x)$ para resolver la ecuación $E(x)=0$.}
+
+\begin{enumerate}
+    \item $E(x) = x - 3 + 7( 3 - x )( x + 2 )$\\
+    \item $E(x) = 4x^{2} - 9 - (4x+6)(3x-1)$\\
+    \item $E(x) = (7x-4)^{2}-(3x+2)^{2}$\\
+    \item $E(x) = (2x-3)(2x-\frac{3}{7})+(3-2x)(x+\frac{18}{7})$\\
+    \item $E(x) = \frac{3}{4}((3x-4)^{2} - (x-2)^{2})$\\
+    \item $E(x) = x^{2} - 2x + 1 +(x-1)(19-4x)$\\
+    \item $E(x) = (x^{2}-16)^{2} - (x+4)^2$\\
+    \item $E(x) = (4x^{2} - 9)^{2} - (2x+3)^{2}$\\
+    \item $E(x) = -x^{2} + 6x -9 + (3-x)(19-5x)$\\
+    \item $E(x) = -x^{2} + 4x-4 + (2-x)(13-3x)$\\
+    \item $E(x) = -x^{2} + 2x-1 + (1-x)(11-5x)$\\
+    \item $E(x) = -x^{2} + 8x-16 + (4-x)(15-x)$\\
+\end{enumerate}
+    \newpage
+\section*{1. $ E(x) = x - 3 + 7( 3 - x )( x + 2 )$ }  
+
+{\red{\underline{Solución:}}}
+
+\begin{equation*}
+    \begin{split}
+      E(x) & = x-3+7(-x+3)(x+2) \quad \textup{Propiedad conmutativa $3-x = -x+3$} \\\\ 
+      & = x-3+7\cdot[-1\cdot(x-3)\cdot(x+2)] \quad \textup{Por factor común $-1$}\\\\
+      & = x-3+7\cdot[-1\cdot(x^{2}-x-6)]\\\\
+      & = x-3+7\cdot[(-x^{2}+x+6)]\\\\
+      & = x-3-7x^{2}+7x+42\\\\
+      E(x) & =-7x^{2}+8x+39 \quad \textup{Sabemos que $E(x)= 0$} \\\\
+      \Rightarrow & -7x^{2}+8x+39 = 0 \quad \\\\
+    \end{split}
+\end{equation*}
+
+Multiplicamos toda la ecuación por $(-1)$ para que el coeficiente principal $(-7)$ sea positivo $(7)$: \\
+\begin{center}
+    Nos queda:
+\end{center}
+
+\begin{center}
+    $7x^{2} -8x-39 = 0$ 
+\end{center} 
+    
+Realizamos la factorización de la forma $ax^{2} + bx + c = 0$
+
+\begin{equation*}
+    \begin{split}
+      \frac{7}{7}\cdot(7x^{2} -8x-39 = 0) & = \frac{(49x^{2}-8(7x)-273 = 0)}{7} \\\\
+      & = \frac{(7x-21)(7x+13)=0}{7} \\\\
+      & = {(x-3)(7x+13)=0} \\\\
+    \end{split}
+\end{equation*}
+Sean: 
+\begin{center}
+   {\red{a}} = $(x-3)$   
+\end{center}
+
+\begin{center}
+    y
+\end{center}
+
+\begin{center}
+   {\red{b}} = $(7x+13)$   
+\end{center}
+    
+Por {\blue{teorema 5: }}
+\begin{center}
+   {\red{a}} = $0$  $\vee$ {\red{b}} = $0$   
+\end{center}
+
+Entonces:
+
+\begin{center}
+   
+   $(x-3)$ = $0$  $\vee$ $(7x+13)$ = $0$   
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+   $x-3$ = $0$ $\Leftrightarrow$ $ x=3 $ 
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+  $7x+13$ = $0$ $\Leftrightarrow$ $ x= -\frac{13}{7}$ 
+   
+\end{center}
+
+{\blue{Solución:}}
+
+\begin{center}
+   
+  $\left\{-\frac{13}{7},3\right\}$ 
+   
+\end{center}
+
+\newpage
+
+\section*{2. $E(x) = 4x^{2} - 9 - (4x+6)(3x-1)$}
+
+{\red{\underline{Solución:}}}
+
+\begin{equation*}
+    \begin{split}
+      E(x) & = 4x^{2} - 9 - (4x+6)(3x-1) \quad\\\\ 
+      & = 4x^{2} - 9 - [12x^{2}+18x-4x-6)] \quad \textup{Propiedad distributiva}\\\\
+      & =  4x^{2} - 9 - [12x^{2}+14x-6)] \quad \textup{Reducción de términos semejantes}\\\\
+      & = 4x^{2} - 9 - 12x^{2}-14x+6\\\\
+      & = 4x^{2} - 12x^{2} - 14x-9+6\\\\
+      E(x) & =-8x^{2}-14x-3 \quad \textup{Sabemos que $E(x)= 0$} \\\\
+      \Rightarrow & -8x^{2}-14x-3 = 0 \quad \\\\
+    \end{split}
+\end{equation*}
+
+Multiplicamos toda la ecuación por $(-1)$ para que el coeficiente principal $(-8)$ sea positivo $(8)$:\\
+\begin{center}
+    Nos queda:
+\end{center}
+
+\begin{center}
+    $8x^{2}+14x+3$ 
+\end{center} 
+    
+Realizamos la factorización de la forma $ax^{2} + bx + c = 0$
+
+\begin{equation*}
+    \begin{split}
+      \frac{8}{8}\cdot(8x^{2}+14x+3 = 0) & = \frac{(64x^{2}+14(8x)+24 = 0)}{8} \\\\
+      & = \frac{(8x+12)(8x+2)=0}{8} \\\\
+      & = \frac{(8x+12)(8x+2)=0}{2\cdot 4} \\\\
+       & = {(2x+3)(4x+1)=0}\\\\
+    \end{split}
+\end{equation*}
+Sean: 
+\begin{center}
+   {\red{a}} = $(2x+3)$ 
+\end{center}
+
+\begin{center}
+    y
+\end{center}
+
+\begin{center}
+   {\red{b}} = $(4x+1)$   
+\end{center}
+    
+Por {\blue{teorema 5: }}
+\begin{center}
+   {\red{a}} = $0$  $\vee$ {\red{b}} = $0$   
+\end{center}
+
+Entonces:
+
+\begin{center}
+   
+   $(2x+3)$ = $0$  $\vee$ $(4x+1)$ = $0$   
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+   $(2x+3)$ = $0$ $\Leftrightarrow$ $ x=-\frac{3}{2} $ 
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+  $(4x+1)$ = $0$ $\Leftrightarrow$ $ x= -\frac{1}{4}$ 
+   
+\end{center}
+
+{\blue{Solución:}}
+
+\begin{center}
+   
+  $\left\{-\frac{3}{2},-\frac{1}{4}\right\}$ 
+   
+\end{center}
+
+\newpage
+
+\section*{3. $E(x) = (7x-4)^{2}-(3x+2)^{2}$}
+
+{\red{\underline{Solución:}}}
+
+\begin{equation*}
+    \begin{split}
+      E(x) & = \left((49x^{2} - 2(4)(7x) + 16) - (9x^{2} + 2(2)(3x) + 4)\right)  \quad \textup{Binomio al cuadrado $(a+b)^{2}$} \\\\
+      & = \left((49x^{2} - (56x) + 16) - (9x^{2} +(12x) + 4)\right) \\\\
+      & =  (49x^{2} - (56x) + 16) - 9x^{2} -(12x) - 4 \\\\
+      & = 40x^{2} -68x + 12\\\\
+      & = 20x^{2} -34x + 6\\\\
+      E(x) & =10x^{2} -17x + 3 \quad \textup{Sabemos que $E(x)= 0$} \\\\
+      \Rightarrow  &  10x^{2} -17x + 3 = 0\\\\
+    \end{split}
+\end{equation*}
+
+Realizamos la factorización por agrupación de términos:
+
+\begin{equation*}
+    \begin{split}
+       & = 10x^{2}-15x-2x+3 = 0 \quad \textup{Expresamos a $-17x$ como $15x -2x$} \\\\
+      & = \left(10x^{2}-15x\right)-2x+3 = 0 \\\\
+      & = 5x\left(2x-3\right)-1\left(2x-3\right) = 0 \quad \textup{Factorizamos $5x$ y $-1$} \\\\
+       & = \left(5x-1\right)\left(2x-3\right) = 0 \quad \textup{Agrupación de términos}\\\\
+    \end{split}
+\end{equation*}
+Sean: 
+\begin{center}
+   {\red{a}} = $\left(5x-1\right)$   
+\end{center}
+
+\begin{center}
+    y
+\end{center}
+
+\begin{center}
+   {\red{b}} = $\left(2x-3\right)$   
+\end{center}
+    
+Por {\blue{teorema 5: }}
+\begin{center}
+   {\red{a}} = $0$  $\vee$ {\red{b}} = $0$   
+\end{center}
+
+Entonces:
+
+\begin{center}
+   
+   $\left(5x-1\right)$ = $0$  $\vee$ $\left(2x-3\right)$ = $0$    
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+   $\left(5x-1\right)$ = $0$ $\Leftrightarrow$ $ x=\frac{1}{5} $ 
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+  $\left(2x-3\right)$ = $0$ $\Leftrightarrow$ $ x= \frac{3}{2}$ 
+   
+\end{center}
+
+{\blue{Solución:}}
+
+\begin{center}
+   
+  $\left\{\frac{1}{5},\frac{3}{2}\right\}$ 
+   
+\end{center}
+\newpage
+\section*{4. $E(x) =(2x-3)\left(2x-\frac{3}{7}\right)+(3-2x)(x+\frac{18}{7})$}
+
+{\red{\underline{Solución:}}}
+
+\begin{equation*}
+    \begin{split}
+      E(x) & = (2x-3)(2x-\frac{3}{7})+(-1)\cdot(2x-3)(x+\frac{18}{7}) \quad \textup{Factorizar $-1$} \\\\ 
+      & = (2x-3)\left((2x-\frac{3}{7})+(-1)\cdot(x+\frac{18}{7})\right) \quad \textup{Factorizar $(2x-3)$}\\\\
+      & = (2x-3)\left(2x-\frac{3}{7}-x-\frac{18}{7})\right)\\\\
+      & = \left(2x-3\right)\left(x-\frac{21}{7}\right)\\\\
+     & = \left(2x-3\right)\left(x-3\right)\\\\
+      E(x) & =\left(2x-3\right)\left(x-3\right) \quad \textup{Sabemos que $E(x)= 0$} \\\\
+      \Rightarrow & \left(2x-3\right)\left(x-3\right) = 0 \quad \\\\
+    \end{split}
+\end{equation*}
+
+Sean: 
+\begin{center}
+   {\red{a}} = $\left(2x-3\right)$   
+\end{center}
+
+\begin{center}
+    y
+\end{center}
+
+\begin{center}
+   {\red{b}} = $\left(x-3\right)$   
+\end{center}
+    
+Por {\blue{teorema 5: }}
+\begin{center}
+   {\red{a}} = $0$  $\vee$ {\red{b}} = $0$   
+\end{center}
+
+Entonces:
+
+\begin{center}
+   
+   $\left(2x-3\right)$ = $0$  $\vee$ $\left(x-3\right)$ = $0$   
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+   $\left(2x-3\right)$ = $0$ $\Leftrightarrow$ $ x=\frac{3}{2} $ 
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+  $\left(x-3\right)$ = $0$  $\Leftrightarrow$ $ x= 3$ 
+   
+\end{center}
+
+{\blue{Solución:}}
+
+\begin{center}
+   
+  $\left\{-\frac{3}{2},3\right\}$ 
+   
+\end{center}
+
+\newpage
+
+\section*{5. $E(x) = \frac{3}{4}\left((3x-4)^{2} - (x-2)^{2}\right)$}
+
+{\red{\underline{Solución:}}}
+
+\begin{equation*}
+    \begin{split}
+      E(x) & = (2x-3)(2x-\frac{3}{7})+(-1)\cdot(2x-3)(x+\frac{18}{7}) \quad \textup{Factorizar $-1$} \\\\ 
+      & = (2x-3)\left((2x-\frac{3}{7})+(-1)\cdot(x+\frac{18}{7})\right) \quad \textup{Factorizar $(2x-3)$}\\\\
+      & = (2x-3)\left(2x-\frac{3}{7}-x-\frac{18}{7})\right)\\\\
+      & = \left(2x-3\right)\left(x-\frac{21}{7}\right)\\\\
+     & = \left(2x-3\right)\left(x-3\right)\\\\
+      E(x) & =\left(2x-3\right)\left(x-3\right) \quad \textup{Sabemos que $E(x)= 0$} \\\\
+      \Rightarrow & \left(2x-3\right)\left(x-3\right) = 0 \quad \\\\
+    \end{split}
+\end{equation*}
+
+Sean: 
+\begin{center}
+   {\red{a}} = $\left(2x-3\right)$   
+\end{center}
+
+\begin{center}
+    y
+\end{center}
+
+\begin{center}
+   {\red{b}} = $\left(x-3\right)$   
+\end{center}
+    
+Por {\blue{teorema 5: }}
+\begin{center}
+   {\red{a}} = $0$  $\vee$ {\red{b}} = $0$   
+\end{center}
+
+Entonces:
+
+\begin{center}
+   
+   $\left(2x-3\right)$ = $0$  $\vee$ $\left(x-3\right)$ = $0$   
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+   $\left(2x-3\right)$ = $0$ $\Leftrightarrow$ $ x=\frac{3}{2} $ 
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+  $\left(x-3\right)$ = $0$  $\Leftrightarrow$ $ x= 3$ 
+   
+\end{center}
+
+{\blue{Solución:}}
+
+\begin{center}
+   
+  $\left\{\frac{3}{2},3\right\}$ 
+   
+\end{center}
+
+\newpage
+
+\section*{6. $E(x) = x^{2} - 2x + 1 +(x-1)(19-4x)$}
+
+{\red{\underline{Solución:}}}
+
+\begin{equation*}
+    \begin{split}
+      E(x) & = x^{2} - 2x + 1 +19x-19-4x^{2}+4x\\\\ 
+      & = -3x^{2} + 21x - 18 \\\\
+      & = 3x^{2} - 21x + 18 \quad \textup{Multiplicamos por $-1$}\\\\ 
+      & = x^{2} - 7x + 6 \quad \textup{Dividimos toda la ecuación por $3$}\\\\
+E(x) & = \left(x-6\right)\left(x-1\right) \quad \textup{Sabemos que $E(x)= 0$}\\\\
+      \Rightarrow & \left(x-6\right)\left(x-1\right) = 0 \\\\
+    \end{split}
+\end{equation*}
+
+Sean: 
+\begin{center}
+   {\red{a}} = $\left(x-6\right)$   
+\end{center}
+
+\begin{center}
+    y
+\end{center}
+
+\begin{center}
+   {\red{b}} = $\left(x-1\right)$   
+\end{center}
+    
+Por {\blue{teorema 5: }}
+\begin{center}
+   {\red{a}} = $0$  $\vee$ {\red{b}} = $0$   
+\end{center}
+
+Entonces:
+
+\begin{center}
+   
+   $\left(x-6\right)$ = $0$  $\vee$ $\left(x-1\right)$ = $0$   
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+   $\left(x-6\right)$  = $0$ $\Leftrightarrow$ $ x=6 $ 
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+  $\left(x-1\right)$ = $0$  $\Leftrightarrow$ $ x= 1$ 
+   
+\end{center}
+
+{\blue{Solución:}}
+
+\begin{center}
+   
+  $\left\{1,6\right\}$ 
+   
+\end{center}
+
+\newpage
+
+\section*{7. $E(x) = (x^{2}-16)^{2} - (x+4)^2$}
+
+{\red{\underline{Solución:}}}
+
+\begin{equation*}
+    \begin{split}
+      E(x) & = (x^{2}-16)(x^{2}-16) - (x+4)(x+4)\\\\ 
+      & = (x-4)(x+4)(x-4)(x+4) - (x+4)(x+4) \\\\
+      & = (x+4)(x+4) \cdot\left( (x-4)(x-4) - (1) \right)\\\\ 
+      & = (x+4)^{2} \left( x^{2}-8x+16 - (1) \right)\\\\
+      & = (x+4)^{2} \left( x^{2}-8x+15\right)\\\\
+E(x)  & = (x+4)^{2} \cdot(x-5)(x-3) \quad \textup{Sabemos que $E(x)= 0$}\\\\
+      \Rightarrow & (x+4)^{2}\cdot (x-5)(x-3) = 0 \\\\
+    \end{split}
+\end{equation*}
+
+Sean: 
+\begin{center}
+   {\red{a}} = $(x+4)^{2}$   
+\end{center}
+
+\begin{center}
+   {\red{b}} = $(x-5)$   
+\end{center}
+    \begin{center}
+    y
+\end{center}
+
+\begin{center}
+    {\red{c}} = $(x-3)$   
+\end{center}
+Por {\blue{teorema 5: }}
+\begin{center}
+   {\red{a}} = $0$  $\vee$ {\red{b}} = $0$  $\vee$ {\red{c}} = $0$ 
+\end{center}
+
+Entonces:
+
+\begin{center}
+   
+   $(x+4)^{2}$ = $0$  $\vee$ $(x-5)$ = $0$ $\vee$ $(x-3)$ = $0$
+   
+\end{center}
+
+Por {\blue{teorema 5:}}
+
+\begin{center}
+   
+   $(x+4)^{2}$  = $0$ $\Leftrightarrow$  $\sqrt{(x+4)^{2}}$  = $\sqrt{0}$ $\Leftrightarrow$ $ x+4=0 $  $\Leftrightarrow$ $x=-4$
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+  $x-5$ = $0$  $\Leftrightarrow$ $ x= 5$ 
+   
+\end{center}
+
+Por {\blue{teorema 5:}}
+
+\begin{center}
+   
+   $x-3$  = $0$ $\Leftrightarrow$ $ x=3 $ 
+   
+\end{center}
+
+{\blue{Solución:}}
+
+\begin{center}
+   
+  $\left\{-4,3,5\right\}$ 
+   
+\end{center}
+
+\newpage
+
+\section*{8. $E(x) = (4x^{2} - 9)^{2} - (2x+3)^{2}$}
+
+{\red{\underline{Solución:}}}
+
+\begin{equation*}
+    \begin{split}
+      E(x) & = (4x^{2} - 9)(4x^{2} - 9) - (2x+3)(2x+3)\\\\ 
+      & = (2x-3)(2x+3)(2x-3)(2x+3) - (2x+3)(2x+3) \\\\
+      & = (2x+3)(2x+3)\cdot\left((2x-3)(2x-3) - (1)\right) \\\\ 
+      & = (2x+3)(2x+3)\cdot\left((4x^{2}-12x+9-1\right)\\\\
+      & = (2x+3)^{2}\cdot\left((4x^{2}-12x+8\right)\\\\
+      & = (2x+3)^{2}\cdot\left((x^{2}-3x+2\right) \\\\
+E(x) & = (2x+3)^{2}\cdot\left((x-2)(x-1)\right) \quad \textup{Sabemos que $E(x)= 0$}\\\\
+      \Rightarrow & (2x+3)^{2}\cdot\left((x-2)(x-1)\right) = 0 \\\\
+    \end{split}
+\end{equation*}
+
+Sean: 
+\begin{center}
+   {\red{a}} = $(2x+3)^{2}$   
+\end{center}
+
+\begin{center}
+   {\red{b}} = $(x-2)$   
+\end{center}
+    \begin{center}
+    y
+\end{center}
+
+\begin{center}
+    {\red{c}} = $(x-1)$   
+\end{center}
+Por {\blue{teorema 5: }}
+\begin{center}
+   {\red{a}} = $0$  $\vee$ {\red{b}} = $0$  $\vee$ {\red{c}} = $0$ 
+\end{center}
+
+Entonces:
+
+\begin{center}
+   
+   $(2x+3)^{2}$ = $0$  $\vee$ $(x-2)$ = $0$ $\vee$ $(x-1)$ = $0$
+   
+\end{center}
+
+Por {\blue{teorema 5:}}
+
+\begin{center}
+   
+   $(2x+3)^{2}$  = $0$ $\Leftrightarrow$  $\sqrt{(2x+3)^{2}}$  = $\sqrt{0}$ $\Leftrightarrow$ $ 2x+3=0 $  $\Leftrightarrow$ $x=-\frac{3}{2}$
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+  $x-2$ = $0$  $\Leftrightarrow$ $ x = 2$ 
+   
+\end{center}
+
+Por {\blue{teorema 5:}}
+
+\begin{center}
+   
+   $x-1$  = $0$ $\Leftrightarrow$ $ x=1$ 
+   
+\end{center}
+
+{\blue{Solución:}}
+
+\begin{center}
+   
+  $\left\{-\frac{3}{2},1,2\right\}$ 
+   
+\end{center}
+
+\newpage
+
+\section*{9. $E(x) = -x^{2} + 6x -9 + (3-x)(19-5x)$}
+
+{\red{\underline{Solución:}}}
+
+\begin{equation*}
+    \begin{split}
+      E(x) & = -x^{2} + 6x -9 + 3(19)+(-x)(19)+(-5x)(3)+(-5x)(-x)\\\\ 
+      & = -x^{2} + 6x -9 + 57-19x-15x+5x^{2} \\\\
+      & = 4x^{2} + 6x-15x-19x-9 + 57 \\\\
+      & = 4x^{2} -9x-19x+48 \\\\ 
+      & = 4x^{2} -28x+48\\\\
+      & = 2x^{2} -14x+24\\\\
+      & = x^{2} -7x+12\\\\
+E(x) & = (x-4)((x-3) \quad \textup{Sabemos que $E(x)= 0$}\\\\
+      \Rightarrow & (x-4)(x-3) = 0 \\\\
+    \end{split}
+\end{equation*}
+
+Sean: 
+\begin{center}
+   {\red{a}} = $(x-4)$   
+\end{center}
+
+\begin{center}
+    y
+\end{center}
+
+\begin{center}
+   {\red{b}} = $(x-3)$   
+\end{center}
+    
+Por {\blue{teorema 5: }}
+\begin{center}
+   {\red{a}} = $0$  $\vee$ {\red{b}} = $0$   
+\end{center}
+
+Entonces:
+
+\begin{center}
+   
+   $x-4$ = $0$  $\vee$ $x-3$ = $0$   
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+   $x-4$  = $0$ $\Leftrightarrow$ $ x=4 $ 
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+  $x-3$ = $0$  $\Leftrightarrow$ $ x= 3$ 
+   
+\end{center}
+
+{\blue{Solución:}}
+
+\begin{center}
+   
+  $\left\{3,4\right\}$ 
+   
+\end{center}
+
+\newpage
+
+\section*{10.$E(x) = -x^{2} + 4x-4 + (2-x)(13-3x)$}
+
+{\red{\underline{Solución:}}}
+
+\begin{equation*}
+    \begin{split}
+      E(x) & =-x^{2} + 4x-4 + 13(2)+13(-x)+(-3x)(2)+(-3x)(-x)\\\\ 
+      & =-x^{2} + 4x-4 + 26-13x-6x+3x^{2} \\\\
+      & = 2x^{2}-15x + 22\\\\ 
+      \frac{2}{2}\cdot\left(2x^{2}-15x + 22\right) & = \frac{4x^{2}-15(2x) + 44}{2} \\\\
+      & = \frac{(2x-11)(2x-4)}{2} \\\\
+E(x) & = (2x-11)(x-2) \quad \textup{Sabemos que $E(x)= 0$}\\\\
+      \Rightarrow & (2x-11)(x-2) = 0 \\\\
+    \end{split}
+\end{equation*}
+
+Sean: 
+\begin{center}
+   {\red{a}} = $(2x-11)$   
+\end{center}
+
+\begin{center}
+    y
+\end{center}
+
+\begin{center}
+   {\red{b}} = $(x-2)$   
+\end{center}
+    
+Por {\blue{teorema 5: }}
+\begin{center}
+   {\red{a}} = $0$  $\vee$ {\red{b}} = $0$   
+\end{center}
+
+Entonces:
+
+\begin{center}
+   
+   $2x-11$ = $0$  $\vee$ $x-2$ = $0$   
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+   $2x-11$  = $0$ $\Leftrightarrow$ $ x=\frac{11}{2} $ 
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+  $x-2$ = $0$  $\Leftrightarrow$ $ x= 2$ 
+   
+\end{center}
+
+{\blue{Solución:}}
+
+\begin{center}
+   
+  $\left\{2,\frac{11}{2}\right\}$ 
+   
+\end{center}
+
+\newpage
+
+\section*{11. $E(x) = -x^{2} + 2x-1 + (1-x)(11-5x)$}
+
+{\red{\underline{Solución:}}}
+
+\begin{equation*}
+    \begin{split}
+      E(x) & =-x^{2} + 2x-1 + 11(1)+11(-x)+(-5x)(1)+(-5x)(-x)\\\\ 
+      & =-x^{2} + 2x-1 + 11-11x-5x+5x^{2}\\\\
+      & = 4x^{2} - 14x + 10\\\\ 
+      & = 2x^{2} - 7x + 5\\\\
+      \frac{2}{2}\cdot\left(2x^{2} - 7x + 5\right) & = \frac{4x^{2}-7(2x) + 10}{2}\\\\
+    & = \frac{(2x-5)(2x-2)}{2}\\\\
+    & = (2x-5)(x-1)\\\\
+E(x) & = (2x-5)(x-1) \quad \textup{Sabemos que $E(x)= 0$}\\\\
+      \Rightarrow & (2x-5)(x-1) = 0 \\\\
+    \end{split}
+\end{equation*}
+
+Sean: 
+\begin{center}
+   {\red{a}} = $(2x-5)$   
+\end{center}
+
+\begin{center}
+    y
+\end{center}
+
+\begin{center}
+   {\red{b}} = $(x-1)$   
+\end{center}
+    
+Por {\blue{teorema 5: }}
+\begin{center}
+   {\red{a}} = $0$  $\vee$ {\red{b}} = $0$   
+\end{center}
+
+Entonces:
+
+\begin{center}
+   
+   $2x-5$ = $0$  $\vee$ $x-1$ = $0$   
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+   $2x-5$  = $0$ $\Leftrightarrow$ $ x=\frac{5}{2} $ 
+   
+\end{center}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+  $x-1$ = $0$  $\Leftrightarrow$ $ x= 1$ 
+   
+\end{center}
+
+{\blue{Solución:}}
+
+\begin{center}
+   
+  $\left\{1,\frac{5}{2}\right\}$ 
+   
+\end{center}
+
+\newpage
+\section*{12. $E(x) = -x^{2} + 8x-16 + (4-x)(15-x)$}
+
+{\red{\underline{Solución:}}}
+
+\begin{equation*}
+    \begin{split}
+      E(x) & =-x^{2} + 8x-16 + 4(15)+15(-x)+4(-x)+(-x)(-x)\\\\ 
+      & =-x^{2} + 8x-16 + 60-15x-4x+x^{2}\\\\
+      & = -11x + 44\\\\ 
+      & = -11(x - 4)\\\\ 
+E(x) & = -11(x - 4) \quad \textup{Sabemos que $E(x)= 0$}\\\\
+      \Rightarrow & -11(x - 4) = 0 \\\\
+    \end{split}
+\end{equation*}
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+   $-11(x - 4) = 0$  $\Leftrightarrow$ $-11$ = $0$ $\vee$ $x - 4 = 0$  
+   
+\end{center}
+
+Pero $-11$ $=$ $0$ es falso, entonces:\\
+
+Por {\blue{teorema 5: }}
+
+\begin{center}
+   
+   $x - 4 = 0$ $\Leftrightarrow$ $ x=4 $ 
+   
+\end{center}
+
+{\blue{Solución:}}
+
+\begin{center}
+   
+  $\left\{4\right\}$ 
+   
+\end{center}
+\end{document}
