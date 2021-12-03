@@ -1,0 +1,100 @@
+\documentclass[12pt]{article} 
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsfonts}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{graphicx}
+\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage{pstricks}
+\begin{document}
+
+\thispagestyle{empty} 
+\begin{center} \LARGE{\bf Benemérita Universidad Autónoma de Puebla} \\[0.5cm]
+\begin{figure}[htb] \centering \includegraphics[scale=.2]{LogoBUAPpng.png} \end{figure}
+\LARGE{Facultad de Ciencias Físico Matemáticas}\\[0.5cm]
+\begin{figure}[htb] \centering \includegraphics[scale=.39]{LogoFCFMBUAP.png} \end{figure} 
+\Large{Licenciatura en Física Teórica}\\[0.5cm]
+\large{Primer semestre} \end{center}
+\begin{center} { \Large \bfseries{Tarea 13}} \\ \end{center}
+\large{\bf Curso:} Matemáticas básicas \textbf{(N.R.C.:25598)}\\
+\large{\bf Alumno:} Julio Alfredo Ballinas García $\left(202107583\right)$ \\
+\large{\bf Docente:} Dra. María Araceli Juárez Ramírez\\
+\large{\bf Grupo:} 102\\ \begin{center} 
+\vfill
+\textsc{18 de septiembre de 2021} \end{center}  
+\newpage
+\sffamily
+\section{Demostración de teorema 6.}
+
+\begin{figure}[htb] \centering \includegraphics[scale=.9]{Imagen1.png}
+\caption{Axiomas $R_1$ a $R_1_6$}
+\end{figure}
+\subsection{El elemento neutro para el producto en \mathbb{R} es único (se denota $é=1$)}\\
+
+Antes de iniciar con la demostración del teorema 6. es necesario aclarar que este teorema es consecuencia de los axiomas $R_1$ a $R_1_6$ vistos en la sesión N$^{o}$ 14 de la clase del día 17 de septiembre de 2021. \\
+
+Por lo tanto para poder llegar a una conclusión será necesario emplear algunos axiomas más. 
+
+{\red{Solución: \black{\underline{inicio de la demostración}}}}\\
+
+{\blue{
+Supongamos que existe un elemento neutro para el producto.\\
+
+Sea este elemento:
+
+\begin{center}
+    \red{$k$}
+\end{center}
+
+Aplicamos axioma {\underline{$R_5$}}
+
+\begin{center}
+$\forall\left(x,y\right) \in \mathbb{R} \mathrm{ X } \mathbb{R} $ $ xy = yx$
+\end{center}
+
+Para el elemento  {\red{$k$}} $=$ $y$ tenemos:
+\begin{center}
+$ x${\red{$k$}} = {\red{$k$}}$x$
+\end{center}
+
+Sabemos por el axioma {\underline{$R_3$}} que existe un único elemento en los reales \mathbb{R} que funciona como neutro para la suma y se denota como $e$. 
+
+\begin{center}
+$\exists e\in \mathbb{R} \mid \forall x \in \mathbb{ R }$ $e + x = x$
+\end{center}
+
+En consecuencia al tratarse de los números reales $\mathbb{ R }$ existe de manera simultánea un elemento neutro (denotado por $é$) para el producto, este está descrito por medio del axioma $R_7$. 
+
+\begin{center}
+$\exists é\in \mathbb{R} \mid é \neq e \wedge \forall x \in \mathbb{ R }$ $éx = x$
+\end{center}
+
+Aplicando los axiomas {\underline{$R_5$}} y {\underline{$R_7$}} tenemos:
+
+\begin{equation*}
+    \begin{split}
+    x {\red{k}}  & = {\red{k}} x \\\\ \textbf{Sea {\red{k}} = {\red{é}} }
+         & =  {\red{é}} x\\\\ \textbf{Esto es}
+        & = x\\\\
+    \end{split}
+\end{equation*}
+
+{\hfill \textit{\textbf{Q.E.D.}}}}}
+\newpage
+
+\section{Investigar el nombre de la propiedad o axioma de los números reales que dice ($R_1_0$):}
+
+\begin{center}
+$\forall x\in \mathbb{R} $ si $  $ x \leq y $ \wedge $ y \leq x $ \Rightarrow x=y$
+\end{center}
+
+{\red{Solución:}}\\
+
+\begin{itemize}
+    \item Propiedad antisimétrica para la relación de orden. [I]
+\end{itemize}
+
+\section{Referencias}
+[I] Ferrari, G., \& Tenembaum, S. (s.f.) \textit{RESUMEN DE RELACIONES Y FUNCIONES}. Recuperado de URL: http://www.x.edu.uy/inet/RELACIONES\_FUNCIONES.pdf
+
+\end{document}
