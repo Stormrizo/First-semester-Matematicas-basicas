@@ -1,0 +1,469 @@
+\documentclass[12pt]{article} 
+\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{float}
+\usepackage[table]{xcolor}
+\setlength{\tabcolsep}{25pt}
+\renewcommand{\arraystretch}{2.5}
+\usepackage{graphicx}
+\usepackage[inline]{enumitem}
+\usepackage{tasks}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+\settasks{label-format={\color{Horizon!100!black}\large\bfseries}, label-align=center, label-offset={5mm}, label-width={5mm}, item-indent={20mm}, item-format={\scshape}, column-sep={5mm}, after-item-skip=-1mm, after-skip={3mm}
+}
+
+\definecolor{prussianblue}{RGB}{1, 45, 75} 
+\definecolor{brightturquoise}{RGB}{1, 196, 254} 
+\definecolor{Aguamarina}{rgb}{0.5, 1.0, 0.83}
+\definecolor{mandarina_atomica}{rgb}{1.0, 0.6, 0.4}
+\definecolor{blizzardblue}{rgb}{0.67, 0.9, 0.93}
+\definecolor{Ebony Clay}{RGB}{35, 44, 67}
+\definecolor{Tuscany}{RGB}{205, 111, 52}
+\definecolor{prussianblue}{RGB}{1, 45, 75} 
+\definecolor{brightturquoise}{RGB}{1, 196, 254} 
+\definecolor{verde_manzana}{rgb}{0.55, 0.71, 0.0}
+\definecolor{Aguamarina}{rgb}{0.5, 1.0, 0.83}
+\definecolor{mandarina_atomica}{rgb}{1.0, 0.6, 0.4}
+\definecolor{blizzardblue}{rgb}{0.67, 0.9, 0.93}
+\definecolor{bluegray}{rgb}{0.4, 0.6, 0.8}
+\definecolor{coolgrey}{rgb}{0.55, 0.57, 0.67}
+\definecolor{tealgreen}{rgb}{0.0, 0.51, 0.5}
+\definecolor{ticklemepink}{rgb}{0.99, 0.54, 0.67}
+\definecolor{thulianpink}{rgb}{0.87, 0.44, 0.63}
+\definecolor{wildwatermelon}{rgb}{0.99, 0.42, 0.52}
+\definecolor{wisteria}{rgb}{0.79, 0.63, 0.86}
+\definecolor{yellow(munsell)}{rgb}{0.94, 0.8, 0.0}
+\definecolor{trueblue}{rgb}{0.0, 0.45, 0.81}	\definecolor{tropicalrainforest}{rgb}{0.0, 0.46, 0.37}
+\definecolor{tearose(rose)}{rgb}{0.96, 0.76, 0.76}
+\definecolor{antiquefuchsia}{rgb}{0.57, 0.36, 0.51}	\definecolor{bittersweet}{rgb}{1.0, 0.44, 0.37}	\definecolor{carrotorange}{rgb}{0.93, 0.57, 0.13}
+\definecolor{cinereous}{rgb}{0.6, 0.51, 0.48}
+\definecolor{darkcoral}{rgb}{0.8, 0.36, 0.27}	\definecolor{orange(colorwheel)}{rgb}{1.0, 0.5, 0.0}
+\definecolor{palatinateblue}{rgb}{0.15, 0.23, 0.89} \definecolor{pakistangreen}{rgb}{0.0, 0.4, 0.0} 	\definecolor{vividviolet}{rgb}{0.62, 0.0, 1.0} 
+\definecolor{tigre}{rgb}{0.88, 0.55, 0.24} 		\definecolor{plum(traditional)}{rgb}{0.56, 0.27, 0.52} 	\definecolor{persianred}{rgb}{0.8, 0.2, 0.2} 	\definecolor{orange(webcolor)}{rgb}{1.0, 0.65, 0.0} 	\definecolor{onyx}{rgb}{0.06, 0.06, 0.06}
+\definecolor{blue-violet}{rgb}{0.54, 0.17, 0.89}
+\definecolor{byzantine}{rgb}{0.74, 0.2, 0.64}
+\definecolor{byzantium}{rgb}{0.44, 0.16, 0.39}
+\definecolor{darkmagenta}{rgb}{0.55, 0.0, 0.55} 
+\definecolor{Gallery}{RGB}{236, 236, 236} 
+\definecolor{darkviolet}{rgb}{0.58, 0.0, 0.83} 	\definecolor{deepmagenta}{rgb}{0.8, 0.0, 0.8}
+\definecolor{Mercury}{RGB}{228, 228, 228} 
+\definecolor{Alto}{RGB}{220, 220, 220}
+\definecolor{Woodsmoke}{RGB}{4, 4, 5} 
+\definecolor{Iron}{RGB}{227, 227, 228} 
+\definecolor{Bluechill}{RGB}{11, 150, 144}
+\definecolor{Deep Sea Green}{RGB}{8, 83, 94}
+\definecolor{Sun}{RGB}{251, 175, 17} 
+\definecolor{Lochmara}{RGB}{9, 116, 189}  
+\definecolor{Green vogue}{RGB}{4, 40, 85}  
+\definecolor{Hippie Blue}{RGB}{92, 148, 179}  
+\definecolor{Saratoga}{RGB}{85, 100, 19}  
+\definecolor{Earls Green}{RGB}{177, 196, 56}  
+\definecolor{Cavern Pink}{RGB}{231, 190, 194} 
+\definecolor{Tamarillo}{RGB}{155, 23, 33} 
+\definecolor{Cinnabar}{RGB}{225, 71, 53} 
+\definecolor{Horizon}{RGB}{88, 132, 169} 
+\definecolor{Tarawera}{RGB}{6, 48, 70}
+\definecolor{Fiery Orange}{RGB}{180, 92, 22}
+\definecolor{Lemon Ginger}{RGB}{170, 164, 40}
+\definecolor{Burnt Sienna}{RGB}{236, 119, 88}
+\definecolor{Milano Red}{RGB}{184, 12, 11}
+\newenvironment{MyColorPar}[1]{%
+    \leavevmode\color{#1}\ignorespaces%
+}{%
+}%
+
+\begin{document}
+\setlength{\arrayrulewidth}{1pt}
+\pagestyle{empty} 
+\sffamily
+\setlength{\parindent}{0pt}
+
+\section*{\textsf{Resolver un inciso del ejercicio 123 de la hoja adjunta.}} \vspace{0.4cm}
+
+\begin{enumerate}[label=\alph*), start=3]
+    {\Large{\item $\mid$ (2x $+$ 3)(1 $-$ x) $\mid$ $>$ $\mid$ 2x $-$ 5 $\mid$}}  
+\end{enumerate} \vspace{0.5cm}
+
+{\bfseries{{\textcolor{Milano Red}{\underline{Solución:}}}}} \vspace{0.5cm}
+
+\begin{MyColorPar}{Tarawera}
+{\bfseries{Estudio de signos}} 
+\end{MyColorPar}
+
+
+{\bfseries{Tenemos las siguientes raíces:}} \vspace{0.5cm}
+
+\begin{tasks}[style=itemize, item-format={\normalfont\sf}, after-item-skip=4mm](3)
+
+\task $-$ {\LARGE{$\frac{3}{2}$}}
+\task {\Large{1}}
+\task {\LARGE{$\frac{5}{2}$}}
+\end{tasks} \vspace{0.5cm}
+
+Necesitamos hallar el valor de los signos de cada expresión (ya sea {\textcolor{Earls Green}{positivo}} o {\textcolor{Cinnabar}{negativo}}) estudiando las raíces con el uso de la siguiente tabla: \vspace{1cm}
+
+{\textcolor{palatinateblue}{$ \big |\ $}} {\textcolor{palatinateblue}{$ \big |\ $}} $=$ valores donde la expresión es $0$.
+
+\hspace{7.35cm} $-$ {\LARGE{$\frac{3}{2}$}} \hspace{2.75cm} {\large{1}} \hspace{2.7cm} {\LARGE{$\frac{5}{2}$}} \vspace{0.2cm}
+
+\hspace{7.9cm}  {$\big |\ $} \hspace{2.73cm}  {$\big |\ $} \hspace{2.75cm}  {$\big |\ $}
+
+\begin{table}[H]
+\begin{tabular}{ | p{3cm}| p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm}|}
+\hline
+{\cellcolor{Horizon!70}{{\bfseries{\hspace{1.5cm}$x$}}}} & {\cellcolor{Sun!70}{{\bfseries{signo}}}} & {\cellcolor{Sun!70}{{\bfseries{signo}}}} & {\cellcolor{Sun!70}{{\bfseries{signo}}}} & {\cellcolor{Sun!70}{{\bfseries{signo}}}} \\ 
+\hline
+{\cellcolor{Horizon!70}{{\bfseries{\hspace{.7cm}(2$x$ $+$ 3)}}}}  & {\cellcolor{Cinnabar!75}{{\Large{\hspace{.5cm}$-$}}}} \hspace{0.1cm} {\textcolor{palatinateblue}{$\big |\ $}} & {\textcolor{palatinateblue}{$ \big |\ $}} {\cellcolor{Earls Green!100}{{\Large{\hspace{.01mm} $+$}}}} & {\cellcolor{Earls Green!100}{{\Large{\hspace{.4cm} $+$}}}} & {\cellcolor{Earls Green!100}{{\Large{\hspace{.4cm} $+$}}}}\\
+\hline
+{\cellcolor{Horizon!70}{{\bfseries{\hspace{.85cm}(1 $-$ $x$)}}}}  &
+{\cellcolor{Earls Green!100}{{\Large{\hspace{.4cm} $+$}}}} & {\cellcolor{Earls Green!100}{{\Large{\hspace{.4cm} $+$}}}} \hspace{0.1cm} {\textcolor{palatinateblue}{$\big |\ $}} & {\textcolor{palatinateblue}{$\big |\ $}} {\cellcolor{Cinnabar!75}{{\Large{\hspace{.1cm}$-$}}}} & {\cellcolor{Cinnabar!75}{{\Large{\hspace{.5cm}$-$}}}}\\
+\hline
+{\cellcolor{Horizon!70}{{\bfseries{\hspace{.7cm}(2$x$ $-$ 5)}}}} & {\cellcolor{Cinnabar!75}{{\Large{\hspace{.5cm}$-$}}}}  & {\cellcolor{Cinnabar!75}{{\Large{\hspace{.5cm}$-$}}}} & {\cellcolor{Cinnabar!75}{{\Large{\hspace{.5cm}$-$}}}} \hspace{0.1cm} {\textcolor{palatinateblue}{$\big |\ $}} & {\textcolor{palatinateblue}{$\big |\ $}} {\cellcolor{Earls Green!100}{{\Large{\hspace{.1mm} $+$}}}}\\
+\hline
+{\cellcolor{Horizon!70}{{\bfseries{(2$x$ $+$ 3)(1 $-$ $x$)}}}}  & {\cellcolor{Cinnabar!75}{{\Large{\hspace{.5cm}$-$}}}} \hspace{0.1cm} {\textcolor{palatinateblue}{$\big |\ $}} & {\textcolor{palatinateblue}{$\big |\ $}} {\cellcolor{Earls Green!100}{{\Large{\hspace{.1mm} $+$}}}} \hspace{0.1cm} {\textcolor{palatinateblue}{$\big |\ $}} & {\textcolor{palatinateblue}{$\big |\ $}} {\cellcolor{Cinnabar!75}{{\Large{\hspace{.1cm}$-$}}}} & {\cellcolor{Cinnabar!75}{{\Large{\hspace{.5cm}$-$}}}}\\
+\hline
+\end{tabular}
+\end{table} \vspace{0.2cm}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Una vez hallados los valores de los signos de nuestras expresiones anteriores. \vspace{0.5cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Lo que hacemos ahora es el estudio para el valor absoluto del producto : \mbox{$\mid$ (2$x$ $+$ 3) $\cdot$ (1 $-$ $x$) $\mid$} y para el valor absoluto de la expresión \mbox{$\mid$ (2$x$ $-$ 5)} $\mid$ en cada dominio de nuestra tabla: \vspace{0.5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+{\bfseries{{\textcolor{Burnt Sienna}{\mbox{D$_{1}$ $=$ {$\Big($} $-$ $\infty$, $-$ {\Large{$\frac{3}{2}$}}} {$\Big ]\ $}}}}}, {\bfseries{{\textcolor{Burnt Sienna}{\mbox{D$_{2}$ $=$ {$\Big[$}  $-$ {\Large{$\frac{3}{2}$}}, 1 {$\Big ]\ $}}}}}}, {\bfseries{{\textcolor{Burnt Sienna}{\mbox{D$_{3}$ $=$ {$\Big[$}  1, {\Large{$\frac{5}{2}$}} {$\Big ]\ $}}}}}} y \hspace{0.1cm} {\bfseries{{\textcolor{Burnt Sienna}{\mbox{D$_{4}$ $=$ {$\Big[$}  {\Large{$\frac{5}{2}$}}, $\infty$ {$\Big )\ $}}}}}} \vspace{0.5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Para así hallar las {\bfseries{soluciones parciales}} (S$_{1}$, S$_{2}$, S$_{3}$ y S$_{4}$) para posteriormente hallar la verdadera solución de nuestra expresión: $\mid$ (2x $+$ 3)(1 $-$ x) $\mid$ $>$ $\mid$ 2x $-$ 5 $\mid$, la cual es conocida como: {\bfseries{solución total}} (S$_{T}$) {\bfseries{de la inecuación}}. Esta solución (S$_{T}$) deberá de ser para valores de \mbox{$x$ $>$ $0$}. \vspace{0.5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+{\bfseries{{\textcolor{Milano Red}{\underline{Inicio:}}}}} 
+
+\section*{{\textcolor{Tarawera}{\textsf{Dominio 1.}}}}
+
+\begin{MyColorPar}{Tarawera}
+{\bfseries{Dominio 1.}}  {\bfseries{{\textcolor{Burnt Sienna}{\mbox{D$_{1}$ $=$ {$\Big($} $-$ $\infty$, $-$ {\Large{$\frac{3}{2}$}}} {$\Big ]\ $}}}}}
+\end{MyColorPar} \vspace{0.5cm}
+
+\hspace{4.5cm} $\forall$$_{x}$ $\in$  {\bfseries{{\textcolor{Burnt Sienna}{\mbox{D$_{1}$}}}}} \hspace{0.5cm} $\mid$ (2x $+$ 3)(1 $-$ x) $\mid$ $>$ $\mid$ 2x $-$ 5 $\mid$ \vspace{0.5cm}
+
+{\bfseries{Definición de valor absoluto}} \hspace{0.1cm} $\Longleftrightarrow$ \hspace{0.2cm} $-$ (2x $+$ 3)(1 $-$ x) $>$ $-$ (2x $-$ 5) \vspace{0.5cm}
+
+\hspace{3cm} {\bfseries{Simétrico}} \hspace{.5cm} $\Longleftrightarrow$ \hspace{0.2cm} ($-$ 2x $-$3)(1 $-$ x) $>$ $-$ 2x $+$ 5 \vspace{0.5cm}
+
+\hspace{5.6cm} $\Longleftrightarrow$ \hspace{0.2cm} $-$ 2x $-$ 3 $+$ 2x$^{2}$ $+$ 3x $>$ $-$ 2x $+$ 5 \vspace{0.5cm}
+
+\hspace{2cm} {\bfseries{{\textcolor{carrotorange}{Axioma 1 (R$_{1}$)}}}} \hspace{.5cm} $\Longleftrightarrow$ \hspace{0.2cm} 2x$^{2}$ $+$ 3x $-$ 2x $-$ 3  $>$ $-$ 2x $+$ 5 \vspace{0.5cm}
+
+\hspace{5.6cm} $\Longleftrightarrow$ \hspace{0.2cm} 2x$^{2}$ $+$ 3x $-$ 2x $+$ 2x $-$ 3 $-$ 5 $>$ $0$ \vspace{0.5cm}
+
+\hspace{5.6cm} $\Longleftrightarrow$ \hspace{0.2cm} 2x$^{2}$ $+$ 3x $-$ 8 $>$ $0$ \vspace{0.5cm}
+
+Fórmula para el discriminante:\vspace{0.5cm}
+
+$\Delta$ $=$ $b^{2}$ $-$ 4$a$$c$ \vspace{0.2cm}
+
+Sean $a$ $=$ 2, \hspace{0.3cm} $b$ $=$ 3 \hspace{0.3cm} y \hspace{0.3cm} $c$ $=$ $-$ 8 \vspace{0.3cm}
+
+$\Delta$ $=$ $3^{2}$ $-$ 4$(2)$$(-8)$ \vspace{0.3cm}
+
+$\Delta$ $=$ $9$ $+$ $64$ \vspace{0.3cm}
+
+$\Delta$ $=$ $73$ \hspace{0.3cm} $\Longrightarrow$ \hspace{0.3cm} 
+$\Delta$ $>$ $0$ \hspace{0.1cm} Entonces la ecuación tiene dos soluciones: $x_{1}$, $x_{2}$ $\in$ $\mathbb{R}$ $\mid$ $x_{1}$ $\neq$ $x_{2}$ 
+
+ \newpage
+ 
+ Las soluciones $x_{1}$ y $x_{2}$ son (factorización por completar el TCP) : \vspace{0.5cm}
+ 
+\hspace{4cm} $2x^{2}$ $+$ $3x$ $-$ $8$ $=$ $0$ \vspace{0.5cm}
+ 
+Dividimos ambos lados de la expresión por $2$ para eliminar el coeficiente de la $x^{2}$ \vspace{0.5cm}
+
+\hspace{4cm} $x^{2}$ $+$ {\Large{$\frac{3}{2}$}} $x$ $-$ $4$ $=$ $0$ \vspace{0.5cm}
+
+Completamos el trinomio cuadrado perfecto:\vspace{0.5cm}
+
+\hspace{4cm} $=$ $x^{2}$ $+$ {\Large{$\frac{3}{2}$}}$x$ $-$ $4$ $=$ $0$ \vspace{0.5cm}
+
+\hspace{4cm} $=$ $x^{2}$ $+$ {\Large{$\frac{3}{2}$}} $x$ $+$ $\bigg($ {\Large{$\frac{\frac{3}{2}}{2}$}} $\bigg)^{2}$ $-$ $\bigg($ {\Large{$\frac{\frac{3}{2}}{2}$}} $\bigg)^{2}$ $-$ $4$ $=$ $0$ \vspace{0.5cm}
+
+\hspace{4cm} $=$ $x^{2}$ $+$ {\Large{$\frac{3}{2}$}} $x$ $+$ $\bigg($ {\Large{$\frac{3}{4}$}} $\bigg)^{2}$ $-$ $\bigg($ {\Large{$\frac{3}{4}$}} $\bigg)^{2}$ $-$ $4$ $=$ $0$ \vspace{0.5cm}
+
+\hspace{4cm} $=$ $x^{2}$ $+$ {\Large{$\frac{3}{2}$}} $x$ $+$ $\bigg($ {\Large{$\frac{9}{16}$}} $\bigg)$ $-$ $\bigg($ {\Large{$\frac{9}{16}$}} $\bigg)$ $-$ $4$ $=$ $0$ \vspace{0.5cm}
+
+\hspace{4cm} $=$ $x^{2}$ $+$ {\Large{$\frac{3}{2}$}} $x$ $+$  {\Large{$\frac{9}{16}$}}  $=$   {\Large{$\frac{9}{16}$}}  $+$ $4$ \vspace{0.5cm}
+
+\hspace{4cm} $=$ $\big($ $x$ $+$ {\Large{$\frac{3}{4}$}} $\big)^{2}$ $=$ {\Large{$\frac{9 + 16(4)}{16}$}} \vspace{0.5cm}
+
+\hspace{4cm} $=$  $x$ $=$ $\pm$ {\large{$\sqrt{\frac{73}{16}}$}} $-$ {\Large{$\frac{3}{4}$}} \vspace{0.5cm}
+
+\hspace{4cm} $=$  $x$ $=$ $\pm$ {\Large{$\frac{\sqrt{73}}{4}$}} $-$ {\Large{$\frac{3}{4}$}} \vspace{0.5cm}
+
+
+$x_{1}$ $=$ $+$ {\Large{$\frac{\sqrt{73}}{4}$}} $-$ {\Large{$\frac{3}{4}$}} \vspace{0.5cm}
+
+\hspace{0.4cm} $\approx$ 1.386 \vspace{0.5cm}
+
+$x_{2}$ $=$ $-$ {\Large{$\frac{\sqrt{73}}{4}$}} $-$ {\Large{$\frac{3}{4}$}} \vspace{0.5cm}
+
+\hspace{0.4cm} $\approx$ $-$ 2.886 \vspace{0.5cm}
+ 
+Las soluciones son: \vspace{0.5cm}
+
+\hspace{5cm} $\bullet$ \fbox{$x_{1}$ $=$ 1.386} \hspace{0.2cm} $\bullet$ \fbox{$x_{2}$ $=$ $-$ 2.886} 
+
+\newpage
+ 
+La gráfica de la ecuación es: \vspace{0.5cm} 
+
+\begin{figure}[htb] \centering
+
+    \includegraphics[scale=.5]{grafica1.png} 
+    
+\end{figure} \vspace{0.5cm}
+
+La solución parcial para el {\bfseries{{\textcolor{Burnt Sienna}{\mbox{D$_{1}$}}}}} es $S_{1}$ $=$ $\big($ $-$ $\infty$, $x_{2}$ $\big]$ $=$ $\big($ $-$ $\infty$, -2.886 $\big]$
+
+\vspace{4cm}
+
+\begin{MyColorPar}{pakistangreen}
+$\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ 
+\end{MyColorPar} \vspace{.5cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{{\textcolor{Tarawera}{\textsf{Dominio 2.}}}}
+
+\begin{MyColorPar}{Tarawera}
+{\bfseries{Dominio 2.}}  {\bfseries{{\textcolor{Burnt Sienna}{\mbox{D$_{2}$ $=$ {$\Big[$}  $-$ {\Large{$\frac{3}{2}$}}, 1 {$\Big ]\ $}}}}}}
+\end{MyColorPar} \vspace{0.5cm}
+
+\hspace{4.5cm} $\forall$$_{x}$ $\in$  {\bfseries{{\textcolor{Burnt Sienna}{\mbox{D$_{2}$}}}}} \hspace{0.5cm} $\mid$ (2x $+$ 3)(1 $-$ x) $\mid$ $>$ $\mid$ 2x $-$ 5 $\mid$ \vspace{0.5cm}
+
+{\bfseries{Definición de valor absoluto}} \hspace{0.1cm} $\Longleftrightarrow$ \hspace{0.2cm} (2x $+$ 3)(1 $-$ x) $>$ $-$ (2x $-$ 5) \vspace{0.5cm}
+
+\hspace{3cm} {\bfseries{Simétrico}} \hspace{.5cm} $\Longleftrightarrow$ \hspace{0.2cm} (2x $+ $3)(1 $-$ x) $>$ $-$ 2x $+$ 5 \vspace{0.5cm}
+
+\hspace{5.6cm} $\Longleftrightarrow$ \hspace{0.2cm} 2x $+$ 3 $-$ 2x$^{2}$ $-$ 3x $>$ $-$ 2x $+$ 5 \vspace{0.5cm}
+
+\hspace{2cm} {\bfseries{{\textcolor{carrotorange}{Axioma 1 (R$_{1}$)}}}} \hspace{.5cm} $\Longleftrightarrow$ \hspace{0.2cm} $-$ 2x$^{2}$ $-$ 3x $+$ 2x $+$ 3  $>$ $-$ 2x $+$ 5 \vspace{0.5cm}
+
+\hspace{5.6cm} $\Longleftrightarrow$ \hspace{0.2cm} $-$ 2x$^{2}$ $-$ 3x $+$ 2x $+$ 2x $+$ 3 $-$ 5 $>$ $0$ \vspace{0.5cm}
+
+\hspace{5.6cm} $\Longleftrightarrow$ \hspace{0.2cm} $-$ 2x$^{2}$ $-$ 3x $+$ 4x $-$ 2 $>$ $0$ \vspace{0.5cm}
+
+\hspace{5.6cm} $\Longleftrightarrow$ \hspace{0.2cm} $-$ 2x$^{2}$ $+$ x $-$ 2 $>$ $0$ \vspace{0.5cm}
+
+Fórmula para el discriminante:\vspace{0.5cm}
+
+$\Delta$ $=$ $b^{2}$ $-$ 4$a$$c$ \vspace{0.2cm}
+
+Sean $a$ $=$ $-$ 2, \hspace{0.3cm} $b$ $=$ 1 \hspace{0.3cm} y \hspace{0.3cm} $c$ $=$ $-$ 2 \vspace{0.3cm}
+
+$\Delta$ $=$ $1^{2}$ $-$ 4$(- 2)$$(-2)$ \vspace{0.3cm}
+
+$\Delta$ $=$ $1$ $-$ $16$ \vspace{0.3cm}
+
+$\Delta$ $=$ $-$ $15$ \hspace{0.3cm} $\Longrightarrow$ \hspace{0.3cm} 
+$\Delta$ $<$ $0$ \hspace{0.1cm} Entonces la ecuación no tiene solución real. \vspace{0.5cm}
+
+
+La solución parcial para el {\bfseries{{\textcolor{Burnt Sienna}{\mbox{D$_{2}$}}}}} es $S_{2}$ $=$ $\big \{$  $\big \}$ $=$ $\O$ \vspace{0.4cm}
+
+\begin{MyColorPar}{pakistangreen}
+$\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ 
+\end{MyColorPar} \vspace{.5cm}
+
+\section*{{\textcolor{Tarawera}{\textsf{Dominio 3. (Este problema es similar al Dominio 1.)}}}}
+\begin{MyColorPar}{Tarawera}
+{\bfseries{Dominio 3.}}  {\bfseries{{\textcolor{Burnt Sienna}{\mbox{D$_{3}$ $=$ {$\Big[$}  1, {\Large{$\frac{5}{2}$}} {$\Big ]\ $}}}}}}
+\end{MyColorPar} \vspace{0.5cm}
+
+\hspace{4.5cm} $\forall$$_{x}$ $\in$  {\bfseries{{\textcolor{Burnt Sienna}{\mbox{D$_{3}$}}}}} \hspace{0.5cm} $\mid$ (2x $+$ 3)(1 $-$ x) $\mid$ $>$ $\mid$ 2x $-$ 5 $\mid$ \vspace{0.5cm}
+
+{\bfseries{Definición de valor absoluto}} \hspace{0.1cm} $\Longleftrightarrow$ \hspace{0.2cm} $-$ (2x $+$ 3)(1 $-$ x) $>$ $-$ (2x $-$ 5) \vspace{0.5cm}
+
+\hspace{3cm} {\bfseries{Simétrico}} \hspace{.5cm} $\Longleftrightarrow$ \hspace{0.2cm} ($-$ 2x $-$3)(1 $-$ x) $>$ $-$ 2x $+$ 5 \vspace{0.5cm}
+
+\hspace{5.6cm} $\Longleftrightarrow$ \hspace{0.2cm} $-$ 2x $-$ 3 $+$ 2x$^{2}$ $+$ 3x $>$ $-$ 2x $+$ 5 \vspace{0.5cm}
+
+\hspace{2cm} {\bfseries{{\textcolor{carrotorange}{Axioma 1 (R$_{1}$)}}}} \hspace{.5cm} $\Longleftrightarrow$ \hspace{0.2cm} 2x$^{2}$ $+$ 3x $-$ 2x $-$ 3  $>$ $-$ 2x $+$ 5 \vspace{0.5cm}
+
+\hspace{5.6cm} $\Longleftrightarrow$ \hspace{0.2cm} 2x$^{2}$ $+$ 3x $-$ 2x $+$ 2x $-$ 3 $-$ 5 $>$ $0$ \vspace{0.5cm}
+
+\hspace{5.6cm} $\Longleftrightarrow$ \hspace{0.2cm} 2x$^{2}$ $+$ 3x $-$ 8 $>$ $0$ \vspace{0.5cm}
+
+Fórmula para el discriminante:\vspace{0.5cm}
+
+$\Delta$ $=$ $b^{2}$ $-$ 4$a$$c$ \vspace{0.2cm}
+
+Sean $a$ $=$ 2, \hspace{0.3cm} $b$ $=$ 3 \hspace{0.3cm} y \hspace{0.3cm} $c$ $=$ $-$ 8 \vspace{0.3cm}
+
+$\Delta$ $=$ $3^{2}$ $-$ 4$(2)$$(-8)$ \vspace{0.3cm}
+
+$\Delta$ $=$ $9$ $+$ $64$ \vspace{0.3cm}
+
+$\Delta$ $=$ $73$ \hspace{0.3cm} $\Longrightarrow$ \hspace{0.3cm} 
+$\Delta$ $>$ $0$ \hspace{0.1cm} Entonces la ecuación tiene dos soluciones: $x_{1}$, $x_{2}$ $\in$ $\mathbb{R}$ $\mid$ $x_{1}$ $\neq$ $x_{2}$ \vspace{0.5cm}
+ 
+Las soluciones $x_{1}$ y $x_{2}$ son (factorización por completar el TCP) : \vspace{0.5cm}
+ 
+\hspace{4cm} $2x^{2}$ $+$ $3x$ $-$ $8$ $=$ $0$ \vspace{0.5cm}
+ 
+Dividimos ambos lados de la expresión por $2$ para eliminar el coeficiente de la $x^{2}$ \vspace{0.5cm}
+
+\hspace{4cm} $x^{2}$ $+$ {\Large{$\frac{3}{2}$}} $x$ $-$ $4$ $=$ $0$ \vspace{0.5cm}
+
+Completamos el trinomio cuadrado perfecto:\vspace{0.5cm}
+
+\hspace{4cm} $=$ $x^{2}$ $+$ {\Large{$\frac{3}{2}$}}$x$ $-$ $4$ $=$ $0$ \vspace{0.5cm}
+
+\hspace{4cm} $=$ $x^{2}$ $+$ {\Large{$\frac{3}{2}$}} $x$ $+$ $\bigg($ {\Large{$\frac{\frac{3}{2}}{2}$}} $\bigg)^{2}$ $-$ $\bigg($ {\Large{$\frac{\frac{3}{2}}{2}$}} $\bigg)^{2}$ $-$ $4$ $=$ $0$ \vspace{0.5cm}
+
+\hspace{4cm} $=$ $x^{2}$ $+$ {\Large{$\frac{3}{2}$}} $x$ $+$ $\bigg($ {\Large{$\frac{3}{4}$}} $\bigg)^{2}$ $-$ $\bigg($ {\Large{$\frac{3}{4}$}} $\bigg)^{2}$ $-$ $4$ $=$ $0$ \vspace{0.5cm}
+
+\hspace{4cm} $=$ $x^{2}$ $+$ {\Large{$\frac{3}{2}$}} $x$ $+$ $\bigg($ {\Large{$\frac{9}{16}$}} $\bigg)$ $-$ $\bigg($ {\Large{$\frac{9}{16}$}} $\bigg)$ $-$ $4$ $=$ $0$ \vspace{0.5cm}
+
+\hspace{4cm} $=$ $x^{2}$ $+$ {\Large{$\frac{3}{2}$}} $x$ $+$  {\Large{$\frac{9}{16}$}}  $=$   {\Large{$\frac{9}{16}$}}  $+$ $4$ \vspace{0.5cm}
+
+\hspace{4cm} $=$ $\big($ $x$ $+$ {\Large{$\frac{3}{4}$}} $\big)^{2}$ $=$ {\Large{$\frac{9 + 16(4)}{16}$}} \vspace{0.5cm}
+
+\hspace{4cm} $=$  $x$ $=$ $\pm$ {\large{$\sqrt{\frac{73}{16}}$}} $-$ {\Large{$\frac{3}{4}$}} \vspace{0.5cm}
+
+\hspace{4cm} $=$  $x$ $=$ $\pm$ {\Large{$\frac{\sqrt{73}}{4}$}} $-$ {\Large{$\frac{3}{4}$}} \vspace{0.5cm}
+
+
+$x_{1}$ $=$ $+$ {\Large{$\frac{\sqrt{73}}{4}$}} $-$ {\Large{$\frac{3}{4}$}} \vspace{0.5cm}
+
+\hspace{0.4cm} $\approx$ 1.386 \vspace{0.5cm}
+
+$x_{2}$ $=$ $-$ {\Large{$\frac{\sqrt{73}}{4}$}} $-$ {\Large{$\frac{3}{4}$}} \vspace{0.5cm}
+
+\hspace{0.4cm} $\approx$ $-$ 2.886 \vspace{0.5cm}
+ 
+Las soluciones son: \vspace{0.5cm}
+
+\hspace{5cm} $\bullet$ \fbox{$x_{1}$ $=$ 1.386} \hspace{0.2cm} $\bullet$ \fbox{$x_{2}$ $=$ $-$ 2.886} 
+
+La gráfica de la ecuación es: \vspace{0.5cm} 
+
+\begin{figure}[htb] \centering
+
+    \includegraphics[scale=.5]{grafica1.png} 
+    
+\end{figure} \vspace{0.5cm}
+
+La solución parcial para el {\bfseries{{\textcolor{Burnt Sienna}{\mbox{D$_{3}$}}}}} es $S_{3}$ $=$ $\big($ $-$ $\infty$, $x_{2}$ $\big]$ $=$ $\big($ $-$ $\infty$, -2.886 $\big]$
+\vspace{1cm}
+
+\begin{MyColorPar}{pakistangreen}
+$\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ 
+\end{MyColorPar} \vspace{.5cm}
+
+\section*{{\textcolor{Tarawera}{\textsf{Dominio 4.}}}}
+
+\begin{MyColorPar}{Tarawera}
+{\bfseries{Dominio 4.}}  {\bfseries{{\textcolor{Burnt Sienna}{\mbox{D$_{4}$ $=$ {$\Big[$}  {\Large{$\frac{5}{2}$}}, $\infty$ {$\Big )\ $}}}}}} 
+\end{MyColorPar} \vspace{0.5cm}
+
+\hspace{4.5cm} $\forall$$_{x}$ $\in$  {\bfseries{{\textcolor{Burnt Sienna}{\mbox{D$_{4}$}}}}} \hspace{0.5cm} $\mid$ (2x $+$ 3)(1 $-$ x) $\mid$ $>$ $\mid$ 2x $-$ 5 $\mid$ \vspace{0.5cm}
+
+{\bfseries{Definición de valor absoluto}} \hspace{0.1cm} $\Longleftrightarrow$ \hspace{0.2cm} $-$ (2x $+$ 3)(1 $-$ x) $>$ 2x $-$ 5 \vspace{0.5cm}
+
+\hspace{3cm} {\bfseries{Simétrico}} \hspace{.5cm} $\Longleftrightarrow$ \hspace{0.2cm} ($-$ 2x $-$3)(1 $-$ x) $>$  2x $-$ 5  \vspace{0.5cm}
+
+\hspace{5.6cm} $\Longleftrightarrow$ \hspace{0.2cm} $-$ 2x $-$ 3 $+$ 2x$^{2}$ $+$ 3x $>$ 2x $-$ 5 \vspace{0.5cm}
+
+\hspace{2cm} {\bfseries{{\textcolor{carrotorange}{Axioma 1 (R$_{1}$)}}}} \hspace{.5cm} $\Longleftrightarrow$ \hspace{0.2cm} 2x$^{2}$ $+$ 3x $-$ 2x $-$ 3  $>$  2x $-$ 5 \vspace{0.5cm}
+
+\hspace{5.6cm} $\Longleftrightarrow$ \hspace{0.2cm} 2x$^{2}$ $+$ 3x $-$ 2x $-$ 2x $-$ 3 $+$ 5 $>$ $0$ \vspace{0.5cm}
+
+
+\hspace{5.6cm} $\Longleftrightarrow$ \hspace{0.2cm} 2x$^{2}$ $+$ 3x $-$ 4x $+$ 2 $>$ $0$ \vspace{0.5cm}
+
+\hspace{5.6cm} $\Longleftrightarrow$ \hspace{0.2cm} 2x$^{2}$ $-$ x $+$ 2 $>$ $0$ \vspace{0.5cm}
+
+Fórmula para el discriminante:\vspace{0.5cm}
+
+$\Delta$ $=$ $b^{2}$ $-$ 4$a$$c$ \vspace{0.2cm}
+
+Sean $a$ $=$ 2, \hspace{0.3cm} $b$ $=$ $-$ 1 \hspace{0.3cm} y \hspace{0.3cm} $c$ $=$ 2 \vspace{0.3cm}
+
+$\Delta$ $=$ $(-1)^{2}$ $-$ 4$(2)$$(2)$ \vspace{0.3cm}
+
+$\Delta$ $=$ $1$ $-$ $16$ \vspace{0.3cm}
+
+$\Delta$ $=$ $-15$ \hspace{0.3cm} $\Longrightarrow$ \hspace{0.3cm} 
+$\Delta$ $<$ $0$ \hspace{0.1cm} Entonces la ecuación no tiene solución real. \vspace{0.5cm}
+ 
+La solución parcial para el {\bfseries{{\textcolor{Burnt Sienna}{\mbox{D$_{4}$}}}}} es $S_{4}$ $=$ $\big \{$ $\big \}$ $=$ $\O$ \vspace{0.5cm}
+
+En conclusión la solución total ($S_{T}$) de la inecuación es: \vspace{0.5cm} 
+
+\hspace{4cm} $S_{T}$ $=$ $S_{1}$ $\cup$ $S_{2}$ $\cup$ $S_{3}$ $\cup$ $S_{4}$ \vspace{0.5cm} 
+
+\hspace{4cm} $S_{T}$ $=$ $\big($ $-$ $\infty$, -2.886 $\big]$ $\cup$ $\O$ $\cup$ $\big($ $-$ $\infty$, -2.886 $\big]$ $\cup$ $\O$ \vspace{0.5cm} 
+
+\hspace{4cm} $S_{T}$ $=$ $\big($ $-$ $\infty$, -2.886 $\big]$   \vspace{.5cm}
+
+\begin{MyColorPar}{pakistangreen}
+$\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ 
+\end{MyColorPar} 
+
+\section*{\textsf{Teorema 34. En $\mathbb{R}$ se tiene siempre:}} \vspace{0.5cm} 
+
+\hspace{3cm}{\Large{$x^{2}$ \hspace{0.2cm} $\leq$ \hspace{0.2cm} $y^{2}$ \hspace{0.2cm} $\Longleftrightarrow$ \hspace{0.2cm} $\mid$ $x$ $\mid$ \hspace{0.2cm} $\leq$ \hspace{0.2cm} $\mid$ $y$ $\mid$}} \vspace{0.5cm}
+
+\section*{{\textsf{Se debe probar}} {\textcolor{Cinnabar}{\bfseries{`` $\Longleftarrow$ ''}}}. {\textsf{Es decir:}}} \vspace{0.5cm}
+
+\hspace{3cm} {\Large{$\mid$ $x$ $\mid$ \hspace{0.2cm} $\leq$ \hspace{0.2cm} $\mid$ $y$ $\mid$ \hspace{0.2cm} $\Longrightarrow$ \hspace{0.2cm} $x^{2}$ \hspace{0.2cm} $\leq$ \hspace{0.2cm} $y^{2}$}} \vspace{0.5cm}
+
+\newpage
+
+\begin{MyColorPar}{Cinnabar}
+{\bfseries{{\underline{Inicio:}}}}
+\end{MyColorPar} \vspace{0.5cm}
+
+\begin{MyColorPar}{Tarawera}
+\bfseries 
+Hipótesis: {\textcolor{black}{$\mid$ $x$ $\mid$ \hspace{0.1cm} $\leq$ \hspace{0.1cm} $\mid$ $y$ $\mid$}} \vspace{0.5cm}
+
+{\textcolor{Cinnabar}{{\underline{Demostración directa}}}}. Suponemos {\textcolor{black}{$\mid$ $x$ $\mid$ \hspace{0.1cm} $\leq$ \hspace{0.1cm} $\mid$ $y$ $\mid$}}  {\textcolor{verde_manzana}{verdadera.}} 
+\end{MyColorPar} \vspace{0.5cm}
+
+{\textcolor{carrotorange}{\bfseries{Por teorema 19 i) 3:}}}
+
+\hspace{4cm} $\mid$ $x$ $\mid$ \hspace{0.1cm} $\leq$ \hspace{0.1cm} $\mid$ $y$ $\mid$ \hspace{0.2cm} $\Longrightarrow$ \hspace{0.2cm} $\mid$ $x$ $\mid$ $-$ $\mid$ $y$ $\mid$ $\leq$ \hspace{0.1cm} $0$ \vspace{0.5cm}
+
+{\textcolor{carrotorange}{\bfseries{Multiplicamos ambos lados por su conjugado (z)}}} \vspace{0.5cm}
+
+{\textcolor{carrotorange}{\bfseries{Esto lo garantiza el teorema 31:}}} \vspace{0.5cm}
+
+\hspace{7cm}  $\Longrightarrow$ \hspace{0.2cm} $\big($ $\mid$ $x$ $\mid$ $-$ $\mid$ $y$ $\mid$ $\big)$ ($z$) \hspace{0.2cm} $\leq$ \hspace{0.1cm} $0$ ($z$) \vspace{0.5cm}
+
+\hspace{7cm}  $\Longrightarrow$ \hspace{0.2cm} $\big($ $\mid$ $x$ $\mid$ $-$ $\mid$ $y$ $\mid$ $\big)$ $\big($ $\mid$ $x$ $\mid$ $+$ $\mid$ $y$ $\mid$ $\big)$ \hspace{0.2cm} $\leq$ \hspace{0.1cm} $0$ \vspace{0.5cm}
+
+{\textcolor{carrotorange}{\bfseries{Binomios conjugados:}}} \vspace{0.5cm}
+
+\hspace{7cm}  $\Longrightarrow$ \hspace{0.2cm}  $\mid$ $x$ $\mid$$^{2}$ $-$ $\mid$ $y$ $\mid$$^{2}$ \hspace{0.2cm} $\leq$ \hspace{0.1cm} $0$ \vspace{0.5cm}
+
+{\textcolor{carrotorange}{\bfseries{Teorema 19 i) 3:}}} \vspace{0.5cm}
+
+\hspace{7cm}  $\Longrightarrow$ \hspace{0.2cm}  $\mid$ $x$ $\mid$$^{2}$  \hspace{0.2cm} $\leq$ \hspace{0.1cm} $\mid$ $y$ $\mid$$^{2}$ \vspace{0.5cm}
+
+{\textcolor{carrotorange}{\bfseries{Teorema 29 igualdad 3):}}} \vspace{0.5cm}
+
+\hspace{7cm}  $\Longrightarrow$ \hspace{0.2cm}  $x^{2}$  \hspace{0.2cm} $\leq$ \hspace{0.1cm}  $y^{2}$ \vspace{0.5cm}
+
+\hspace{7.5cm} {\textcolor{carrotorange}{$\qedsymbol$}} 
+
+
+\end{document}
