@@ -1,0 +1,601 @@
+\documentclass[12pt]{article} 
+\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{pdfpages}
+\usepackage{csquotes}
+\usepackage{afterpage}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{multicol}
+\newenvironment{Figura}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+\usepackage{caption}
+\usepackage{amsfonts}
+\usepackage{amsmath, amsthm, amssymb}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\usepackage{graphicx}
+\usepackage{pstricks} 
+
+\usepackage{xcolor}
+
+\definecolor{prussianblue}{RGB}{1, 45, 75} 
+\definecolor{brightturquoise}{RGB}{1, 196, 254} 
+\definecolor{Aguamarina}{rgb}{0.5, 1.0, 0.83}
+\definecolor{mandarina_atomica}{rgb}{1.0, 0.6, 0.4}
+\definecolor{blizzardblue}{rgb}{0.67, 0.9, 0.93}
+\definecolor{Ebony Clay}{RGB}{35, 44, 67}
+\definecolor{Tuscany}{RGB}{205, 111, 52}
+\definecolor{prussianblue}{RGB}{1, 45, 75} 
+\definecolor{brightturquoise}{RGB}{1, 196, 254} 
+\definecolor{verde_manzana}{rgb}{0.55, 0.71, 0.0}
+\definecolor{Aguamarina}{rgb}{0.5, 1.0, 0.83}
+\definecolor{mandarina_atomica}{rgb}{1.0, 0.6, 0.4}
+\definecolor{blizzardblue}{rgb}{0.67, 0.9, 0.93}
+\definecolor{bluegray}{rgb}{0.4, 0.6, 0.8}
+\definecolor{coolgrey}{rgb}{0.55, 0.57, 0.67}
+\definecolor{tealgreen}{rgb}{0.0, 0.51, 0.5}
+\definecolor{ticklemepink}{rgb}{0.99, 0.54, 0.67}
+\definecolor{thulianpink}{rgb}{0.87, 0.44, 0.63}
+\definecolor{wildwatermelon}{rgb}{0.99, 0.42, 0.52}
+\definecolor{wisteria}{rgb}{0.79, 0.63, 0.86}
+\definecolor{yellow(munsell)}{rgb}{0.94, 0.8, 0.0}
+\definecolor{trueblue}{rgb}{0.0, 0.45, 0.81}	\definecolor{tropicalrainforest}{rgb}{0.0, 0.46, 0.37}
+\definecolor{tearose(rose)}{rgb}{0.96, 0.76, 0.76}
+\definecolor{antiquefuchsia}{rgb}{0.57, 0.36, 0.51}	\definecolor{bittersweet}{rgb}{1.0, 0.44, 0.37}	\definecolor{carrotorange}{rgb}{0.93, 0.57, 0.13}
+\definecolor{cinereous}{rgb}{0.6, 0.51, 0.48}
+\definecolor{darkcoral}{rgb}{0.8, 0.36, 0.27}	\definecolor{orange(colorwheel)}{rgb}{1.0, 0.5, 0.0}
+\definecolor{palatinateblue}{rgb}{0.15, 0.23, 0.89} \definecolor{pakistangreen}{rgb}{0.0, 0.4, 0.0} 	\definecolor{vividviolet}{rgb}{0.62, 0.0, 1.0} 
+\definecolor{tigre}{rgb}{0.88, 0.55, 0.24} 		\definecolor{plum(traditional)}{rgb}{0.56, 0.27, 0.52} 	\definecolor{persianred}{rgb}{0.8, 0.2, 0.2} 	\definecolor{orange(webcolor)}{rgb}{1.0, 0.65, 0.0} 	\definecolor{onyx}{rgb}{0.06, 0.06, 0.06}
+\definecolor{blue-violet}{rgb}{0.54, 0.17, 0.89}
+\definecolor{byzantine}{rgb}{0.74, 0.2, 0.64}
+\definecolor{byzantium}{rgb}{0.44, 0.16, 0.39}
+\definecolor{darkmagenta}{rgb}{0.55, 0.0, 0.55} 
+\definecolor{Gallery}{RGB}{236, 236, 236} 
+\definecolor{darkviolet}{rgb}{0.58, 0.0, 0.83} 	\definecolor{deepmagenta}{rgb}{0.8, 0.0, 0.8}
+\definecolor{Mercury}{RGB}{228, 228, 228} 
+\definecolor{Alto}{RGB}{220, 220, 220}
+\definecolor{Woodsmoke}{RGB}{4, 4, 5} 
+\definecolor{Iron}{RGB}{227, 227, 228} 
+\definecolor{Bluechill}{RGB}{11, 150, 144}
+\definecolor{Deep Sea Green}{RGB}{8, 83, 94}
+\definecolor{Sun}{RGB}{251, 175, 17} 
+\definecolor{Lochmara}{RGB}{9, 116, 189}  
+\definecolor{Green vogue}{RGB}{4, 40, 85}  
+\definecolor{Hippie Blue}{RGB}{92, 148, 179}  
+\definecolor{Saratoga}{RGB}{85, 100, 19}  
+\definecolor{Earls Green}{RGB}{177, 196, 56}  
+\definecolor{Cavern Pink}{RGB}{231, 190, 194} 
+\definecolor{Tamarillo}{RGB}{155, 23, 33} 
+\definecolor{Cinnabar}{RGB}{225, 71, 53} 
+\definecolor{Horizon}{RGB}{88, 132, 169} 
+\definecolor{Tarawera}{RGB}{6, 48, 70}
+\definecolor{Fiery Orange}{RGB}{180, 92, 22}
+\definecolor{Lemon Ginger}{RGB}{170, 164, 40}
+\definecolor{Burnt Sienna}{RGB}{236, 119, 88}
+\definecolor{Milano Red}{RGB}{184, 12, 11}
+\definecolor{Lochinvar}{RGB}{36, 142, 137} 
+\definecolor{Saffron}{RGB}{243, 192, 60}
+\newenvironment{MyColorPar}[1]{%
+    \leavevmode\color{#1}\ignorespaces%
+}{%
+}%
+
+
+\begin{document}
+
+\begingroup
+\begin{titlepage}
+	\AddToShipoutPicture*{\put(79,350){\includegraphics[scale=.3]{descarga.png}}}
+	\noindent
+	\vspace{1mm}
+\end{titlepage}
+\endgroup
+
+\pagestyle{empty} 
+\setlength{\parindent}{0pt}
+\sffamily
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center} 
+
+    \LARGE{\bf{\textsf{Benemérita Universidad Autónoma de Puebla}}} \\[0.5cm]
+    
+\begin{figure}[htb] \centering
+
+    \includegraphics[scale=.25]{LogoBUAPpng.png} 
+
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \LARGE{Facultad de Ciencias Físico Matemáticas}\\[0.5cm]
+
+\begin{figure}[htb] \centering
+
+    \includegraphics[scale=.4]{LogoFCFMBUAP.png} 
+    
+\end{figure} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \Large{Licenciatura en Física Teórica}\\[0.5cm]
+    \Large{Primer semestre} 
+
+\end{center} \vspace{0.3cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+
+    {\Large{\bfseries{{\textcolor{carrotorange}{Tarea 32 (Dominio, imagen y gráfica de una función)}}}}} \\ 
+    
+\end{center}
+
+    \large{\bf{\textsf{Curso:}}} {\bfseries{{\textcolor{brightturquoise}{Matemáticas básicas \bfseries{(N.R.C.:25598)}}}}} \\
+    \large{\bf{\textsf{Alumno:}}} {\bfseries{{\textcolor{prussianblue}{Julio Alfredo Ballinas García {\large{{$\mid$}}} 202107583}}}}  \\
+    \large{\bf{\textsf{Docente:}}} {\bfseries{{\textcolor{wisteria}{Dra. María Araceli Juárez Ramírez}}}}\\
+    \large{\bf{\textsf{Grupo:}}} {\bfseries{{\textcolor{verde_manzana}{102}}}}\\
+
+\vfill
+    
+\begin{center} 
+
+    {\texttt{13 de noviembre de 2021}}
+    
+\end{center}
+
+\newpage
+
+\section*{{\textsf{Hallar el dominio, la imagen y la gráfica de las siguientes funciones:}}}
+
+\begin{enumerate}[label=\alph*)]
+    \item \begin{MyColorPar}{Lochinvar} 
+    $f(x)$ $=$ \LARGE{$\frac{1}{1 \hspace{0.1cm} - \hspace{0.1cm} x }$}
+    \end{MyColorPar}
+    \vspace{0.5cm}
+    
+    \item \begin{MyColorPar}{Cinnabar} 
+    $g(x)$ $=$ $\sqrt{x^{2} \hspace{0.1cm} + \hspace{0.1cm} 1 }$
+    \end{MyColorPar}
+    \vspace{0.5cm}
+    
+    \item \begin{MyColorPar}{darkmagenta} 
+   $h(x)$ $=$ {\LARGE{$\frac{x}{2-x}$}}
+    \end{MyColorPar}
+    \vspace{0.5cm}
+    
+    \item \begin{MyColorPar}{carrotorange} 
+   $l(x)$ $=$ $2$ $-$ $3x$
+    \end{MyColorPar}
+    \vspace{0.5cm}
+    
+    \item \begin{MyColorPar}{verde_manzana} 
+   $m(x)$ $=$ $x^{2}$ 
+    \end{MyColorPar}
+    \vspace{0.5cm}
+\end{enumerate} \vspace{0.5cm}
+
+{\textcolor{Cinnabar}{\bfseries{Inicio:}}} \vspace{0.5cm}
+
+\section*{{\textcolor{Lochinvar}{\textsf{\bfseries{Inciso a)}}}}} \begin{MyColorPar}{Lochinvar} 
+    $f(x)$ $=$ \LARGE{$\frac{1}{1 \hspace{0.1cm} - \hspace{0.1cm} x }$}
+    \end{MyColorPar} \vspace{0.5cm}
+    
+\begin{MyColorPar}{Lochinvar} \bfseries{
+{\black{{\bfseries{Dominio:}}}} En general dada una función de $f:$ $A$ $\longrightarrow$ $B$, el dominio de esta función está definido por: \vspace{0.5cm}
+
+{\underline{Notación:}}} $Dom_{f}$ denotaremos al dominio de $f.$ \vspace{0.5cm}
+
+\hspace{4cm} $Dom_{f}$ $=$ $\big{\{}$ $x$ $\in$ $A$ $\mid$ $\exists$ $y$ $\in$ $B$, $f(x)$ $=$ $y$ $\big{\}}$  $\subseteq$ $A$ \vspace{0.5cm}
+
+Entonces el dominio es un subconjunto del conjunto de salida A. \vspace{0.5cm}
+
+Para esta función $\big{(}$ $f(x)$ $=$ {\LARGE{$\frac{1}{1 \hspace{0.1cm} - \hspace{0.1cm} x}$}} $\big{)}$  se busca que el denominador sea diferente de cero, ya que en los números reales no está definida esta operación, pues se dice que esto contradice a los axiomas que definen a los reales $\mathbb{R}$. \vspace{0.5cm}
+
+Tenemos entonces: \vspace{0.5cm}
+
+\hspace{4cm} $1$ $-$ $x$ $\neq$ $0$
+
+\hspace{4cm} $1$ $\neq$ $x$ \vspace{0.5cm}
+
+Por tanto el dominio de esta función es: \vspace{0.5cm}
+
+\hspace{2cm} $Dom_{f}$ $=$ $\big{\{}$ $x$ $\in$ $\mathbb{R}$ $\mid$ $\exists$ $y$ $\in$ $\mathbb{R}$, $f(x)$ $=$ {\LARGE{$\frac{1}{1 \hspace{0.1cm} - \hspace{0.1cm} x}$}} $\big{\}}$ $=$ $\mathbb{R}$ - $\{ 1 \}$ \vspace{0.5cm}
+
+O también: 
+
+\hspace{2cm} $Dom_{f}$ $=$ $\big{\{}$ $x$ $\in$ $\mathbb{R}$ $\mid$  $x$ $\neq$ $1$ $\big{\}}$ \vspace{0.5cm}
+
+O bien: 
+
+\hspace{3cm} \fbox{$x$ $\in$ ($-$ $\infty$ , $1$) $\cup$ ($1$, $\infty$)} \vspace{0.5cm}
+
+\end{MyColorPar}
+
+
+\begin{MyColorPar}{Saffron} \bfseries{
+ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$  }
+\end{MyColorPar}
+
+\begin{MyColorPar}{Lochinvar} \bfseries{
+{\black{{\bfseries{Imagen:}}}} También definimos la imagen de una función, la cual denotaremos por $Img_{f}$ $=$ $\big{\{}$ $y$ $\in$ $B$ $\mid$ $\exists$ $x$ tal que $f(x)$ $=$ $y$} $\big{\}}$ \vspace{0.5cm}
+
+{\underline{Nota:}} Usualmente para calcular el dominio buscamos los valores de $x$ que definen un número $f(x)$. Mientras que para la imagen se plantea la ecuación $f(x)$ $=$ $y$ despejando $x$ como función de $y$. \vspace{0.5cm}
+
+En particular para esta función la imagen se calcula como sigue: \vspace{0.5cm}
+
+Se despeja $x$ en términos de $y$: \vspace{0.5cm}
+
+\hspace{4cm}  $f(x)$ $=$ {\LARGE{$\frac{1}{1 \hspace{0.1cm} - \hspace{0.1cm} x }$}} \vspace{0.5cm}
+
+\hspace{4cm}  $y$ $=$ {\LARGE{$\frac{1}{1 \hspace{0.1cm} - \hspace{0.1cm} x }$}} \vspace{0.5cm}
+
+\hspace{1.8cm}  ($1$ $-$ $x$) $\cdot$ $y$ $=$ $1$ \vspace{0.5cm}
+
+\hspace{3cm}  $1$ $-$ $x$ $=$ {\LARGE{$\frac{1}{y}$}}  \vspace{0.5cm}
+
+\hspace{3.5cm}   $-$ $x$ $=$ {\LARGE{$\frac{1}{y}$}} $-$ $1$ \vspace{0.5cm}
+
+\hspace{4.1cm}   $x$ $=$ $-$ {\LARGE{$\frac{1}{y}$}} $+$ $1$ \vspace{0.5cm}
+
+\hspace{4.1cm}   $x$ $=$ $1$ $-$ {\LARGE{$\frac{1}{y}$}}  \vspace{0.5cm}
+
+Se busca que el denominador sea diferente de cero:\vspace{0.5cm}
+
+\hspace{4cm} $y$ $\neq$ $0$ \vspace{0.5cm}
+
+Entonces la imagen de la función $Img_{f}$ es: \vspace{0.5cm}
+
+\hspace{2cm} $Img_{f}$ $=$ $\big{\{}$ $y$ $\in$ $\mathbb{R}$ $\mid$  $y$ $\neq$ $0$ $\big{\}}$ \vspace{0.5cm}
+
+O bien: \vspace{0.5cm}
+
+\hspace{3cm} \fbox{$y$ $\in$ ($-$ $\infty$ , $0$) $\cup$ ($0$, $\infty$)} \vspace{0.5cm}
+
+\end{MyColorPar}
+
+\begin{MyColorPar}{Saffron} \bfseries{
+ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$  }
+\end{MyColorPar} \vspace{0.5cm}
+
+\begin{MyColorPar}{Lochinvar} \bfseries{
+{\black{{\bfseries{Gráfica de la función:}}}}}  \vspace{0.5cm}
+\end{MyColorPar}
+
+\begin{figure}[htb] \centering
+
+    \includegraphics[scale=.6]{1.png} 
+
+\end{figure}
+
+ $f(x)$ $=$ {\LARGE{$\frac{1}{1 \hspace{0.1cm} - \hspace{0.1cm} x }$}}\vspace{0.5cm}
+ 
+ \begin{MyColorPar}{Saffron} \bfseries{
+ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$  }
+\end{MyColorPar} \vspace{0.5cm}
+
+\section*{{\textcolor{Cinnabar}{\textsf{\bfseries{Inciso b)}}}}}
+
+\begin{MyColorPar}{Cinnabar} 
+    $g(x)$ $=$ $\sqrt{x^{2}+1}$
+    \end{MyColorPar} \vspace{0.5cm}
+
+\begin{MyColorPar}{Cinnabar} \bfseries{
+{\black{{\bfseries{Dominio:}}}} 
+Para esta función $\big{(}$ $g(x)$ $=$ $\sqrt{x^{2}+1}$ $\big{)}$  Podemos ver que el dominio no tiene restricciones, dado que acepta cualquier valor de x. \vspace{0.5cm}
+
+Tenemos entonces que el dominio para esta función es: \vspace{0.5cm}
+
+\hspace{2cm} $Dom_{g}$ $=$ $\big{\{}$ $x$ $\in$ $\mathbb{R}$ $\mid$ $\exists$ $y$ $\in$ $\mathbb{R}$, $g(x)$ $=$ $\sqrt{x^{2}+1}$ $\big{\}}$ $=$ $\mathbb{R}$ \vspace{0.5cm}
+
+O también: 
+
+\hspace{2cm} $Dom_{g}$ $=$ $\big{\{}$ $x$ $\mid$  $x$ $\in$ $\mathbb{R}$ $\big{\}}$ \vspace{0.5cm}
+
+O bien: 
+
+\hspace{3cm} \fbox{$x$ $\in$ ($-$ $\infty$ , $\infty$)} \vspace{0.5cm}
+}
+\end{MyColorPar}
+
+
+\begin{MyColorPar}{Saffron} \bfseries{
+ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$  }
+\end{MyColorPar}
+
+\begin{MyColorPar}{Cinnabar} \bfseries{
+{\black{{\bfseries{Imagen:}}}} 
+En particular para esta función la imagen se calcula como sigue: \vspace{0.5cm}
+
+Se despeja $x$ en términos de $y$: \vspace{0.5cm}
+
+\hspace{4cm}  $g(x)$ $=$ $\sqrt{x^{2}+1}$ \vspace{0.5cm}
+
+\hspace{4.6cm}  $y$ $=$ $\sqrt{x^{2}+1}$ \vspace{0.5cm}
+
+\hspace{4.4cm}  $y^{2}$ $=$ $x^{2}$ $+$ $1$ \vspace{0.5cm}
+
+\hspace{3.4cm}  $y^{2}$ $-$ $1$ $=$ $x^{2}$  \vspace{0.5cm}
+
+\hspace{3cm}  $\sqrt{y^{2} - 1}$ $=$ $x$  \vspace{0.5cm}
+
+Se busca que lo de que está dentro de la raíz o radicando sea mayor o igual a cero ya que las raíces cuadradas negativas no están definidas en el campo de los reales:\vspace{0.5cm}
+
+\hspace{4cm} $y^{2}$ $-$ $1$ $\geq$ $0$ \vspace{0.5cm}
+
+\hspace{4cm} ($y$ $-$ $1$) ($y$ $+$ $1$) $\geq$ $0$ \vspace{0.5cm}
+
+Tenemos los siguientes valores para y: \vspace{0.5cm}
+
+\hspace{4cm} $y_{1}$ $=$ $1$ $y_{2}$ $=$ $-1$ \vspace{0.5cm}
+
+Los valores $1$ y $-$ $1$ se localizan en la recta numérica y se forman los intervalos. \vspace{0.5cm}
+
+Se busca que los valores sean {\textcolor{verde_manzana}{positivos (+)}} o iguales a {\textcolor{Tarawera}{cero}}. \vspace{0.5cm}
+
+{\black{Intervalo I. ($-\infty$, $-$ $1$]}} \vspace{0.5cm}
+
+Se toma el valor de $y$ $=$ $-$ $2$ y se sustituye en cada factor: \vspace{0.5cm}
+
+($y$ $-$ $1$) ($y$ $+$ $1$) $\geq$ $0$ \hspace{0.1cm} $\longrightarrow$ \hspace{0.1cm} ($-2$ $-$ $1$) ($-2$ $+$ $1$) $\geq$ $0$ \hspace{0.1cm} $\longrightarrow$ \hspace{0.1cm} ($-3$) ($-1$) $\geq$ $0$ \hspace{0.1cm} $\longrightarrow$ \hspace{0.1cm} $3$ $\geq$ $0$ \hspace{0.1cm} {\black{Esto es cierto.}} Entonces el intervalo {\black{($-\infty$, $-$ $1$]}} es una solución. \vspace{0.5cm}
+
+{\black{Intervalo II. [$-$ $1$, $1$]}} \vspace{0.5cm}
+
+Se toma el valor de $y$ $=$ $0$ y se sustituye en cada factor: \vspace{0.5cm}
+
+($y$ $-$ $1$) ($y$ $+$ $1$) $\geq$ $0$ \hspace{0.1cm} $\longrightarrow$ \hspace{0.1cm} ($0$ $-$ $1$) ($0$ $+$ $1$) $\geq$ $0$ \hspace{0.1cm} $\longrightarrow$ \hspace{0.1cm} ($-1$) ($1$) $\geq$ $0$ \hspace{0.1cm} $\longrightarrow$ \hspace{0.1cm} $-1$ $\geq$ $0$ \hspace{0.1cm} {\black{Esto es falso.}} Entonces el intervalo {\black{[$-$ $1$, $1$]}} no es una solución. \vspace{0.5cm}
+
+{\black{Intervalo III. [$1$, $\infty$]}} \vspace{0.5cm}
+
+Se toma el valor de $y$ $=$ $2$ y se sustituye en cada factor: \vspace{0.5cm}
+
+($y$ $-$ $1$) ($y$ $+$ $1$) $\geq$ $0$ \hspace{0.1cm} $\longrightarrow$ \hspace{0.1cm} ($2$ $-$ $1$) ($2$ $+$ $1$) $\geq$ $0$ \hspace{0.1cm} $\longrightarrow$ \hspace{0.1cm} ($1$) ($3$) $\geq$ $0$ \hspace{0.1cm} $\longrightarrow$ \hspace{0.1cm} $3$ $\geq$ $0$ \hspace{0.1cm} {\black{Esto es cierto.}} Entonces el intervalo {\black{[$1$, $\infty$]}} es una solución. \vspace{0.5cm}
+
+Entonces la imagen de la función $Img_{f}$ es: \vspace{0.5cm}
+
+\hspace{3cm} \fbox{$y$ $\in$ ($-$ $\infty$ , $1$] $\cup$ [$1$, $\infty$)}} \vspace{0.5cm}
+
+\end{MyColorPar}
+
+\begin{MyColorPar}{Saffron} \bfseries{
+ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$  }
+\end{MyColorPar} \vspace{0.5cm}
+
+\begin{MyColorPar}{Lochinvar} \bfseries{
+{\black{{\bfseries{Gráfica de la función:}}}}}  \vspace{0.5cm}
+\end{MyColorPar}
+
+ $g(x)$ $=$ $\sqrt{x^{2} +1}$ \vspace{0.5cm}
+ 
+ \begin{figure}[htb] \centering
+
+    \includegraphics[scale=.6]{2.png} 
+
+\end{figure}
+ 
+ \begin{MyColorPar}{Saffron} \bfseries{
+ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$  }
+\end{MyColorPar} \vspace{0.5cm}
+
+\section*{{\textcolor{darkmagenta}{\textsf{\bfseries{Inciso c)}}}}}
+
+\begin{MyColorPar}{darkmagenta} 
+   $h(x)$ $=$ {\LARGE{$\frac{x}{2-x}$}}
+    \end{MyColorPar} \vspace{0.5cm}
+
+\begin{MyColorPar}{darkmagenta} \bfseries{
+{\black{{\bfseries{Dominio:}}}} 
+Para esta función $\big{(}$  $h(x)$ $=$ {\LARGE{$\frac{x}{2-x}$}} $\big{)}$ podemos ver que el dominio sí tiene restricciones, dado que no acepta cualquier valor posible de x, ya que si observamos este no puede tomar el valor de $x$ $=$ $2$. \vspace{0.5cm}
+
+Tenemos entonces que el dominio para esta función es: \vspace{0.5cm}
+
+\hspace{2cm} $Dom_{h}$ $=$ $\big{\{}$ $x$ $\in$ $\mathbb{R}$ $\mid$ $\exists$ $y$ $\in$ $\mathbb{R}$, $h(x)$ $=$ {\LARGE{$\frac{x}{2-x}$}} $\big{\}}$ $=$ $\mathbb{R}$ $-$ $\{ 2 \}$ \vspace{0.5cm}
+
+O también: 
+
+\hspace{2cm} $Dom_{h}$ $=$ $\big{\{}$ $x$ $\in$ $\mathbb{R}$ $\mid$  $x$ $\neq$ $2$  $\big{\}}$ \vspace{0.5cm}
+
+O bien: 
+
+\hspace{3cm} \fbox{$x$ $\in$ ($-$ $\infty$ , $2$) $\cup$ ($2$, $\infty$) } \vspace{0.5cm}
+}
+\end{MyColorPar}
+
+
+\begin{MyColorPar}{Saffron} \bfseries{
+ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$  }
+\end{MyColorPar}
+
+\begin{MyColorPar}{darkmagenta} \bfseries{
+{\black{{\bfseries{Imagen:}}}} 
+En particular para esta función la imagen se calcula como sigue: \vspace{0.5cm}
+
+Se despeja $x$ en términos de $y$: \vspace{0.5cm}
+
+\hspace{4cm}  $h(x)$ $=$ {\LARGE{$\frac{x}{2-x}$}} \vspace{0.5cm}
+
+\hspace{4.6cm}  $y$ $=$ {\LARGE{$\frac{x}{2-x}$}} \vspace{0.5cm}
+
+\hspace{4.6cm}  $y$ $\cdot$ ($2-x$) $=$ $x$ \vspace{0.5cm}
+
+\hspace{4.6cm}  $2y$ $-$ $xy$ $=$ $x$ \vspace{0.5cm}
+
+\hspace{4.6cm}  $2y$ $=$ $x$  $+$ $xy$ \vspace{0.5cm}
+
+\hspace{4.6cm}  $2y$ $=$ $x$ $\cdot$ ($1$ $+$ $y$) \vspace{0.5cm}
+
+\hspace{4.6cm} {\LARGE{$\frac{2y}{(1 \hspace{0.1cm} + \hspace{0.1cm} y)}$}} $=$ $x$  \vspace{0.5cm}
+
+Se busca que la variable $y$ no tome el valor de $-$ $1$\vspace{0.5cm}
+
+\hspace{5cm} $y$ $\neq$ $-1$  \vspace{0.5cm}
+
+Entonces la imagen de la función $Img_{f}$ es: \vspace{0.5cm}
+
+\hspace{3cm} \fbox{$y$ $\in$ ($-$ $\infty$ , $-1$) $\cup$ ($-1$, $\infty$)}} \vspace{0.5cm}
+
+\end{MyColorPar}
+
+\begin{MyColorPar}{Saffron} \bfseries{
+ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$  }
+\end{MyColorPar} \vspace{0.5cm}
+
+\begin{MyColorPar}{Lochinvar} \bfseries{
+{\black{{\bfseries{Gráfica de la función:}}}}}  \vspace{0.5cm}
+\end{MyColorPar}
+
+  $h(x)$ $=$ {\LARGE{$\frac{x}{2-x}$}} \vspace{0.5cm}
+  
+  \begin{figure}[htb] \centering
+
+    \includegraphics[scale=.6]{3.png} 
+
+\end{figure}
+ 
+ \begin{MyColorPar}{Saffron} \bfseries{
+ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$  }
+\end{MyColorPar} \vspace{0.5cm}
+
+\section*{{\textcolor{carrotorange}{\textsf{\bfseries{Inciso d)}}}}}
+
+\begin{MyColorPar}{carrotorange} 
+   $l(x)$ $=$ $2$ $-$ $3x$
+    \end{MyColorPar} \vspace{0.5cm}
+
+\begin{MyColorPar}{carrotorange} \bfseries{
+{\black{{\bfseries{Dominio:}}}} 
+Para esta función $\big{(}$  $l(x)$ $=$ $2$ $-$ $3x$ $\big{)}$ podemos ver que el dominio no tiene restricciones, dado que acepta cualquier valor posible de $x$. \vspace{0.5cm}
+
+Tenemos entonces que el dominio para esta función es: \vspace{0.5cm}
+
+\hspace{2cm} $Dom_{l}$ $=$ $\big{\{}$ $x$ $\in$ $\mathbb{R}$ $\mid$ $\exists$ $y$ $\in$ $\mathbb{R}$, $l(x)$ $=$ $2$ $-$ $3x$ $\big{\}}$ $=$ $\mathbb{R}$  \vspace{0.5cm}
+
+O también: 
+
+\hspace{2cm} $Dom_{l}$ $=$ $\big{\{}$ $x$ $\mid$  $x$ $\in$ $\mathbb{R}$  $\big{\}}$ \vspace{0.5cm}
+
+O bien: 
+
+\hspace{3cm} \fbox{$x$ $\in$ ($-$ $\infty$ , $\infty$)} \vspace{0.5cm}
+}
+\end{MyColorPar}
+
+
+\begin{MyColorPar}{Saffron} \bfseries{
+ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$  }
+\end{MyColorPar}
+
+\begin{MyColorPar}{carrotorange} \bfseries{
+{\black{{\bfseries{Imagen:}}}} 
+En particular para esta función la imagen se calcula como sigue: \vspace{0.5cm}
+
+Se despeja $x$ en términos de $y$: \vspace{0.5cm}
+
+\hspace{4cm}   $l(x)$ $=$ $2$ $-$ $3x$ \vspace{0.5cm}
+
+\hspace{4cm}   $y$ $=$ $2$ $-$ $3x$ \vspace{0.5cm}
+
+\hspace{4cm}   $y$ $+$ $3x$ $=$ $2$ \vspace{0.5cm}
+
+\hspace{4cm}   $3x$ $=$ $2$ $-$ $y$ \vspace{0.5cm}
+
+\hspace{4cm}   $x$ $=$ {\LARGE{${\frac{2 - y}{3}}$}} \vspace{0.5cm}
+
+Podemos observar que la imagen no tiene restricciones, dado que acepta cualquier valor posible de $y$.\vspace{0.5cm}
+
+Entonces la imagen de la función $Img_{f}$ es: \vspace{0.5cm}
+
+\hspace{3cm} \fbox{$y$ $\in$ ($-\infty$, $\infty$)}} \vspace{0.5cm}
+
+\end{MyColorPar}
+
+\begin{MyColorPar}{Saffron} \bfseries{
+ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$  }
+\end{MyColorPar} \vspace{0.5cm}
+
+\begin{MyColorPar}{Lochinvar} \bfseries{
+{\black{{\bfseries{Gráfica de la función:}}}}}  
+\end{MyColorPar} \vspace{0.5cm}
+
+  $l(x)$ $=$ $2$ $-$ $3x$ \vspace{0.5cm}
+
+\begin{figure}[H] \centering
+
+    \includegraphics[scale=.6]{4.png} 
+
+\end{figure}
+ 
+ \begin{MyColorPar}{Saffron} \bfseries{
+ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$  }
+\end{MyColorPar} \vspace{0.5cm}
+
+\section*{{\textcolor{verde_manzana}{\textsf{\bfseries{Inciso d)}}}}}
+
+\begin{MyColorPar}{verde_manzana} 
+   $m(x)$ $=$ $x^{2}$ 
+    \end{MyColorPar} \vspace{0.5cm}
+
+\begin{MyColorPar}{verde_manzana} \bfseries{
+{\black{{\bfseries{Dominio:}}}} 
+Para esta función $\big{(}$  $m(x)$ $=$ $x^{2}$  $\big{)}$ podemos ver que el dominio no tiene restricciones, dado que acepta cualquier valor posible de $x$. \vspace{0.5cm}
+
+Tenemos entonces que el dominio para esta función es: \vspace{0.5cm}
+
+\hspace{2cm} $Dom_{m}$ $=$ $\big{\{}$ $x$ $\in$ $\mathbb{R}$ $\mid$ $\exists$ $y$ $\in$ $\mathbb{R}$, $m(x)$ $=$ $x^{2}$  $\big{\}}$ $=$ $\mathbb{R}$  \vspace{0.5cm}
+
+O también: 
+
+\hspace{2cm} $Dom_{m}$ $=$ $\big{\{}$ $x$ $\mid$  $x$ $\in$ $\mathbb{R}$  $\big{\}}$ \vspace{0.5cm}
+
+O bien: 
+
+\hspace{3cm} \fbox{$x$ $\in$ ($-$ $\infty$ , $\infty$)} \vspace{0.5cm}
+}
+\end{MyColorPar}
+
+
+\begin{MyColorPar}{Saffron} \bfseries{
+ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$  }
+\end{MyColorPar}
+
+\begin{MyColorPar}{verde_manzana} \bfseries{
+{\black{{\bfseries{Imagen:}}}} 
+En particular para esta función la imagen se calcula como sigue: \vspace{0.5cm}
+
+Se despeja $x$ en términos de $y$: \vspace{0.5cm}
+
+\hspace{4cm}   $m(x)$ $=$ $x^{2}$  \vspace{0.5cm}
+
+\hspace{4cm}   $y$ $=$ $x^{2}$  \vspace{0.5cm}
+
+\hspace{4cm}   $\sqrt{y}$ $=$ $x$  \vspace{0.5cm}
+
+Observamos que el radicando debe de ser mayor o igual a cero. Por lo tanto la imagen de la función $m(x)$ es: \vspace{0.5cm}
+
+\hspace{3cm} \fbox{$y$ $\in$ [$0$, $\infty$)}} \vspace{0.5cm}
+
+\end{MyColorPar}
+
+\begin{MyColorPar}{Saffron} \bfseries{
+ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$ $\bullet$  }
+\end{MyColorPar} \vspace{0.5cm}
+
+\begin{MyColorPar}{verde_manzana} \bfseries{
+{\black{{\bfseries{Gráfica de la función:}}}}}  \vspace{0.5cm}
+\end{MyColorPar}
+
+  $m(x)$ $=$ $x^{2}$  \vspace{0.5cm}
+  
+    \begin{figure}[htb] \centering
+
+    \includegraphics[scale=.6]{5.png} 
+
+\end{figure}
+\end{document}
