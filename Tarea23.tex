@@ -1,0 +1,327 @@
+\documentclass[12pt]{article} 
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{pdfpages}
+\usepackage{afterpage}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{multicol}
+\newenvironment{Figura}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+\usepackage{caption}
+\usepackage{amsfonts}
+\usepackage{amsmath, amsthm, amssymb}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\usepackage{graphicx}
+\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage{pstricks} 
+
+\usepackage{xcolor}
+\definecolor{prussianblue}{RGB}{1, 45, 75} 
+\definecolor{brightturquoise}{RGB}{1, 196, 254} 
+\definecolor{verde_manzana}{rgb}{0.55, 0.71, 0.0}
+\definecolor{Aguamarina}{rgb}{0.5, 1.0, 0.83}
+\definecolor{mandarina_atomica}{rgb}{1.0, 0.6, 0.4}
+\definecolor{blizzardblue}{rgb}{0.67, 0.9, 0.93}
+\definecolor{bluegray}{rgb}{0.4, 0.6, 0.8}
+\definecolor{coolgrey}{rgb}{0.55, 0.57, 0.67}
+\definecolor{tealgreen}{rgb}{0.0, 0.51, 0.5}
+\definecolor{ticklemepink}{rgb}{0.99, 0.54, 0.67}
+\definecolor{thulianpink}{rgb}{0.87, 0.44, 0.63}
+\definecolor{wildwatermelon}{rgb}{0.99, 0.42, 0.52}
+\definecolor{wisteria}{rgb}{0.79, 0.63, 0.86}
+\definecolor{yellow(munsell)}{rgb}{0.94, 0.8, 0.0}
+\definecolor{trueblue}{rgb}{0.0, 0.45, 0.81}	\definecolor{tropicalrainforest}{rgb}{0.0, 0.46, 0.37}
+\definecolor{tearose(rose)}{rgb}{0.96, 0.76, 0.76}
+\definecolor{antiquefuchsia}{rgb}{0.57, 0.36, 0.51}	\definecolor{bittersweet}{rgb}{1.0, 0.44, 0.37}	\definecolor{carrotorange}{rgb}{0.93, 0.57, 0.13}
+\definecolor{cinereous}{rgb}{0.6, 0.51, 0.48}
+\definecolor{darkcoral}{rgb}{0.8, 0.36, 0.27}	\definecolor{orange(colorwheel)}{rgb}{1.0, 0.5, 0.0}
+\definecolor{palatinateblue}{rgb}{0.15, 0.23, 0.89} \definecolor{pakistangreen}{rgb}{0.0, 0.4, 0.0} 	\definecolor{vividviolet}{rgb}{0.62, 0.0, 1.0} 
+\definecolor{tigre}{rgb}{0.88, 0.55, 0.24} 		\definecolor{plum(traditional)}{rgb}{0.56, 0.27, 0.52} 	\definecolor{persianred}{rgb}{0.8, 0.2, 0.2} 	\definecolor{orange(webcolor)}{rgb}{1.0, 0.65, 0.0} 	\definecolor{onyx}{rgb}{0.06, 0.06, 0.06}
+\definecolor{blue-violet}{rgb}{0.54, 0.17, 0.89}
+\definecolor{byzantine}{rgb}{0.74, 0.2, 0.64}
+\definecolor{byzantium}{rgb}{0.44, 0.16, 0.39}
+\definecolor{darkmagenta}{rgb}{0.55, 0.0, 0.55} 	\definecolor{darkviolet}{rgb}{0.58, 0.0, 0.83} 	\definecolor{deepmagenta}{rgb}{0.8, 0.0, 0.8}
+
+\begin{document}
+
+\begingroup
+\begin{titlepage}
+	\AddToShipoutPicture*{\put(79,350){\includegraphics[scale=.3]{descarga.png}}}
+	\noindent
+	\vspace{1mm}
+\end{titlepage}
+\endgroup
+
+\pagestyle{empty} 
+\setlength{\parindent}{0pt}
+\sffamily
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center} 
+
+    \LARGE{\bf{\textsf{Benemérita Universidad Autónoma de Puebla}}} \\[0.5cm]
+    
+\begin{figure}[htb] \centering
+
+    \includegraphics[scale=.25]{LogoBUAPpng.png} 
+
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \LARGE{Facultad de Ciencias Físico Matemáticas}\\[0.5cm]
+
+\begin{figure}[htb] \centering
+
+    \includegraphics[scale=.4]{LogoFCFMBUAP.png} 
+    
+\end{figure} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \Large{Licenciatura en Física Teórica}\\[0.5cm]
+    \Large{Primer semestre} 
+
+\end{center} \vspace{0.3cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+
+    {\Large{\bfseries{{\textcolor{carrotorange}{Tarea 23}}}}} \\ 
+    
+\end{center}
+
+    \large{\bf{\textsf{Curso:}}} {\bfseries{{\textcolor{brightturquoise}{Matemáticas básicas \bfseries{(N.R.C.:25598)}}}}} \\
+    \large{\bf{\textsf{Alumno:}}} {\bfseries{{\textcolor{prussianblue}{Julio Alfredo Ballinas García {\large{{$\mid$}}} 202107583}}}}  \\
+    \large{\bf{\textsf{Docente:}}} {\bfseries{{\textcolor{wisteria}{Dra. María Araceli Juárez Ramírez}}}}\\
+    \large{\bf{\textsf{Grupo:}}} {\bfseries{{\textcolor{verde_manzana}{102}}}}\\
+
+\vfill
+    
+\begin{center} 
+
+    {\small{\textsf{\underline{Tarea retrasada:} venció 17 de octubre {\red{8 AM}}} {\LARGE{ $\mid$ }}\textsf{{\underline{Fecha de hoy:}} 18 de octubre}}}
+    
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\textsf{Mostrar {\red{Teorema 25}} {\blue{iii)}}: Se tiene en $\mathbb{R}$ }} \vspace{.5cm}
+
+{\LARGE{{\blue{iii)}} \hspace{.1cm} $x$ $>$ $0$ $\wedge$ $y$ $<$ $0$ $\Longrightarrow$ $xy$ $<$ $0$}} \vspace{.5cm}
+
+
+{\red{{\underline{Demostración directa}}}}  \vspace{0.5cm}
+
+{\red{{\underline{Solución:}}}} \vspace{0.5cm} 
+
+{\textcolor{palatinateblue}{Hipótesis:} {\Large{$x$ $>$ $0$ $\wedge$ $y$ $<$ $0$}}} \vspace{0.5cm}
+
+{\textcolor{palatinateblue}{Debemos transformar a ambas proposiciones para poder trabajar con ellas.}} \vspace{0.5cm}
+
+{\textcolor{palatinateblue}{Suponemos}} {\Large{$x$ $>$ $0$ $\wedge$ $y$ $<$ $0$ }} {\textcolor{pakistangreen}{verdadera.}} \vspace{0.5cm}
+
+$x$ $+$ $x^{\prime}$ $>$ $0$ $+$ $x^{\prime}$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $y$ $+$ $y^{\prime}$ $<$ $0$ $+$ $y^{\prime}$ \hspace{3.1cm} {\textcolor{carrotorange}{Axioma 4 (R$_{4}$)}} \vspace{0.5cm}
+
+$x$ $+$ $(-x)$ $>$ $0$ $+$ $(-x)$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $y$ $+$ $(-y)$ $<$ $0$ $+$ $(-y)$ \hspace{0.4cm} {\textcolor{carrotorange}{Teorema 3 (T$_{3}$)}} \vspace{0.5cm}
+
+$0$ $>$ $0$ $+$ $(-x)$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $<$ $0$ $+$ $(-y)$ \hspace{4cm} {\textcolor{carrotorange}{Axioma 4 (R$_{4}$)}} \vspace{0.5cm}
+
+$0$ $>$ $-x$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $<$ $-y$ \hspace{6.7cm} {\textcolor{carrotorange}{Axioma 3 (R$_{3}$)}} \vspace{0.5cm}
+
+$0$ $<$ $x$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $<$ $-y$ \hspace{6cm} {\textcolor{carrotorange}{Teorema 19 $ii)$ en (4)  (T$_{19}$)}} \vspace{0.5cm}
+
+$0$ $\leq$ $x$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$  \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $<$ $-y$ \hspace{4.5cm} {\textcolor{carrotorange}{{\underline{Definición} de $(<)$}}} \vspace{0.5cm}
+
+$0$ $\leq$ $x$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm}  $0$ $<$ $-y$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$\hspace{4.7cm} {\textcolor{carrotorange}{ Axioma 1 (R$_{1}$)}} \vspace{0.5cm}
+
+(\hspace{0.2cm} $0$ $\leq$ $x$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $<$ $-y$ \hspace{0.2cm} )  \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{3.3cm} {\textcolor{carrotorange}{ Axioma 2 (R$_{2}$)}} \vspace{0.5cm}
+
+( \hspace{0.2cm} $0$ $\leq$ $x$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\leq$ $-y$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $y$ \hspace{0.2cm} )  \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.4cm} {\textcolor{carrotorange}{{\underline{Definición} de $(<)$}}} \vspace{0.5cm}
+
+( \hspace{0.2cm} $0$ $\leq$ $x$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\leq$ $-y$ \hspace{0.2cm} ) \hspace{0.2cm}  $\wedge$ \hspace{0.2cm} ( \hspace{0.2cm} $0$ $\neq$ $y$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm} ) \hspace{0.4cm} {\textcolor{carrotorange}{Axioma 2 (R$_{2}$)}} \vspace{0.5cm}
+
+$0$ $\leq$ $x$ $(-y)$  \hspace{0.2cm}  $\wedge$ \hspace{0.2cm} ( \hspace{0.2cm} $0$ $\neq$ $y$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm} ) \hspace{3.8cm} {\textcolor{carrotorange}{Teorema 14 (T$_{14}$)}} \vspace{0.5cm}
+
+$0$ $\leq$ $-xy$  \hspace{0.2cm}  $\wedge$ \hspace{0.2cm} ( \hspace{0.2cm} $0$ $\neq$ $y$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm} ) \hspace{4.3cm} {\textcolor{carrotorange}{Teorema 12 (T$_{12}$)}} \vspace{0.5cm}
+
+$(-xy)^{\prime}$ $+$ $0$ $\leq$ $-xy$ $+$ $(-xy)^{\prime}$  \hspace{0.2cm}  $\wedge$ \hspace{0.2cm} ( \hspace{0.2cm} $0$ $\neq$ $y$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm} ) \hspace{0.4cm} {\textcolor{carrotorange}{Axioma 4 (R$_{4}$)}} \vspace{0.5cm}
+
+$-(-xy)$ $+$ $0$ $\leq$ $-xy$ $+$ $-(-xy)$  \hspace{0.2cm}  $\wedge$ \hspace{0.2cm} ( \hspace{0.2cm} $0$ $\neq$ $y$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm} ) {\textcolor{carrotorange}{Teorema 3 (T$_{3}$)}} \vspace{0.5cm}
+
+$xy$ $+$ $0$ $\leq$ $-xy$ $+$ $xy$  \hspace{0.2cm}  $\wedge$ \hspace{0.2cm} ( \hspace{0.2cm} $0$ $\neq$ $y$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm} ) \hspace{2cm} {\textcolor{carrotorange}{Teorema 4 (T$_{4}$)}} \vspace{0.5cm}
+
+$xy$ $\leq$ $-xy$ $+$ $xy$  \hspace{0.2cm}  $\wedge$ \hspace{0.2cm} ( \hspace{0.2cm} $0$ $\neq$ $y$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm} ) \hspace{3cm} {\textcolor{carrotorange}{Axioma 3 (R$_{3}$)}} \vspace{0.5cm}
+
+$xy$ $\leq$ $0$  \hspace{0.2cm}  $\wedge$ \hspace{0.2cm} ( \hspace{0.2cm} $0$ $\neq$ $y$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm} ) \hspace{5cm} {\textcolor{carrotorange}{Axioma 4 (R$_{4}$)}} \vspace{0.5cm}
+
+$xy$ $<$ $0$  \hspace{0.2cm}  $\vee$ \hspace{0.2cm} $xy$ $=$ $0$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} ( \hspace{0.2cm} $0$ $\neq$ $y$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm} ) \hspace{1.4cm} {\textcolor{carrotorange}{Teorema 14 (T$_{14}$)}} \vspace{0.5cm}
+
+{\fbox{$xy$ $<$ $0$}}  \hspace{0.2cm}  $\vee$ \hspace{0.2cm} {\red{{\underline{(\hspace{0.2cm} {\black{$xy$ $=$ $0$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm}  \hspace{0.2cm} $0$ $\neq$ $y$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$}} \hspace{0.2cm} )}}}} \hspace{1.5cm} {\textcolor{carrotorange}{Axioma 2 (R$_{2}$)}} \vspace{0.1cm}
+
+\hspace{5cm} {\red{Contradicción (FALSO)}} \vspace{0.5cm}
+
+$x$ $>$ $0$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $y$ $<$ $0$ \hspace{0.2cm} $\Longrightarrow$ \hspace{0.2cm} {\fbox{$xy$ $<$ $0$}} \hspace{2.3cm} {\textcolor{carrotorange}{Trasitividad de la implicación({\textcolor{vividviolet}{{\bf{$\Longrightarrow$}}}})}} \vspace{0.5cm}
+
+\hspace{7cm} {\textcolor{carrotorange}{\qedsymbol}}
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\textsf{Mostrar {\red{Teorema 25}} {\blue{iv)}}: Se tiene en $\mathbb{R}$ }} \vspace{.5cm}
+
+{\LARGE{{\blue{iv)}} \hspace{.1cm} $x$ $<$ $0$ $\wedge$ $y$ $<$ $0$ $\Longrightarrow$ $xy$ $>$ $0$}} \vspace{.5cm}
+
+
+{\red{{\underline{Demostración directa}}}}  \vspace{0.5cm}
+
+{\red{{\underline{Solución:}}}} \vspace{0.5cm} 
+
+{\textcolor{palatinateblue}{Hipótesis:} {\Large{$x$ $<$ $0$ $\wedge$ $y$ $<$ $0$}}} \vspace{0.5cm}
+
+{\textcolor{palatinateblue}{Debemos transformar a ambas proposiciones para poder trabajar con ellas.}} \vspace{0.5cm}
+
+{\textcolor{palatinateblue}{Suponemos}} {\Large{$x$ $<$ $0$ $\wedge$ $y$ $<$ $0$ }} {\textcolor{pakistangreen}{verdadera.}} \vspace{0.5cm}
+
+$x$ $\leq$ $0$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $x$ $\neq$ $0$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $y$ $\leq$ $0$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $y$ $\neq$ $0$ \hspace{2cm} {\textcolor{carrotorange}{{\underline{Definición} de ($<$)}}} \vspace{0.5cm}
+
+$x$ $\leq$ $0$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $y$ $\leq$ $0$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $x$ $\neq$ $0$  \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $y$ $\neq$ $0$ \hspace{2cm} {\textcolor{carrotorange}{Axioma 1 (R$_{1}$)}} \vspace{0.5cm}
+ 
+$xy$ $\leq$ $0$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $x$ $\neq$ $0$  \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $y$ $\neq$ $0$ \hspace{2.4cm} {\textcolor{carrotorange}{Axioma 14 (R$_{14}$) con ($e$ $=$ $0$ $=$ $xy$)}} \vspace{0.5cm}
+
+$xy$ $<$ $0$ \hspace{0.2cm} $\vee$ \hspace{0.2cm} $xy$ $=$ $0$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm}  $x$ $\neq$ $0$  \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $y$ $\neq$ $0$ \hspace{1.6cm} {\textcolor{carrotorange}{Teorema 14 (T$_{14}$)}} \vspace{0.5cm}
+
+$xy$ $<$ $0$ \hspace{0.2cm} $\vee$ \hspace{0.2cm} {\red{\underline{(\hspace{0.2cm} {\black{$xy$ $=$ $0$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm}  $x$ $\neq$ $0$  \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $y$ $\neq$ $0$}}\hspace{0.2cm})}}} \hspace{0.7cm} {\textcolor{carrotorange}{Axioma 2 (R$_{2}$)}}
+
+\hspace{4.5cm} {\red{Contradicción (FALSO)}} \vspace{0.5cm}
+
+$xy$ $<$ $0$ \hspace{0.2cm} $\vee$ \hspace{0.2cm} {\red{F}} \hspace{6.8cm} {\textcolor{carrotorange}{Propiedad de la disyunción ({\Large{{\bf{$\vee$)}}}}}} \vspace{0.5cm}
+
+{\textcolor{palatinateblue}{Por hipótesis} $x$ $<$ $0$ $\wedge$ $y$ $<$ $0$} \vspace{0.5cm}
+
+{\textcolor{palatinateblue}{Entonces en conclusión:}}
+
+\fbox{$xy$ $>$ $0$} \hspace{0.6cm} {\textcolor{carrotorange}{\qedsymbol}}
+ 
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\textsf{Mostrar {\red{Teorema 26}} {\blue{ii)}}: Para todo real $x$ se tiene siempre:}} \vspace{.5cm}
+
+{\LARGE{{\blue{ii)}} \hspace{.1cm} $x^{2}$ $=$ $0$ \hspace{0.2cm} $\Longrightarrow$ \hspace{0.2cm} $x$ $=$ $0$}} \vspace{.5cm}
+
+{\red{{\underline{Demostración directa}}}}  \vspace{0.5cm}
+
+{\red{{\underline{Solución:}}}} \vspace{0.5cm} 
+
+{\textcolor{palatinateblue}{Hipótesis:} {\Large{$x^{2}$ $=$ $0$}}} \vspace{0.5cm}
+
+{\textcolor{palatinateblue}{Suponemos}} {\Large{$x^{2}$ $=$ $0$}} {\textcolor{pakistangreen}{verdadera.}} \vspace{0.5cm}
+
+$x^{2}$ $=$ $0$ \hspace{4.9cm} {\textcolor{palatinateblue}{Hipótesis}} \vspace{0.5cm}
+
+$x$ $x$ $=$ $0$ \hspace{4.8cm} {\textcolor{carrotorange}{{\underline{NOTACIÓN}} ($xx$ se escribe $x^{2}$) en axioma 6 (R$_{6}$)}} \vspace{0.5cm}
+
+$x$ $=$ $0$ \hspace{0.2cm} $\vee$ \hspace{0.2cm} $x$ $=$ $0$ \hspace{2.4cm} {\textcolor{carrotorange}{Teorema 5 (T$_{5}$)}} \vspace{0.5cm}
+
+\fbox{$x$ $=$ $0$} \hspace{0.2cm} \hspace{4.5cm} {\textcolor{carrotorange}{Propiedad de la disyunción  ({\LARGE{${\vee}$}})}} \vspace{0.5cm}
+
+$x^{2}$ $=$ $0$ \hspace{0.2cm} $\Longrightarrow$ \hspace{0.2cm} \fbox{$x$ $=$ $0$} \hspace{1.6cm} {\textcolor{carrotorange}{Por la transitividad de la implicación}} {\textcolor{vividviolet}{{\bf{$\Longrightarrow$}}}} \vspace{0.5cm}
+
+\hspace{6.6cm} \textcolor{carrotorange}{\qedsymbol}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\textsf{Mostrar {\red{Teorema 26}} {\blue{iii)}}: Para todo real $x$ se tiene siempre:}} \vspace{.5cm}
+
+{\LARGE{{\blue{iii)}} \hspace{.1cm} $x^{2}$ $>$ $0$ $\Longrightarrow$ $x$ $\neq$ $0$}} \vspace{.5cm}
+
+{\red{{\underline{Demostración directa}}}}  \vspace{0.5cm}
+
+{\red{{\underline{Solución:}}}} \vspace{0.5cm} 
+
+{\textcolor{palatinateblue}{Hipótesis:} {\Large{$x^{2}$ $>$ $0$}}} \vspace{0.5cm}
+
+{\textcolor{palatinateblue}{Suponemos}} {\Large{$x^{2}$ $>$ $0$}} {\textcolor{pakistangreen}{verdadera.}} \vspace{0.5cm}
+
+$x^{2}$ $>$ $0$ \hspace{8.2cm} {\textcolor{palatinateblue}{Hipótesis}} \vspace{0.5cm}
+
+($x^{2}$){\LARGE{$^{\prime}$}} $+$ $x^{2}$ $>$ $0$ $+$ ($x^{2}$){\LARGE{$^{\prime}$}} \hspace{4.8cm} {\textcolor{carrotorange}{Axioma 4 (R$_{4}$)}} \vspace{0.5cm}
+
+($-x^{2}$) $+$ $x^{2}$ $>$ $0$ $+$ ($-x^{2}$) \hspace{4.4cm} {\textcolor{carrotorange}{Teorema 3 (T$_{3}$)}} \vspace{0.5cm}
+
+$x^{2}$ $+$ ($-x^{2}$) $>$ $0$ $+$ ($-x^{2}$) \hspace{4.3cm} {\textcolor{carrotorange}{Axioma 1 (R$_{1}$)}} \vspace{0.5cm}
+
+$0$ $>$ $0$ $+$ ($-x^{2}$) \hspace{6.5cm} {\textcolor{carrotorange}{Axioma 4 (R$_{4}$)}} \vspace{0.5cm}
+
+$0$ $>$ $-x^{2}$ \hspace{7.8cm} {\textcolor{carrotorange}{Axioma 3 (R$_{3}$)}} \vspace{0.5cm}
+
+$0$ $<$ $x^{2}$ \hspace{7cm} {\textcolor{carrotorange}{Teorema 19 $ii$) en (4) (R$_{19}$)}} \vspace{0.5cm}
+
+$0$ $\leq$ $x^{2}$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x^{2}$ \hspace{5.3cm} {\textcolor{carrotorange}{{\underline{Definición}} de ($<$)}} \vspace{0.5cm}
+
+$0$ $\leq$ $x^{2}$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $xx$ \hspace{4cm} {\textcolor{carrotorange}{{\underline{Notación}} axioma 6 ($xx=x^{2}$)}} \vspace{0.5cm}
+
+$0$ $\leq$ $x^{2}$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm} $\vee$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{3cm} {\textcolor{carrotorange}{Teorema 5  (T$_{5}$)}} \vspace{0.5cm}
+
+(\hspace{0.2cm} $0$ $<$ $x^{2}$ \hspace{0.2cm} $\vee$ \hspace{0.2cm} $0$ $=$ $x^{2}$ \hspace{0.2cm}) \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm} $\vee$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{.1cm} {\textcolor{carrotorange}{Teorema 14  (T$_{14}$)}} \vspace{0.5cm}
+
+{\textcolor{carrotorange}{Distributiva de {\Large{($\vee / \wedge$) :}}}} \vspace{0.5cm}
+
+(\hspace{0.2cm} $0$ $<$ $x^{2}$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm}) \hspace{0.2cm} $\vee$ \hspace{0.2cm} (\hspace{0.2cm} $0$ $=$ $x^{2}$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm}) \hspace{0.2cm} $\vee$ \hspace{0.2cm} $0$ $\neq$ $x$ \vspace{0.5cm}
+
+
+{\textcolor{carrotorange}{{\underline{Notación}} axioma 6 ($xx=x^{2}$) :}} \vspace{0.5cm}
+
+(\hspace{0.2cm} $0$ $<$ $x^{2}$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm}) \hspace{0.2cm} $\vee$ \hspace{0.2cm} (\hspace{0.2cm} $0$ $=$ $xx$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm}) \hspace{0.2cm} $\vee$ \hspace{0.2cm} $0$ $\neq$ $x$ \vspace{0.5cm}
+
+{\textcolor{carrotorange}{Teorema 5 (T$_{5}$) :}} \vspace{0.5cm}
+
+(\hspace{0.2cm} $0$ $<$ $x^{2}$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm}) \hspace{0.2cm} $\vee$ \hspace{0.2cm} (\hspace{0.2cm} $0$ $=$ $x$ \hspace{0.2cm} $\vee$ \hspace{0.2cm} $0$ $=$ $x$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm}) \hspace{0.2cm} $\vee$ \hspace{0.2cm} $0$ $\neq$ $x$ \vspace{0.5cm}
+
+{\textcolor{carrotorange}{Axioma 1 (R$_{1}$) :}} \vspace{0.5cm}
+
+(\hspace{0.2cm} $0$ $<$ $x^{2}$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm}) \hspace{0.2cm} $\vee$ \hspace{0.2cm} (\hspace{0.2cm} $0$ $=$ $x$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm} $\vee$  \hspace{0.2cm} $0$ $=$ $x$ \hspace{0.2cm}) \hspace{0.2cm} $\vee$ \hspace{0.2cm} $0$ $\neq$ $x$ \vspace{0.5cm}
+
+
+{\textcolor{carrotorange}{Axioma 2 (R$_{2}$) :}} \vspace{0.5cm}
+
+{\textcolor{verde_manzana}{({{\underline{\black{\hspace{0.2cm} $0$ $<$ $x^{2}$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm}}}}})}} \hspace{0.2cm} $\vee$ \hspace{0.2cm} (\hspace{0.2cm} {\textcolor{red}{({{\underline{\black{$0$ $=$ $x$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$}}}})}} \hspace{0.2cm} $\vee$  \hspace{0.2cm} $0$ $=$ $x$ \hspace{0.2cm})  $\vee$ \vspace{0.2cm} $0$ $\neq$ $x$ 
+
+\hspace{0.6cm} {\textcolor{verde_manzana}{VERDADERO}} \hspace{4.5cm} {\red{FALSO}}
+
+(\hspace{0.2cm} $0$ $<$ $x^{2}$ \hspace{0.2cm} $\wedge$ \hspace{0.2cm} $0$ $\neq$ $x$ \hspace{0.2cm}) \hspace{0.2cm} $\vee$ \hspace{0.2cm} (\hspace{0.2cm} $0$ $=$ $x$ \hspace{0.2cm}) \hspace{0.2cm} $\vee$ \hspace{0.2cm} $0$ $\neq$ $x$ \vspace{0.5cm}
+
+{\textcolor{carrotorange}{Propiedad de la disyunción}} {\textcolor{palatinateblue}{y}} {\textcolor{carrotorange}{por la propiedad de la transitividad de la implicación {\textcolor{vividviolet}{($\Longrightarrow$)}}}} {\textcolor{carrotorange}{:}} \vspace{0.5cm}
+
+$x^{2}$ $>$ $0$ $\Longrightarrow$ \fbox{$x$ $\neq$ $0$} \hspace{.6cm} \textcolor{carrotorange}{\qedsymbol}
+
+
+
+
+\newpage
+\end{document}
